@@ -1,0 +1,2723 @@
+<resources>
+    <string name="app_name">TVS2</string>
+
+
+    <string-array name="Array_vehicleType">
+
+        <item>Select</item>
+        <item>Taxi</item>
+        <item>Car</item>
+        <item>Bus</item>
+        <item>Truck</item>
+        <item>Van</item>
+        <item>Jeepney</item>
+        <item>Utility</item>
+        <item>Motorcycle</item>
+        <item>Tricicycle</item>
+        <item>AUV</item>
+        <item>Trailer</item>
+
+    </string-array>
+
+    <string-array name="Array_vehicleStatus">
+        <item>Select</item>
+        <item>None</item>
+        <item>Towed</item>
+        <item>Impounded</item>
+    </string-array>
+
+    <string-array name="Array_offenseName">
+
+        <item></item>
+        <item>Any Violation of General Driving Rule</item>
+        <item>Keeping as Fas Right as as Practicable Overtaking</item>
+        <item>Use of Center Lanes of Three Lanes Thoroughfares</item>
+        <item>Passing Vehicles</item>
+        <item>Giving wat to Overtaking Vehicles</item>
+        <item>Drivers bot to Obstruct Traffic</item>
+        <item>Driving in Lanes Thoroughfares</item>
+        <item>Driving through Roundabouts and Rotondas</item>
+        <item>Keeping Right of Double Yellow Lanes</item>
+        <item>Driving in Bicycles Lanes</item>
+        <item>Driving in Reversed Lanes</item>
+        <item>Driving Over a Yellow Box</item>
+        <item>Disobedience to Traffic Control Signals</item>
+        <item>Disobedience to Traffic Signs</item>
+        <item>Driving Under the Influence of Liquor or Drugs</item>
+        <item>Driving Outside Bicycle Lane</item>
+        <item>Driving Tricycle on National Road</item>
+        <item>Driving Without License</item>
+        <item>Driving Without License</item>
+        <item>Driving in Sandos/Slippers</item>
+        <item>Driving through Funeral or other Processions</item>
+        <item>Discrimination of Passengers/Trip Cutting</item>
+        <item>Erection and Interference with Traffic Control Items</item>
+        <item>Exceeding Gross Weight, Axle and Wheel Load (Overloading)</item>
+        <item>Failure to Cary/Show/Surrender Driver\'s License</item>
+        <item>Failure to Carry/Show/Surrender Driver\'s License</item>
+        <item>Failure to Cary/Show/Registration</item>
+        <item>Failure to Carry/Show/Registration</item>
+        <item>Following Fire Trucks and Other Emergency Vehicles</item>
+        <item>Improper Riding of Bicycle or Tricycle</item>
+        <item>Improper Uniform</item>
+        <item>Improper Uniform</item>
+        <item>Improper Opening of Door and Alightning from Vehicles</item>
+        <item>Improper Opening of Doors and Alightning from Vehicles</item>
+        <item>Improper Use of Horns, Warning Instruments</item>
+        <item>Kabit System</item>
+        <item>Lack of Accessories of Taxicabs</item>
+        <item>Loads not Properly Secured</item>
+        <item>Not Giving Way to Intersections</item>
+        <item>Not Giving Way During Turns</item>
+        <item>Not Giving Way to Emergency Vehicles</item>
+        <item>Not Giving Way to or From Parked Vehicles</item>
+        <item>Not Giving Wat to Vehicles while Leaving or Entering a Road</item>
+        <item>Not Giving Way to Vehicles while Leaving or Entering a Road</item>
+        <item>Not Giving Way to Roundabout and Rotonda</item>
+        <item>Non-Payment of Parking Fees</item>
+        <item>No Holding to Handle Bar</item>
+        <item>Non-Payment of Parking Fees</item>
+        <item>No Franchise/CPC/PA Carried (Amended from Ordinance 8327)</item>
+        <item>No Franchise/CPC/PA Carried (Amended from Ordinance 8327)</item>
+        <item>Non-Compliance with WRP</item>
+        <item>No Fare Matrix Displayed</item>
+        <item>No Designated Seats for Displayed Persons</item>
+        <item>No ID/s Displayed</item>
+        <item>No Safety Helmet for Motorcyclist</item>
+        <item>No Safety Helmet for Motorcyclist</item>
+        <item>Non-Use of Seatbelts</item>
+        <item>Operating Animal Drawn Carriages, Bicycle and Tricycle without</item>
+        <item>Overloading of Passengers of Bicycle and Tricycle</item>
+        <item>No Permit to Move Equipment and or Load or Excessive Weight, Width or Height</item>
+        <item>Out of Route (PUB/PUJ)</item>
+        <item>Out of Route (PUB/PUJ)</item>
+        <item>Out of Service Area (Tricycle/Pedicab)</item>
+        <item>Overcharging of Fares/Contracting Services</item>
+        <item>Overcharging of Fares/Contracting services</item>
+        <item>Constructing Drivers View or Mechanism</item>
+        <item>Obstracting Roads by Motor Vehicles Vendors Stalled Vehicle</item>
+        <item>Obstracting Roads or Sidewalks by Residential or Commercial Establishment</item>
+        <item>Parking And Waiting in Prohibited Areas</item>
+        <item>Parking and Waiting In Prohibited Area</item>
+        <item>Parking Near Grade or Curve</item>
+        <item>Parking on Parade Routes and on Any Special Occasion</item>
+        <item>Parking for Certain Prohibited Purposed</item>
+        <item>Parking in Front Resident or of Commercial Establishment</item>
+        <item>Projecting Loads on Passenger Vehicles</item>
+        <item>Putting Glass, Sharp Objects on Highway</item>
+        <item>Riding Bicycle and Tricycle Without Regular and Permanent Seat</item>
+        <item>Reckless Driving</item>
+        <item>Reckless Driving: Passing Thru Red Light Abrupt Changing of Lane 2nd Lane/3rd Lane/ Solid Lane</item>
+        <item>Reckless driving</item>
+        <item>Riding Bicycle More than Two Abreast</item>
+        <item>Refusal to Have Vehicles Weighed and/ or to remove excess</item>
+        <item>Road Unworthiness of Motor Vehicles</item>
+        <item>Sirens, Dazzling Lights, Similar Gadgets</item>
+        <item>Street Diggings or Road Closure Without Permit</item>
+        <item>Student Driver Permit</item>
+        <item>Unauthorized Drag Racing/ Speed Contest</item>
+        <item>Towing of Bicycles</item>
+        <item>Unregistred Motor Vehicle</item>
+        <item>Unathorized Change of Color/Engine</item>
+        <item>Use, Posting or Display of Fake Unauthorized ID/Es, Stickers, Etc.</item>
+        <item>User of Expired Commemorative, Driver\'s License, Plates, Etc.</item>
+        <item>Use of Signaling Devices</item>
+        <item>Unauthorized Installation/ Use of Jalousies Additional Air-Con</item>
+        <item>Taxi without Meter/Uncalibrated or Tampered Taximeter Seal</item>
+        <item>Tracking Mud Unto the Highway</item>
+        <item>Violation of No Left Turn, No Right Turn</item>
+        <item>Violation of No Left Turn, No Right Turn</item>
+        <item>Violation of One-Way Street</item>
+        <item>Violation of One-Way street (Ord.8327)</item>
+        <item>1st Offense</item>
+        <item>Violation of No Enty Sign</item>
+        <item>Violation of No Overtaking/No Passing Sign</item>
+        <item>Violation of No Overtaking on Bridge Sign</item>
+        <item>Violation of Bridge Load Limit</item>
+        <item>Violation of Keep Right, Keep Left Sign</item>
+        <item>Violation of Stop Sign</item>
+        <item>Violation of Give Way/Yield Sign</item>
+        <item>Violation of No U-Turn Sign (Amended from Ord.8327)</item>
+        <item>Violation of No U-Turn Sign</item>
+        <item>Violation of Speed Limits</item>
+        <item>Violation of Speed/Drag Racing Contests</item>
+        <item>Violation of Operating Rule on One-Way Streets</item>
+        <item>Violation of Loading/Unloading Zoned (Amended from Ord. 8237)</item>
+        <item>Violation In Parking Areas</item>
+        <item>Violation of Procedures Involving Traffic Accidents</item>
+        <item>Violation or Non-Compliance with any Section or Article regarding Lighting, Warning signs, Equiptment</item>
+        <item>Violation of Bridge Load Limit or Limit in the Use of Bridge</item>
+        <item>Violation of Speed Limit on Wooden Bridge</item>
+        <item>Violation of Limited Truck Ban</item>
+        <item>Violationg of License Restriction</item>
+        <item>Violation of License Restriction</item>
+        <item>Violating Pedestrian Crossing</item>
+        <item>Violationg Restriction on Pedestrian</item>
+        <item>Violation Vehicular Reduction Scheme</item>
+        <item>Violation Vehicular Reduction Scheme</item>
+        <item>Driving Vehicle Using Fake Driver\'s License</item>
+        <item>Jaywalking (Amended Ord 8327)</item>
+        <item>1st offense</item>
+        <item>Smoke Belching (Amended Ord 8327)</item>
+        <item>1st offense</item>
+        <item>Breach of franchise condition</item>
+        <item>Colorum operation of Tricycle No CPC/Francise</item>
+        <item>Colorum Operations of Cargo and Passenger Vehicle</item>
+        <item>Colorum operation of cargo and passenger vehicle</item>
+        <item>Disregarding Lane Marking</item>
+        <item>Illegal Counterflow</item>
+        <item>Counter Flow</item>
+        <item>Illegal Display of Sign Boards</item>
+        <item>Illegeal Display of Sign Boards</item>
+        <item>Improper Display of Plates</item>
+        <item>Using Cellphone While Driving</item>
+        <item>Using Cellphone While Driving</item>
+        <item>Arrogance, Discourtesy of Driver</item>
+        <item>2nd Offense</item>
+        <item>3rd and succeeding offense</item>
+        <item>Driving over yellow box (Amended Ord 8327)</item>
+        <item>1st offense</item>
+        <item>Violation of Driving Over Yellow Box</item>
+        <item>2nd Offense</item>
+        <item>3rd and succeeding offense</item>
+        <item>1st Offense (Amended Ord 8327)</item>
+        <item>2nd Offense</item>
+        <item>3rd and succeeding offense</item>
+        <item>1st Offense</item>
+        <item>2nd Offense</item>
+        <item>3rd and succeeding offense</item>
+        <item>2nd Offense</item>
+        <item>3rd and succeeding offense</item>
+        <item>2nd Offense</item>
+        <item>3rd and succeeding offense</item>
+        <item>Total Truck Ban</item>
+        <item>Restriction on Some Roads</item>
+        <item>Unclean/ Unsanitary Vehicle and Lack of Signs</item>
+        <item>Clamping Fee</item>
+
+        <item>======================</item>
+        <item>======================</item>
+        <item>======================</item>
+        <item>======================</item>
+        <item>======================</item>
+
+        <item>OBSTRUCTION</item>
+        <item>OBSTRUCTION</item>
+        <item>OBSTRUCTION</item>
+        <item>LOADING AND UNLOADING IN PROHIBITED ZONES </item>
+        <item>LOADING AND UNLOADING IN PROHIBITED ZONES </item>
+        <item>LOADING AND UNLOADING IN PROHIBITED ZONES </item>
+        <item>LOADING AND UNLOADING IN PROHIBITED ZONES as of july 12,2012 MC 08-12 </item>
+        <item>LOADING AND UNLOADING IN PROHIBITED ZONES as of july 12,2012 MC 08-12 </item>
+        <item>LOADING AND UNLOADING IN PROHIBITED ZONES as of july 12,2012 MC 08-12 </item>
+        <item>NO CONTACT/ LOADING AND UNLOADING IN PROHIBITED ZONES  MMDA Reg. No. 04-003 Series Of 2004</item>
+        <item>NO CONTACT/ LOADING AND UNLOADING IN PROHIBITED ZONES  MMDA Reg. No. 04-003 Series Of 2004</item>
+        <item>NO CONTACT/ LOADING AND UNLOADING IN PROHIBITED ZONES  MMDA Reg. No. 04-003 Series Of 2004</item>
+        <item>DISREGARDING TRAFFIC SIGNS</item>
+        <item>DISREGARDING TRAFFIC SIGNS</item>
+        <item>DISREGARDING TRAFFIC SIGNS</item>
+        <item>RECKLESS DRIVING</item>
+        <item>RECKLESS DRIVING</item>
+        <item>RECKLESS DRIVING</item>
+        <item>No Contact Reckless MMDA Reg. No. 11-001 Series of 2011</item>
+        <item>No Contact Reckless MMDA Reg. No. 11-001 Series of 2011</item>
+        <item>No Contact Reckless MMDA Reg. No. 11-001 Series of 2011</item>
+        <item>STALLED VEHICLE</item>
+        <item>STALLED VEHICLE</item>
+        <item>STALLED VEHICLE</item>
+        <item>*ILLEGAL PARKING (NOT TOWED)</item>
+        <item>*ILLEGAL PARKING (NOT TOWED)</item>
+        <item>*ILLEGAL PARKING (NOT TOWED)</item>
+        <item>*ILLEGAL PARKING (TOWED)</item>
+        <item>*ILLEGAL PARKING (TOWED)</item>
+        <item>*ILLEGAL PARKING (TOWED)</item>
+        <item>For No Contact along Commonwealth (Illegal Parking)MMDA Reg. No. 11- 001 Series of 2011</item>
+        <item>For No Contact along Commonwealth (Illegal Parking)MMDA Reg. No. 11- 001 Series of 2011</item>
+        <item>For No Contact along Commonwealth (Illegal Parking)MMDA Reg. No. 11- 001 Series of 2011</item>
+        <item>NO CONTACT ILLEGAL PARKING MMDA Reg. No. 11-001 Series of 2011</item>
+        <item>NO CONTACT ILLEGAL PARKING MMDA Reg. No. 11-001 Series of 2011</item>
+        <item>NO CONTACT ILLEGAL PARKING MMDA Reg. No. 11-001 Series of 2011</item>
+        <item>TRUCK BAN</item>
+        <item>TRUCK BAN</item>
+        <item>TRUCK BAN</item>
+        <item>ILLEGAL TURNING</item>
+        <item>OUT OF LINE OPERATION - MMDA Reg. No. 97 - 004</item>
+        <item>OUT OF LINE OPERATION - MMDA Reg. No. 97 - 004</item>
+        <item>OUT OF LINE OPERATION - MMDA Reg. No. 97 - 004</item>
+        <item>BUS / PUJ LANE ORDINANCE</item>
+        <item>BUS / PUJ LANE ORDINANCE</item>
+        <item>BUS / PUJ LANE ORDINANCE</item>
+        <item>PRIVATE VEHICLE USING YELLOW LANE</item>
+        <item>PRIVATE VEHICLE USING YELLOW LANE</item>
+        <item>PRIVATE VEHICLE USING YELLOW LANE</item>
+        <item>No Contact (BUS/PUJ LANE ORDINANCE) MMDA Reg. No.11-001 Series of 2011</item>
+        <item>No Contact (BUS/PUJ LANE ORDINANCE) MMDA Reg. No.11-001 Series of 2011</item>
+        <item>No Contact (BUS/PUJ LANE ORDINANCE) MMDA Reg. No.11-001 Series of 2011</item>
+        <item>BUS / PUJ Lane Ordinance along Commonwealth(Pvt. Veh.) Physical App. MMDA Reg. No. 11-001 Series of</item>
+        <item>BUS / PUJ Lane Ordinance along Commonwealth(Pvt. Veh.) Physical App. MMDA Reg. No. 11-001 Series of</item>
+        <item>BUS / PUJ Lane Ordinance along Commonwealth(Pvt. Veh.) Physical App. MMDA Reg. No. 11-001 Series of</item>
+        <item>BUS/PUJ LANE ORDINANCE (as of july 12 , 2012)(MC 08-12)</item>
+        <item>BUS/PUJ LANE ORDINANCE (as of july 12 , 2012)(MC 08-12)</item>
+        <item>BUS/PUJ LANE ORDINANCE (as of july 12 , 2012)(MC 08-12)</item>
+        <item>REFUSAL TO CONVEY PASSENGER TO DESTN. / TRIPCUTTING PUV</item>
+        <item>REFUSAL TO CONVEY PASSENGER TO DESTN. / TRIPCUTTING PUV</item>
+        <item>REFUSAL TO CONVEY PASSENGER TO DESTN. / TRIPCUTTING PUV</item>
+        <item>REFUSAL TO CONVEY PASSENGER TO DESTN. / TRIPCUTTING TX</item>
+        <item>REFUSAL TO CONVEY PASSENGER TO DESTN. / TRIPCUTTING TX</item>
+        <item>REFUSAL TO CONVEY PASSENGER TO DESTN. / TRIPCUTTING TX</item>
+        <item>ILLEGAL OVERTAKING</item>
+        <item>COLORUM OPERATION (PASSENGER) - MMDA Reg. No. 97 - 004</item>
+        <item>COLORUM OPERATION (PASSENGER) - MMDA Reg. No. 97 - 004</item>
+        <item>COLORUM OPERATION (PASSENGER) - MMDA Reg. No. 97 - 004</item>
+        <item>COLORUM OPERATION (PASSENGER) - MMDA Reg. No. 97 - 004</item>
+        <item>COLORUM OPERATION (PASSENGER) - MMDA Reg. No. 97 - 004</item>
+        <item>COLORUM OPERATION (CARGO VEHICLE)</item>
+        <item>CR / OR NOT CARRIED</item>
+        <item>CR / OR NOT CARRIED</item>
+        <item>CR / OR NOT CARRIED</item>
+        <item>DELINQUENT / INVALID REGISTRATION</item>
+        <item>DELINQUENT / INVALID REGISTRATION</item>
+        <item>DELINQUENT / INVALID REGISTRATION</item>
+        <item>Open Door (W/ Conductor)</item>
+        <item>Open Door (W/ Conductor)</item>
+        <item>Open Door (W/O Conductor)</item>
+        <item>Open Door (W/O Conductor)</item>
+        <item>Open Door (W/O Conductor)</item>
+        <item>Open Door (W/ Conductor)</item>
+        <item>OPEN DOOR (W/CONDUCTOR) (as of july 12,2012)(MC 08-12)</item>
+        <item>OPEN DOOR (W/CONDUCTOR) (as of july 12,2012)(MC 08-12)</item>
+        <item>OPEN DOOR (W/CONDUCTOR) (as of july 12,2012)(MC 08-12)</item>
+        <item>No Contact Open Door - (1 door only) MMDA reg. No. 04-003 Series of 2004</item>
+        <item>No Contact Open Door - (1 door only) MMDA reg. No. 04-003 Series of 2004</item>
+        <item>No Contact Open Door - (1 door only) MMDA reg. No. 04-003 Series of 2004</item>
+        <item>OPEN DOOR (W/o CONDUCTOR) (as of july 12,2012)(MC 08-12)</item>
+        <item>OPEN DOOR (W/o CONDUCTOR) (as of july 12,2012)(MC 08-12)</item>
+        <item>OPEN DOOR (W/o CONDUCTOR) (as of july 12,2012)(MC 08-12)</item>
+        <item>No Contact Open Door - (2 door) MMDA Reg. No. 04-003 Series of 2004</item>
+        <item>No Contact Open Door - (2 door) MMDA Reg. No. 04-003 Series of 2004</item>
+        <item>No Contact Open Door - (2 door) MMDA Reg. No. 04-003 Series of 2004</item>
+        <item>NO / DEFECTIVE HEADLIGHTS</item>
+        <item>NO / DEFECTIVE HEADLIGHTS</item>
+        <item>NO / DEFECTIVE HEADLIGHTS</item>
+        <item>NO / DEFECTIVE HEADLIGHTS</item>
+        <item>NO / DEFECTIVE HEADLIGHTS</item>
+        <item>NO / DEFECTIVE HEADLIGHTS</item>
+        <item>OVERNIGHT PARKING</item>
+        <item>OVERNIGHT PARKING</item>
+        <item>OVERNIGHT PARKING</item>
+        <item>DRIVING AGAINST TRAFFIC</item>
+        <item>DRIVING AGAINST TRAFFIC</item>
+        <item>DRIVING AGAINST TRAFFIC</item>
+        <item>ILLEGAL OR UNAUTHORIZED COUNTERFLOW - MMDA Reg. No. 97 - 003/p></item>
+        <item>ILLEGAL OR UNAUTHORIZED COUNTERFLOW - MMDA Reg. No. 97 - 003/p></item>
+        <item>ILLEGAL OR UNAUTHORIZED COUNTERFLOW - MMDA Reg. No. 97 - 003/p></item>
+        <item>MODIFIED BUS STOP SEGREGATION SCHEME</item>
+        <item>MODIFIED BUS STOP SEGREGATION SCHEME</item>
+        <item>MODIFIED BUS STOP SEGREGATION SCHEME</item>
+        <item>EDSA MINIBUS BAN</item>
+        <item>EDSA MINIBUS BAN</item>
+        <item>EDSA MINIBUS BAN</item>
+        <item>REFUSAL TO RENDER SERVICE TO PUBLIC (PUV)</item>
+        <item>REFUSAL TO RENDER SERVICE TO PUBLIC (PUV)</item>
+        <item>REFUSAL TO RENDER SERVICE TO PUBLIC (PUV)</item>
+        <item>REFUSAL TO RENDER SERVICE TO PUBLIC (TX)</item>
+        <item>REFUSAL TO RENDER SERVICE TO PUBLIC (TX)</item>
+        <item>REFUSAL TO RENDER SERVICE TO PUBLIC (TX)</item>
+        <item>UNDUE PREFERENCE / UNJUST DISCRIMINATION</item>
+        <item>UNDUE PREFERENCE / UNJUST DISCRIMINATION</item>
+        <item>UNDUE PREFERENCE / UNJUST DISCRIMINATION</item>
+        <item>OVERTAKING AT UNSAFE DISTANCE</item>
+        <item>OVERTAKING AT UNSAFE DISTANCE</item>
+        <item>OVERTAKING AT UNSAFE DISTANCE</item>
+        <item>CUTTING AN OVERTAKEN VEHICLE</item>
+        <item>CUTTING AN OVERTAKEN VEHICLE</item>
+        <item>CUTTING AN OVERTAKEN VEHICLE</item>
+        <item>INCREASING SPEED WHEN OVERTAKEN</item>
+        <item>INCREASING SPEED WHEN OVERTAKEN</item>
+        <item>INCREASING SPEED WHEN OVERTAKEN</item>
+        <item>OVERTAKING WHEN LEFT SIDE NOT VIS / CLEAR</item>
+        <item>OVERTAKING WHEN LEFT SIDE NOT VIS / CLEAR</item>
+        <item>OVERTAKING WHEN LEFT SIDE NOT VIS / CLEAR</item>
+        <item>OVERTAKING UPON A CREST OF GRADE</item>
+        <item>OVERTAKING UPON A CREST OF GRADE</item>
+        <item>OVERTAKING UPON A CREST OF GRADE</item>
+        <item>OVERTAKING UPON A CURVE</item>
+        <item>OVERTAKING UPON A CURVE</item>
+        <item>OVERTAKING UPON A CURVE</item>
+        <item>OVERTAKING AT RAILWAY GRADE CROSSING</item>
+        <item>OVERTAKING AT RAILWAY GRADE CROSSING</item>
+        <item>OVERTAKING AT RAILWAY GRADE CROSSING</item>
+        <item>UNAUTHORIZED FOR HIRE PLATES ON PRIVATE MV</item>
+        <item>OVERTAKING AT AN INTERSECTION</item>
+        <item>OVERTAKING AT AN INTERSECTION</item>
+        <item>OVERTAKING AT AN INTERSECTION</item>
+        <item>UNAUTHORIZED FOR HIRE PLATES ON PRIVATE MV</item>
+        <item>UNAUTHORIZED FOR HIRE PLATES ON PRIVATE MV</item>
+        <item>OVERTAKING BET MEN WORKING / CAUTION SIGNS</item>
+        <item>OVERTAKING BET MEN WORKING / CAUTION SIGNS</item>
+        <item>OVERTAKING BET MEN WORKING / CAUTION SIGNS</item>
+        <item>OVERTAKING AT NO OVERTAKING ZONE</item>
+        <item>OVERTAKING AT NO OVERTAKING ZONE</item>
+        <item>OVERTAKING AT NO OVERTAKING ZONE</item>
+        <item>FAILURE TO GIVE WAY TO OVERTAKING MOTOR VEHICLE</item>
+        <item>FAILURE TO GIVE WAY TO OVERTAKING MOTOR VEHICLE</item>
+        <item>FAILURE TO GIVE WAY TO OVERTAKING MOTOR VEHICLE</item>
+        <item>FAILURE TO YIELD RIGHT OF WAY</item>
+        <item>FAILURE TO YIELD RIGHT OF WAY</item>
+        <item>FAILURE TO YIELD RIGHT OF WAY</item>
+        <item>FAILURE TO STOP BEFORE THROUGH HW / RR CROSSING</item>
+        <item>FAILURE TO STOP BEFORE THROUGH HW / RR CROSSING</item>
+        <item>FAILURE TO STOP BEFORE THROUGH HW / RR CROSSING</item>
+        <item>FAILURE TO GIVE WAY TO POLICE / FIRE VEH / AMBULANCE</item>
+        <item>FAILURE TO GIVE WAY TO POLICE / FIRE VEH / AMBULANCE</item>
+        <item>FAILURE TO GIVE WAY TO POLICE / FIRE VEH / AMBULANCE</item>
+        <item>FAILURE TO GIVE PROPER SIGNAL</item>
+        <item>FAILURE TO GIVE PROPER SIGNAL</item>
+        <item>FAILURE TO GIVE PROPER SIGNAL</item>
+        <item>FAILURE TO STOP MOTOR AND NOTCH HANDBRAKE OF MOTOR WHEN UNATTENDED</item>
+        <item>FAILURE TO STOP MOTOR AND NOTCH HANDBRAKE OF MOTOR WHEN UNATTENDED</item>
+        <item>FAILURE TO STOP MOTOR AND NOTCH HANDBRAKE OF MOTOR WHEN UNATTENDED</item>
+        <item>FAILURE TO DIM HEADLIGHTS</item>
+        <item>FAILURE TO DIM HEADLIGHTS</item>
+        <item>FAILURE TO DIM HEADLIGHTS</item>
+        <item>ALLOWING PASSENGER ON TOP OF VEHICLE</item>
+        <item>ALLOWING PASSENGER ON TOP OF VEHICLE</item>
+        <item>ALLOWING PASSENGER ON TOP OF VEHICLE</item>
+        <item>PASSENGER ON RUNNING / STEP BRD / MUDGUARD</item>
+        <item>PASSENGER ON RUNNING / STEP BRD / MUDGUARD</item>
+        <item>PASSENGER ON RUNNING / STEP BRD / MUDGUARD</item>
+        <item>**ARROGANCE/DISCOURTESY (w/seminar)</item>
+        <item>**ARROGANCE/DISCOURTESY (w/seminar)</item>
+        <item>**ARROGANCE/DISCOURTESY (w/seminar)</item>
+        <item>HITCHING</item>
+        <item>HITCHING</item>
+        <item>HITCHING</item>
+        <item>DRIVING IN SLIPPERS</item>
+        <item>DRIVING IN SLIPPERS</item>
+        <item>DRIVING IN SLIPPERS</item>
+        <item>DRIVING IN SLEEVELESS SHIRT</item>
+        <item>DRIVING IN SLEEVELESS SHIRT</item>
+        <item>DRIVING IN SLEEVELESS SHIRT</item>
+        <item>DRIVING IN A PLACE NOT FOR TRAFFIC</item>
+        <item>DRIVING IN A PLACE NOT FOR TRAFFIC</item>
+        <item>DRIVING IN A PLACE NOT FOR TRAFFIC</item>
+        <item>DRIVING WITHOUT LICENSE</item>
+        <item>DRIVING WITHOUT LICENSE</item>
+        <item>DRIVING WITHOUT LICENSE</item>
+        <item>DRIVING W /DEL / INVAL / INEFFECTUAL DL</item>
+        <item>DRIVING W /DEL / INVAL / INEFFECTUAL DL</item>
+        <item>DRIVING W /DEL / INVAL / INEFFECTUAL DL</item>
+        <item>DRIVING WITH SUSPENDED DRIVERS LICENSE</item>
+        <item>DRIVING WITH SUSPENDED DRIVERS LICENSE</item>
+        <item>DRIVING WITH SUSPENDED DRIVERS LICENSE</item>
+        <item>DRIVING WITH REVOKED DRIVERS LICENSE</item>
+        <item>DRIVING WITH REVOKED DRIVERS LICENSE</item>
+        <item>DRIVING WITH REVOKED DRIVERS LICENSE</item>
+        <item>FAILURE TO CARRY / SHOW / SURRENDER DRIVERS LICENSE</item>
+        <item>FAILURE TO CARRY / SHOW / SURRENDER DRIVERS LICENSE</item>
+        <item>FAILURE TO CARRY / SHOW / SURRENDER DRIVERS LICENSE</item>
+        <item>FAILURE TO SIGN DRIVERS LICENSE</item>
+        <item>FAILURE TO SIGN DRIVERS LICENSE</item>
+        <item>FAILURE TO SIGN DRIVERS LICENSE</item>
+        <item>ALLOWING ANOTHER PERSON TO USE DRIVERS LICENSE</item>
+        <item>ALLOWING ANOTHER PERSON TO USE DRIVERS LICENSE</item>
+        <item>ALLOWING ANOTHER PERSON TO USE DRIVERS LICENSE</item>
+        <item>ALLOWING IMPROPERLY LIC/UNLIC PERSON TO DRIVE</item>
+        <item>ALLOWING IMPROPERLY LIC/UNLIC PERSON TO DRIVE</item>
+        <item>ALLOWING IMPROPERLY LIC/UNLIC PERSON TO DRIVE</item>
+        <item>EMPLOYING DISCOURTEOUS / ARROGANT DRIVER / CONDUCTOR (w/seminar)</item>
+        <item>EMPLOYING DISCOURTEOUS / ARROGANT DRIVER / CONDUCTOR (w/seminar)</item>
+        <item>EMPLOYING DISCOURTEOUS / ARROGANT DRIVER / CONDUCTOR (w/seminar)</item>
+        <item>Operating MV W/O Licensed Drive</item>
+        <item>Operating MV W/O Licensed Drive</item>
+        <item>Operating MV W/O Licensed Drive</item>
+        <item>UNLICENSED CONDUCTOR</item>
+        <item>UNLICENSED CONDUCTOR</item>
+        <item>UNLICENSED CONDUCTOR</item>
+        <item>DRIVING UNDER INFLUENCE OF LIQUOR</item>
+        <item>DRIVING UNDER INFLUENCE OF LIQUOR</item>
+        <item>DRIVING UNDER INFLUENCE OF LIQUOR</item>
+        <item>DRIVING UNDER INFLUENCE OF DRUGS</item>
+        <item>DRIVING UNDER INFLUENCE OF DRUGS</item>
+        <item>DRIVING UNDER INFLUENCE OF DRUGS</item>
+        <item>USING MV IN COMMISION OF CRIME</item>
+        <item>USING MV IN COMMISION OF CRIME</item>
+        <item>USING MV IN COMMISION OF CRIME</item>
+        <item>UNREGISTERED MOTOR VEHICLE</item>
+        <item>UNREGISTERED MOTOR VEHICLE</item>
+        <item>UNREGISTERED MOTOR VEHICLE</item>
+        <item>IMPROPERLY REGISTERED MOTOR VEHICLE</item>
+        <item>IMPROPERLY REGISTERED MOTOR VEHICLE</item>
+        <item>IMPROPERLY REGISTERED MOTOR VEHICLE</item>
+        <item>SUSPENDED CERT. OF REGITRATION</item>
+        <item>SUSPENDED CERT. OF REGITRATION</item>
+        <item>SUSPENDED CERT. OF REGITRATION</item>
+        <item>NO FRANCHISE / CPC / PA CARRIED</item>
+        <item>NO FRANCHISE / CPC / PA CARRIED</item>
+        <item>NO FRANCHISE / CPC / PA CARRIED</item>
+        <item>BREACH OF FRANCHISE CONDITIONS</item>
+        <item>BREACH OF FRANCHISE CONDITIONS</item>
+        <item>BREACH OF FRANCHISE CONDITIONS</item>
+        <item>UNREGISTERED SUBS/ REPLACEMENT ENGINE</item>
+        <item>UNREGISTERED SUBS/ REPLACEMENT ENGINE</item>
+        <item>UNREGISTERED SUBS/ REPLACEMENT ENGINE</item>
+        <item>UNAUTHORIZED CHANGE OF COLOR / CONFIGURATION</item>
+        <item>UNAUTHORIZED CHANGE OF COLOR / CONFIGURATION</item>
+        <item>UNAUTHORIZED CHANGE OF COLOR / CONFIGURATION</item>
+        <item>PLATES NOT FIRMLY ATTACHED / VISIBLE</item>
+        <item>PLATES NOT FIRMLY ATTACHED / VISIBLE</item>
+        <item>PLATES NOT FIRMLY ATTACHED / VISIBLE</item>
+        <item>DIRTY / UNCARED FOR PLATES</item>
+        <item>DIRTY / UNCARED FOR PLATES</item>
+        <item>DIRTY / UNCARED FOR PLATES</item>
+        <item>INCONSPICOUSLY DISPLAYED PLATES</item>
+        <item>INCONSPICOUSLY DISPLAYED PLATES</item>
+        <item>INCONSPICOUSLY DISPLAYED PLATES</item>
+        <item>PLATES DIFFERENT FROM BODY NUMBER</item>
+        <item>PLATES DIFFERENT FROM BODY NUMBER</item>
+        <item>PLATES DIFFERENT FROM BODY NUMBER</item>
+        <item>IMPROPERLY DISPLAYED PLATES</item>
+        <item>IMPROPERLY DISPLAYED PLATES</item>
+        <item>IMPROPERLY DISPLAYED PLATES</item>
+        <item>FAKE NUMBER PLATES</item>
+        <item>FAKE NUMBER PLATES</item>
+        <item>FAKE NUMBER PLATES</item>
+        <item>TAMPERED MARKED PLATES</item>
+        <item>TAMPERED MARKED PLATES</item>
+        <item>TAMPERED MARKED PLATES</item>
+        <item>UnAUTHORIZED IMPROVISED PLATES</item>
+        <item>UnAUTHORIZED IMPROVISED PLATES</item>
+        <item>UnAUTHORIZED IMPROVISED PLATES</item>
+        <item>ILLEGAL DISPLAY OF SIGNBOARD</item>
+        <item>ILLEGAL DISPLAY OF SIGNBOARD</item>
+        <item>ILLEGAL DISPLAY OF SIGNBOARD</item>
+        <item>NO STICKER</item>
+        <item>NO STICKER</item>
+        <item>NO STICKER</item>
+        <item>FAKE STICKERS</item>
+        <item>FAKE STICKERS</item>
+        <item>FAKE STICKERS</item>
+        <item>TAMPERED / MARKED STICKERS</item>
+        <item>TAMPERED / MARKED STICKERS</item>
+        <item>TAMPERED / MARKED STICKERS</item>
+        <item>VIOLATION OF COMMEMORATIVE PLATE RULES AND REGULATION</item>
+        <item>VIOLATION OF COMMEMORATIVE PLATE RULES AND REGULATION</item>
+        <item>VIOLATION OF COMMEMORATIVE PLATE RULES AND REGULATION</item>
+        <item>FAKE ID / PERMIT</item>
+        <item>FAKE ID / PERMIT</item>
+        <item>FAKE ID / PERMIT</item>
+        <item>FAKE TAGS</item>
+        <item>FAKE TAGS</item>
+        <item>FAKE TAGS</item>
+        <item>TAMPERING OF OR / CR / CPC AND OTHER DOCUMENTS (SPURIOUS DOCUMENTS) - MMDA Reg. No. 97-004</item>
+        <item>TAMPERING OF OR / CR / CPC AND OTHER DOCUMENTS (SPURIOUS DOCUMENTS) - MMDA Reg. No. 97-004</item>
+        <item>TAMPERING OF OR / CR / CPC AND OTHER DOCUMENTS (SPURIOUS DOCUMENTS) - MMDA Reg. No. 97-004</item>
+        <item>MV W/ METALLIC TIRES</item>
+        <item>MV W/ METALLIC TIRES</item>
+        <item>MV W/ METALLIC TIRES</item>
+        <item>DEFECTIVE BRAKES</item>
+        <item>DEFECTIVE BRAKES</item>
+        <item>DEFECTIVE BRAKES</item>
+        <item>NO / DEFECTIVE HANDBRAKE</item>
+        <item>NO / DEFECTIVE HANDBRAKE</item>
+        <item>NO / DEFECTIVE HANDBRAKE</item>
+        <item>IMPROPER/ DEFECTIVE HORN / SIGNALING DEVICE</item>
+        <item>IMPROPER/ DEFECTIVE HORN / SIGNALING DEVICE</item>
+        <item>IMPROPER/ DEFECTIVE HORN / SIGNALING DEVICE</item>
+        <item>CARRYING RED LIGHTS INFRONT OF MV</item>
+        <item>CARRYING RED LIGHTS INFRONT OF MV</item>
+        <item>CARRYING RED LIGHTS INFRONT OF MV</item>
+        <item>NO RED REAR LIGHTS</item>
+        <item>NO RED REAR LIGHTS</item>
+        <item>NO RED REAR LIGHTS</item>
+        <item>NO PLATE LIGHTS</item>
+        <item>NO PLATE LIGHTS</item>
+        <item>NO PLATE LIGHTS</item>
+        <item>NO BRAKE LIGHTS</item>
+        <item>NO BRAKE LIGHTS</item>
+        <item>NO BRAKE LIGHTS</item>
+        <item>NO / DEFECTIVE WIPER</item>
+        <item>NO / DEFECTIVE WIPER</item>
+        <item>NO / DEFECTIVE WIPER</item>
+        <item>NO / CUT MUFFLER</item>
+        <item>NO / CUT MUFFLER</item>
+        <item>NO / CUT MUFFLER</item>
+        <item>DIRTY / UNSIGHTLY / DILAPIDATED MOTOR VEHICLE</item>
+        <item>DIRTY / UNSIGHTLY / DILAPIDATED MOTOR VEHICLE</item>
+        <item>DIRTY / UNSIGHTLY / DILAPIDATED MOTOR VEHICLE</item>
+        <item>FAILURE TO PAINT AUTHORIZED ROUTE</item>
+        <item>FAILURE TO PAINT AUTHORIZED ROUTE</item>
+        <item>FAILURE TO PAINT AUTHORIZED ROUTE</item>
+        <item>IMPROPER PAINTING OF AUTHORIZED ROUTE</item>
+        <item>IMPROPER PAINTING OF AUTHORIZED ROUTE</item>
+        <item>IMPROPER PAINTING OF AUTHORIZED ROUTE</item>
+        <item>PAINTING OF UNAUTHORIZED ROUTE</item>
+        <item>PAINTING OF UNAUTHORIZED ROUTE</item>
+        <item>PAINTING OF UNAUTHORIZED ROUTE</item>
+        <item>NO BUSINESS / TRADE NAME (PRIVATE)</item>
+        <item>NO BUSINESS / TRADE NAME (PRIVATE)</item>
+        <item>NO BUSINESS / TRADE NAME (PRIVATE)</item>
+        <item>NO OWNER / BUSINESS NAME / ADDRESS (For Hire)</item>
+        <item>NO OWNER / BUSINESS NAME / ADDRESS (For Hire)</item>
+        <item>NO OWNER / BUSINESS NAME / ADDRESS (For Hire)</item>
+        <item>driving without license</item>
+        <item>UNAUTHORIZED COMML / BUSS / TRADE NAME (TX)</item>
+        <item>UNAUTHORIZED COMML / BUSS / TRADE NAME (TX)</item>
+        <item>UNAUTHORIZED COMML / BUSS / TRADE NAME (TX)</item>
+        <item>ALLOWING ANOTHER TO USE COMML/BUSS NAME</item>
+        <item>ALLOWING ANOTHER TO USE COMML/BUSS NAME</item>
+        <item>ALLOWING ANOTHER TO USE COMML/BUSS NAME</item>
+        <item>DIRTY / UNCARED FOR PLATES</item>
+        <item>DIRTY / UNCARED FOR PLATES</item>
+        <item>DIRTY / UNCARED FOR PLATES</item>
+        <item>DEFECTIVE EQUIPMENT</item>
+        <item>DEFECTIVE EQUIPMENT</item>
+        <item>NO / DEFECTIVE SPEEDOMETER / TACHOMETER</item>
+        <item>NO / DEFECTIVE SPEEDOMETER / TACHOMETER</item>
+        <item>NO / DEFECTIVE SPEEDOMETER / TACHOMETER</item>
+        <item>DEFECTIVE / BROKEN WINDSHIELD</item>
+        <item>DEFECTIVE / BROKEN WINDSHIELD</item>
+        <item>DEFECTIVE / BROKEN WINDSHIELD</item>
+        <item>NO / DEFECTIVE WINDSHIELD WIPER</item>
+        <item>NO / DEFECTIVE WINDSHIELD WIPER</item>
+        <item>NO / DEFECTIVE WINDSHIELD WIPER</item>
+        <item>NO REAR VIEW MIRROR</item>
+        <item>NO REAR VIEW MIRROR</item>
+        <item>NO REAR VIEW MIRROR</item>
+        <item>TOWING FEE STALLED ILLEGALLY PARK (LIGHT VEHICLES)</item>
+        <item>TOWING FEE STALLED ILLEGALLY PARK (LIGHT VEHICLES)</item>
+        <item>TOWING FEE STALLED ILLEGALLY PARK (LIGHT VEHICLES)</item>
+        <item>TOWING FEE STALLED ILLEGALLY PARK (MEDIUM VEHICLES)</item>
+        <item>TOWING FEE STALLED ILLEGALLY PARK (MEDIUM VEHICLES)</item>
+        <item>TOWING FEE STALLED ILLEGALLY PARK (MEDIUM VEHICLES)</item>
+        <item>TOWING FEE STALLED ILLEGALLY PARK (HEAVY VEHICLES)</item>
+        <item>TOWING FEE STALLED ILLEGALLY PARK (HEAVY VEHICLES)</item>
+        <item>TOWING FEE STALLED ILLEGALLY PARK (HEAVY VEHICLES)</item>
+        <item>NO INTERIOR LIGHT</item>
+        <item>NO INTERIOR LIGHT</item>
+        <item>NO INTERIOR LIGHT</item>
+        <item>NO SPARE TIRE</item>
+        <item>NO SPARE TIRE</item>
+        <item>NO SPARE TIRE</item>
+        <item>UNAUTHORIZED BELL / SIREN / EXHAUST WHISTLE</item>
+        <item>UNAUTHORIZED BELL / SIREN / EXHAUST WHISTLE</item>
+        <item></item>
+        <item>UNAUTHORIZED BELL / SIREN / EXHAUST WHISTLE</item>
+        <item>NO RED FLAG / LIGHTS ON PROJECTION LOADING</item>
+        <item>NO RED FLAG / LIGHTS ON PROJECTION LOADING</item>
+        <item>NO RED FLAG / LIGHTS ON PROJECTION LOADING</item>
+        <item>NO BODY NUMBER</item>
+        <item>NO BODY NUMBER</item>
+        <item>NO BODY NUMBER</item>
+        <item>FAILURE TO CARRY EWD</item>
+        <item>FAILURE TO CARRY EWD</item>
+        <item>FAILURE TO CARRY EWD</item>
+        <item>FAILURE TO INSTALL EWD</item>
+        <item>FAILURE TO INSTALL EWD</item>
+        <item>FAILURE TO INSTALL EWD</item>
+        <item>NO CRASH HELMET</item>
+        <item>NO CRASH HELMET</item>
+        <item>NO CRASH HELMET</item>
+        <item>STEREO BAN</item>
+        <item>STEREO BAN</item>
+        <item>STEREO BAN</item>
+        <item>VIOLATION OF COLOR SCHEME</item>
+        <item>VIOLATION OF COLOR SCHEME</item>
+        <item>VIOLATION OF COLOR SCHEME</item>
+        <item>NO CAPACITY MARKINGS</item>
+        <item>NO CAPACITY MARKINGS</item>
+        <item>NO CAPACITY MARKINGS</item>
+        <item>INSTALLATION OF JALOUSIES ( FOR HIRE)</item>
+        <item>INSTALLATION OF JALOUSIES ( FOR HIRE)</item>
+        <item>INSTALLATION OF JALOUSIES ( FOR HIRE)</item>
+        <item>DIM-COLORED LIGHTS (FOR HIRE)</item>
+        <item>DIM-COLORED LIGHTS (FOR HIRE)</item>
+        <item>DIM-COLORED LIGHTS (FOR HIRE)</item>
+        <item>STROBE / DANCING LIGHTS (For Hire)</item>
+        <item>STROBE / DANCING LIGHTS (For Hire)</item>
+        <item>STROBE / DANCING LIGHTS (For Hire)</item>
+        <item>NO DRIVERS UNIFORM</item>
+        <item>NO DRIVERS UNIFORM</item>
+        <item>COLORED / TINTED / PAINTED WINSHIELD / WIND GLASS</item>
+        <item>NO DRIVERS UNIFORM</item>
+        <item>COLORED / TINTED / PAINTED WINSHIELD / WIND GLASS</item>
+        <item>COLORED / TINTED / PAINTED WINSHIELD / WIND GLASS</item>
+        <item>NO TAIL GATE</item>
+        <item>NO TAIL GATE</item>
+        <item>NO TAIL GATE</item>
+        <item>NO NOT FOR HIRE SIGN</item>
+        <item>NO NOT FOR HIRE SIGN</item>
+        <item>NO NOT FOR HIRE SIGN</item>
+        <item>NO FARE MATRIX</item>
+        <item>NO FARE MATRIX</item>
+        <item>NO FARE MATRIX</item>
+        <item>NON-ISSUANCE OF FARE TICKET (PUB)</item>
+        <item>NON-ISSUANCE OF FARE TICKET (PUB)</item>
+        <item>NON-ISSUANCE OF FARE TICKET (PUB)</item>
+        <item>NON-ISSUANCE OF FARE TICKET (PUB)</item>
+        <item>NON-ISSUANCE OF FARE TICKET (PUB)</item>
+        <item>NON-ISSUANCE OF FARE TICKET (PUB)</item>
+        <item>OVERCHARGING (W/ Conductor)</item>
+        <item>OVERCHARGING (W/ Conductor)</item>
+        <item>OVERCHARGING (W/ Conductor)</item>
+        <item>OVERCHARGING (W/ Conductor)</item>
+        <item>OVERCHARGING (W/ Conductor)</item>
+        <item>OVERCHARGING (W/ Conductor)</item>
+        <item>UNDERCHARGING (W/ CONDUCTOR)</item>
+        <item>UNDERCHARGING (W/ CONDUCTOR)</item>
+        <item>UNDERCHARGING (W/ CONDUCTOR)</item>
+        <item>FAST / DEFECT / NON-OPER / TAMPERED TAXI METER</item>
+        <item>FAST / DEFECT / NON-OPER / TAMPERED TAXI METER</item>
+        <item>FAST / DEFECT / NON-OPER / TAMPERED TAXI METER</item>
+        <item>FAST / DEFECT / NON-OPER / TAMPERED TAXI METER</item>
+        <item>FAST / DEFECT / NON-OPER / TAMPERED TAXI METER</item>
+        <item>FAST / DEFECT / NON-OPER / TAMPERED TAXI METER</item>
+        <item>BROKEN TAXIMETER SEAL</item>
+        <item>BROKEN TAXIMETER SEAL</item>
+        <item>BROKEN TAXIMETER SEAL</item>
+        <item>FAKE /ALTERED TAXIMETER SEAL</item>
+        <item>FAKE /ALTERED TAXIMETER SEAL</item>
+        <item>FAKE /ALTERED TAXIMETER SEAL</item>
+        <item>TAMPERED SEALING WIRE</item>
+        <item>TAMPERED TAXIMETER SEAL</item>
+        <item>TAMPERED TAXIMETER SEAL</item>
+        <item>TAMPERED TAXIMETER SEAL</item>
+        <item>TAMPERED SEALING WIRE</item>
+        <item>TAMPERED SEALING WIRE</item>
+        <item>BROKEN SEALING WIRE</item>
+        <item>BROKEN SEALING WIRE</item>
+        <item>BROKEN SEALING WIRE</item>
+        <item>JOINED/RECONNECTED SEALING WIRE</item>
+        <item>JOINED/RECONNECTED SEALING WIRE</item>
+        <item>JOINED/RECONNECTED SEALING WIRE</item>
+        <item>JOINED/RECONNECTED SEALING WIRE</item>
+        <item>JOINED/RECONNECTED SEALING WIRE</item>
+        <item>JOINED/RECONNECTED SEALING WIRE</item>
+        <item>FAKE / ALTERED SEALING WIRE</item>
+        <item>FAKE / ALTERED SEALING WIRE</item>
+        <item>FAKE / ALTERED SEALING WIRE</item>
+        <item>OLD METER / Transmission / Triplex Seal</item>
+        <item>OLD METER / Transmission / Triplex Seal</item>
+        <item>OLD METER / Transmission / Triplex Seal</item>
+        <item>LOOSE TRIPLEX SEAL</item>
+        <item>LOOSE TRIPLEX SEAL</item>
+        <item>LOOSE TRIPLEX SEAL</item>
+        <item>OPERATING ON CONTRUCTUAL BASIS</item>
+        <item>OPERATING ON CONTRUCTUAL BASIS</item>
+        <item>OPERATING ON CONTRUCTUAL BASIS</item>
+        <item>FLAGGED UP METER</item>
+        <item>FLAGGED UP METER</item>
+        <item>FLAGGED UP METER</item>
+        <item>NO TAXI METER</item>
+        <item>NO TAXI METER</item>
+        <item>NO TAXI METER</item>
+        <item>NO TAXI METER</item>
+        <item>NO TAXI METER</item>
+        <item>NO TAXI METER</item>
+        <item>INSTALLING AIRCON W/O AUTHORITY (TX)</item>
+        <item>INSTALLING AIRCON W/O AUTHORITY (TX)</item>
+        <item>INSTALLING AIRCON W/O AUTHORITY (TX)</item>
+        <item>FAILURE TO PAINT "AIRCON" (TX)</item>
+        <item>FAILURE TO PAINT "AIRCON" (TX)</item>
+        <item>FAILURE TO PAINT "AIRCON" (TX)</item>
+        <item>FAILURE TO PROVIDE LIGHT ON TAXI METER</item>
+        <item>FAILURE TO PROVIDE LIGHT ON TAXI METER</item>
+        <item>FAILURE TO PROVIDE LIGHT ON TAXI METER</item>
+        <item>FAILURE TO PROVIDE LIGHT ON TOP OF TAXI</item>
+        <item>FAILURE TO PROVIDE LIGHT ON TOP OF TAXI</item>
+        <item>FAILURE TO PROVIDE LIGHT ON TOP OF TAXI</item>
+        <item>FAILURE TO PROVIDE CLEAN SEAT COVER (TX)</item>
+        <item>FAILURE TO PROVIDE CLEAN SEAT COVER (TX)</item>
+        <item>FAILURE TO PROVIDE CLEAN SEAT COVER (TX)</item>
+        <item>EXTENDING LOAD WITHOUT PERMIT</item>
+        <item>EXTENDING LOAD WITHOUT PERMIT</item>
+        <item>EXTENDING LOAD WITHOUT PERMIT</item>
+        <item>OVERLOADING (SEC. 9 RA. 4136)</item>
+        <item>OVERLOADING (SEC. 9 RA. 4136)</item>
+        <item>OVERLOADING (SEC. 9 RA. 4136)</item>
+        <item>OVERLOADING ( EXCESS 100KG ON PASS TRUCK)</item>
+        <item>OVERLOADING ( EXCESS 100KG ON PASS TRUCK)</item>
+        <item>OVERLOADING ( EXCESS 100KG ON PASS TRUCK)</item>
+        <item>OVERLOADING OF PASS THAN Reg. CAPACITY W/O Conductor</item>
+        <item>OVERLOADING OF PASS THAN Reg. CAPACITY W/O Conductor</item>
+        <item>OVERLOADING OF PASS THAN Reg. CAPACITY W/O Conductor</item>
+        <item>OVERLOADING OF PASS THAN Reg. CAPACITY W/ Condutor</item>
+        <item>OVERLOADING OF PASS THAN Reg. CAPACITY W/ Condutor</item>
+        <item>OVERLOADING OF PASS THAN Reg. CAPACITY W/ Condutor</item>
+        <item>OVERLOADING OF CARGO ON TRUCK THAN Reg. Cap.</item>
+        <item>OVERLOADING OF CARGO ON TRUCK THAN Reg. Cap.</item>
+        <item>OVERLOADING OF CARGO ON TRUCK THAN Reg. Cap.</item>
+        <item>Overloading On Top Of Truck (20Kg / 80M)</item>
+        <item>Overloading On Top Of Truck (20Kg / 80M)</item>
+        <item>Overloading On Top Of Truck (20Kg / 80M)</item>
+        <item>NO PLATE / FRONT PLATE / REAR PLATE</item>
+        <item>NO PLATE / FRONT PLATE / REAR PLATE</item>
+        <item>NO PLATE / FRONT PLATE / REAR PLATE</item>
+        <item>BAN ON RIGHT-HAND DRIVE MV</item>
+        <item>BAN ON RIGHT-HAND DRIVE MV</item>
+        <item>BAN ON RIGHT-HAND DRIVE MV</item>
+        <item>SMOKE BELCHING</item>
+        <item>SMOKE BELCHING</item>
+        <item>SMOKE BELCHING</item>
+        <item>UNIFIED VEHICLE VOLUME REDUCTION PROGRAM</item>
+        <item>UNIFIED VEHICLE VOLUME REDUCTION PROGRAM</item>
+        <item>UNIFIED VEHICLE VOLUME REDUCTION PROGRAM</item>
+        <item>DOUBLE LICENSE</item>
+        <item>DOUBLE LICENSE</item>
+        <item>DOUBLE LICENSE</item>
+        <item>ILLEGAL / UNSAFE TOWING</item>
+        <item>ILLEGAL / UNSAFE TOWING</item>
+        <item>ILLEGAL / UNSAFE TOWING</item>
+        <item>NO CANVAS COVER</item>
+        <item>NO CANVAS COVER</item>
+        <item>NO CANVAS COVER</item>
+        <item>UNSAFE LOAD / CARGO</item>
+        <item>UNSAFE LOAD / CARGO</item>
+        <item>UNSAFE LOAD / CARGO</item>
+        <item>OVERLOADING</item>
+        <item>OVERLOADING</item>
+        <item>OVERLOADING</item>
+        <item>NO DRIVERS ID</item>
+        <item>NO DRIVERS ID</item>
+        <item>NO DRIVERS ID</item>
+        <item>DRIVING WHILE USING CELLULAR PHONE / HANDSET RADIO</item>
+        <item>DRIVING WHILE USING CELLULAR PHONE / HANDSET RADIO</item>
+        <item>DRIVING WHILE USING CELLULAR PHONE / HANDSET RADIO</item>
+        <item>ILLEGAL DISPLAY OF ENFORCERS I.D</item>
+        <item>ILLEGAL DISPLAY OF ENFORCERS I.D</item>
+        <item>ILLEGAL DISPLAY OF ENFORCERS I.D</item>
+        <item>SATURDAY TRAFFIC SCHEME</item>
+        <item>SATURDAY TRAFFIC SCHEME</item>
+        <item>SATURDAY TRAFFIC SCHEME</item>
+        <item>SPORT DAZZLING HEADLIGHTS NEON LIGHTS BROKEN LENS</item>
+        <item>SPORT DAZZLING HEADLIGHTS NEON LIGHTS BROKEN LENS</item>
+        <item>SPORT DAZZLING HEADLIGHTS NEON LIGHTS BROKEN LENS</item>
+        <item>FAILURE TO DISPLAY THE REGULAR PLATE (w/comm. Plate)</item>
+        <item>FAILURE TO DISPLAY THE REGULAR PLATE (w/comm. Plate)</item>
+        <item>FAILURE TO DISPLAY THE REGULAR PLATE (w/comm. Plate)</item>
+        <item>ORGANIZED BUS ROUTE: Defacing / Marking writing on the queue. Card</item>
+        <item>FAILURE TO CARRY ARMORED VEH. DOCUMENTS</item>
+        <item>FAILURE TO CARRY ARMORED VEH. DOCUMENTS</item>
+        <item>ORGANIZED BUS ROUTE: Defacing / Marking writing on the queue. Card</item>
+        <item>ORGANIZED BUS ROUTE: Defacing / Marking writing on the queue. Card</item>
+        <item>FAILURE TO CARRY ARMORED VEH. DOCUMENTS</item>
+        <item>LACK OF ARMORED VEHICLE MARKINGS</item>
+        <item>LACK OF ARMORED VEHICLE MARKINGS</item>
+        <item>LACK OF ARMORED VEHICLE MARKINGS</item>
+        <item>FAILURE TO COMPLY W/ACCDT. OR TRAFF. VIOL. PROCEDURES</item>
+        <item>FAILURE TO COMPLY W/ACCDT. OR TRAFF. VIOL. PROCEDURES</item>
+        <item>FAILURE TO COMPLY W/ACCDT. OR TRAFF. VIOL. PROCEDURES</item>
+        <item>FAILURE TO USE SEATBELT</item>
+        <item>FAILURE TO USE SEATBELT</item>
+        <item>FAILURE TO USE SEATBELT</item>
+        <item>FAILURE TO RETROFIT</item>
+        <item>FAILURE TO RETROFIT</item>
+        <item>FAILURE TO RETROFIT</item>
+        <item>ORGANIZED BUS ROUTE: Vehicles in excess of time limit prescribe for loading / unloading of passenger</item>
+        <item>ORGANIZED BUS ROUTE: Vehicles in excess of time limit prescribe for loading / unloading of passenger</item>
+        <item>ORGANIZED BUS ROUTE: Vehicles in excess of time limit prescribe for loading / unloading of passenger</item>
+        <item>ORGANIZED BUS ROUTE : ignoring interval timer where there are timers installed</item>
+        <item>ORGANIZED BUS ROUTE : ignoring interval timer where there are timers installed</item>
+        <item>ORGANIZED BUS ROUTE : ignoring interval timer where there are timers installed</item>
+        <item>ORGANIZED BUS ROUTE: skipping or by passing designated terminals or loading bays. City bus running w</item>
+        <item>ORGANIZED BUS ROUTE: skipping or by passing designated terminals or loading bays. City bus running w</item>
+        <item>ORGANIZED BUS ROUTE: skipping or by passing designated terminals or loading bays. City bus running w</item>
+        <item>DETACHED / IMPROPER / TEMPORARY SIGNBOARD</item>
+        <item>DETACHED / IMPROPER / TEMPORARY SIGNBOARD</item>
+        <item>DETACHED / IMPROPER / TEMPORARY SIGNBOARD</item>
+        <item>No Contact Overspeeding MMDA Reg. No. 11-001 Series of 2011</item>
+        <item>No Contact Overspeeding MMDA Reg. No. 11-001 Series of 2011</item>
+        <item>No Contact Overspeeding MMDA Reg. No. 11-001 Series of 2011</item>
+        <item>OVERSPEEDING MACAPAGAL AVENUE MMDA MC No. 14 - 11</item>
+        <item>OVERSPEEDING MACAPAGAL AVENUE MMDA MC No. 14 - 11</item>
+        <item>OVERSPEEDING MACAPAGAL AVENUE MMDA MC No. 14 - 11</item>
+        <item>OVERSPEEDING PHYSICAL APPREHENSION MMDA MC No. 14-11</item>
+        <item>OVERSPEEDING PHYSICAL APPREHENSION MMDA MC No. 14-11</item>
+        <item>OVERSPEEDING PHYSICAL APPREHENSION MMDA MC No. 14-11</item>
+        <item>ROOM TAGGINIG MMDA RESOLUTION 11-02 Series of 2011</item>
+        <item>ROOM TAGGINIG MMDA RESOLUTION 11-02 Series of 2011</item>
+        <item>ROOM TAGGINIG MMDA RESOLUTION 11-02 Series of 2011</item>
+        <item>Drag Racing / Speed Contest â€“ PARANAQUE MMDA MC No. 14-11</item>
+        <item>Drag Racing / Speed Contest â€“ PARANAQUE MMDA MC No. 14-11</item>
+        <item>Drag Racing / Speed Contest â€“ PARANAQUE MMDA MC No. 14-11</item>
+        <item>Drag Racing / Speed Contest â€“ PASAY MMDA MC No. 14-11</item>
+        <item>Drag Racing / Speed Contest â€“ PASAY MMDA MC No. 14-11</item>
+        <item>Drag Racing / Speed Contest â€“ PASAY MMDA MC No. 14-11</item>
+        <item>RECKLESS DRIVING - PASAY AND PARANQUE (W/ SEMINAR) MMDA MC No. 14-11</item>
+        <item>RECKLESS DRIVING - PASAY AND PARANQUE (W/ SEMINAR) MMDA MC No. 14-11</item>
+        <item>RECKLESS DRIVING - PASAY AND PARANQUE (W/ SEMINAR) MMDA MC No. 14-11</item>
+        <item>SPEED LIMIT - PASAY AND PARANAQUE (MACAPAGAL AVE) MMDA MC No.14-11</item>
+        <item>SPEED LIMIT - PASAY AND PARANAQUE (MACAPAGAL AVE) MMDA MC No.14-11</item>
+        <item>SPEED LIMIT - PASAY AND PARANAQUE (MACAPAGAL AVE) MMDA MC No.14-11</item>
+        <item>JAYWALKING Ordinance No. 1 Series of 1995</item>
+        <item>JAYWALKING Ordinance No. 1 Series of 1995</item>
+        <item>JAYWALKING Ordinance No. 1 Series of 1995</item>
+        <item>MOTORCYCLE LANE COMMONWEALTH</item>
+        <item>MOTORCYCLE LANE COMMONWEALTH</item>
+        <item>MOTORCYCLE LANE COMMONWEALTH</item>
+        <item>MOTORCYCLE LANE (EDSA) - MMDA Res. No. 1 SERIES 2012</item>
+        <item>MOTORCYCLE LANE (EDSA) - MMDA Res. No. 1 SERIES 2012</item>
+        <item>MOTORCYCLE LANE (EDSA) - MMDA Res. No. 1 SERIES 2012</item>
+        <item>MOTORCYCLE LANE MACAPAGAL MMDA MC No. 19-11</item>
+        <item>MOTORCYCLE LANE MACAPAGAL MMDA MC No. 19-11</item>
+        <item>MOTORCYCLE LANE MACAPAGAL MMDA MC No. 19-11</item>
+        <item>Motorcycle Ordinance Marikina No. 43</item>
+        <item>Motorcycle Ordinance Marikina No. 43</item>
+        <item>Motorcycle Ordinance Marikina No. 43</item>
+        <item>FAILURE TO REGISTER MOTORCYCLE HELMET</item>
+        <item>FAILURE TO REGISTER MOTORCYCLE HELMET</item>
+        <item>FAILURE TO REGISTER MOTORCYCLE HELMET</item>
+        <item>Jogging Lane</item>
+        <item>Jogging Lane</item>
+        <item>Jogging Lane</item>
+        <item>Failure to Comply with LTFRB MC 2011-004</item>
+        <item>Failure to Comply with LTFRB MC 2011-004</item>
+        <item>Failure to Comply with LTFRB MC 2011-004</item>
+        <item>Dress Code for Riders (Slippers)</item>
+        <item>Dress Code for Riders (Slippers)</item>
+        <item>Dress Code for Riders (Slippers)</item>
+        <item>Excess Passenger / Cargo</item>
+        <item>Excess Passenger / Cargo</item>
+        <item>Excess Passenger / Cargo</item>
+        <item>BUSES WITH DEFECTIVE DOORS (as of july 12, 2012 ) (MC 08-12)</item>
+        <item>BUSES WITH DEFECTIVE DOORS (as of july 12, 2012 ) (MC 08-12)</item>
+        <item>BUSES WITH DEFECTIVE DOORS (as of july 12, 2012 ) (MC 08-12)</item>
+        <item>BUS SEGRAGATION SCHEME (as of july 12 , 2012)(MC 08-12)</item>
+        <item>BUS SEGRAGATION SCHEME (as of july 12 , 2012)(MC 08-12)</item>
+        <item>BUS SEGRAGATION SCHEME (as of july 12 , 2012)(MC 08-12)</item>
+        <item>Total Truck Ban</item>
+        <item>borrowing cert</item>
+        <item>OUT OF LINE OPERATION - MMDA Reg. No. 97 - 004</item>
+        <item>OUT OF LINE OPERATION - MMDA Reg. No. 97 - 004</item>
+        <item>OUT OF LINE OPERATION - MMDA Reg. No. 97 - 004</item>
+        <item>DELINQUENT / INVALID REGISTRATION</item>
+        <item>DELINQUENT / INVALID REGISTRATION</item>
+        <item>DELINQUENT / INVALID REGISTRATION</item>
+        <item>UNREGISTERED MOTOR VEHICLE</item>
+        <item>UNREGISTERED MOTOR VEHICLE</item>
+        <item>UNREGISTERED MOTOR VEHICLE</item>
+        <item>IMPROPERLY REGISTERED MOTOR VEHICLE</item>
+        <item>IMPROPERLY REGISTERED MOTOR VEHICLE</item>
+        <item>IMPROPERLY REGISTERED MOTOR VEHICLE</item>
+        <item>TAMPERING OF OR/ CR / CPC AND OTHER DOCUMENTS (SPURIOUS DOCUMENTS) - MMDA Reg. No. 97 - 004</item>
+        <item>TAMPERING OF OR/ CR / CPC AND OTHER DOCUMENTS (SPURIOUS DOCUMENTS) - MMDA Reg. No. 97 - 004</item>
+        <item>TAMPERING OF OR/ CR / CPC AND OTHER DOCUMENTS (SPURIOUS DOCUMENTS) - MMDA Reg. No. 97 - 004</item>
+        <item>COLORUM OPERATION (CARGO VEHICLE)</item>
+        <item>COLORUM OPERATION (CARGO VEHICLE)</item>
+        <item>COLORUM OPERATION (CARGO VEHICLE)</item>
+
+
+
+
+
+    </string-array>
+
+
+    <string-array name="Array_offenseFee">
+
+        <item></item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>2500</item>
+        <item>200</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>1,000 + Impounding</item>
+        <item>150</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>150</item>
+        <item>300</item>
+        <item>1000</item>
+        <item>500</item>
+        <item>150</item>
+        <item>500</item>
+        <item>150</item>
+        <item>500</item>
+        <item>150</item>
+        <item>150</item>
+        <item>500</item>
+        <item>2500</item>
+        <item>300</item>
+        <item>100</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>400</item>
+        <item>200</item>
+        <item>400</item>
+        <item>2000</item>
+        <item>400</item>
+        <item>300</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>250</item>
+        <item>1000</item>
+        <item>200</item>
+        <item>2500</item>
+        <item>2500</item>
+        <item>2,500 + Impounding</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>200</item>
+        <item>500</item>
+        <item>500</item>
+        <item>400</item>
+        <item>500</item>
+        <item>400</item>
+        <item>400</item>
+        <item>400</item>
+        <item>400</item>
+        <item>150</item>
+        <item>500</item>
+        <item>400</item>
+        <item>2000</item>
+        <item>2,000 + 2 days Seminar</item>
+        <item>2000 + Seminar</item>
+        <item>500</item>
+        <item>500</item>
+        <item>2500</item>
+        <item>500</item>
+        <item>2500</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>400</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>2500</item>
+        <item>150</item>
+        <item>500</item>
+        <item>2500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>400</item>
+        <item>2000</item>
+        <item>300</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>200</item>
+        <item>200</item>
+        <item>375</item>
+        <item>500</item>
+        <item>2,000 + Impounding</item>
+        <item>200</item>
+        <item>200</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>375</item>
+        <item>2000</item>
+        <item>1500</item>
+        <item>1500</item>
+        <item>500</item>
+        <item>2000</item>
+        <item>2,000 + 2 days Seminar</item>
+        <item>375</item>
+        <item>500</item>
+        <item>150</item>
+        <item>200</item>
+        <item>500</item>
+        <item>500</item>
+        <item>3000</item>
+        <item>4000+ impounding</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000+ imponuding</item>
+        <item>2000</item>
+        <item>3000+ One(1) day Impouding</item>
+        <item>4000+ Three(3) days Impouding</item>
+        <item>2000</item>
+        <item>3,000 + 1 day Impound</item>
+        <item>4,000 + 3 day Impound</item>
+        <item>300</item>
+        <item>500</item>
+        <item>3000</item>
+        <item>4000+</item>
+        <item>5000</item>
+        <item>2500</item>
+        <item>300</item>
+        <item>900</item>
+
+        <item>======================</item>
+        <item>======================</item>
+        <item>======================</item>
+        <item>======================</item>
+        <item>======================</item>
+
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>1200</item>
+        <item>1200</item>
+        <item>1200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>150</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>1200</item>
+        <item>1200</item>
+        <item>1200</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>150</item>
+        <item>5000</item>
+        <item>5000</item>
+        <item>5000</item>
+        <item>5000</item>
+        <item>5000</item>
+        <item>1000</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>450</item>
+        <item>450</item>
+        <item>450</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>1000</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>750</item>
+        <item>750</item>
+        <item>750</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>750</item>
+        <item>750</item>
+        <item>750</item>
+        <item>400</item>
+        <item>400</item>
+        <item>400</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>10000</item>
+        <item>10000</item>
+        <item>10000</item>
+        <item>450</item>
+        <item>450</item>
+        <item>450</item>
+        <item>450</item>
+        <item>450</item>
+        <item>450</item>
+        <item>450</item>
+        <item>450</item>
+        <item>450</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>450</item>
+        <item>450</item>
+        <item>450</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>5000</item>
+        <item>5000</item>
+        <item>5000</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>2000</item>
+        <item>1000</item>
+        <item>3000</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>500</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>1500</item>
+        <item>1500</item>
+        <item>1500</item>
+        <item>2500</item>
+        <item>2500</item>
+        <item>2500</item>
+        <item>4500</item>
+        <item>4500</item>
+        <item>4500</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>600</item>
+        <item>600</item>
+        <item></item>
+        <item>600</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>100</item>
+        <item>100</item>
+        <item>500</item>
+        <item>100</item>
+        <item>500</item>
+        <item>500</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>5000</item>
+        <item>5000</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>5000</item>
+        <item>3000</item>
+        <item>2500</item>
+        <item>5000</item>
+        <item>1000</item>
+        <item>500</item>
+        <item>200</item>
+        <item>300</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>375</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>750</item>
+        <item>750</item>
+        <item>750</item>
+        <item>750</item>
+        <item>750</item>
+        <item>750</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>5000</item>
+        <item>5000</item>
+        <item>5000</item>
+        <item>500</item>
+        <item>300</item>
+        <item>300</item>
+        <item>500</item>
+        <item>500</item>
+        <item>300</item>
+        <item>5000</item>
+        <item>5000</item>
+        <item>5000</item>
+        <item>300</item>
+        <item>300</item>
+        <item>300</item>
+        <item>1000</item>
+        <item>500</item>
+        <item>250</item>
+        <item>3000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>500</item>
+        <item>750</item>
+        <item>1000</item>
+        <item>750</item>
+        <item>750</item>
+        <item>750</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>5000</item>
+        <item>5000</item>
+        <item>5000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>500</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>2000</item>
+        <item>5000</item>
+        <item>1000</item>
+        <item>500</item>
+        <item>700</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>5000</item>
+        <item>200</item>
+        <item>500</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>450</item>
+        <item>450</item>
+        <item>450</item>
+        <item>450</item>
+        <item>450</item>
+        <item>450</item>
+        <item>450</item>
+        <item>450</item>
+        <item>450</item>
+        <item>1500</item>
+        <item>1500</item>
+        <item>1500</item>
+        <item>500</item>
+        <item>750</item>
+        <item>1000</item>
+
+
+
+    </string-array>
+
+    <string-array name="Array_offenseCode">
+
+        <item></item>
+        <item>1</item>
+        <item>1A</item>
+        <item>1B</item>
+        <item>1C</item>
+        <item>1D</item>
+        <item>1E</item>
+        <item>1F</item>
+        <item>1G</item>
+        <item>1H</item>
+        <item>1I</item>
+        <item>1J</item>
+        <item>1K</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>13</item>
+        <item>14</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>17</item>
+        <item>18</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>30</item>
+        <item>31</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>55</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+        <item>61</item>
+        <item>62</item>
+        <item>63</item>
+        <item>64</item>
+        <item>65</item>
+        <item>66</item>
+        <item>67</item>
+        <item>68</item>
+        <item>69</item>
+        <item>72</item>
+        <item>73</item>
+        <item>74</item>
+        <item>74</item>
+        <item>75</item>
+        <item>75</item>
+        <item>75</item>
+        <item>76</item>
+        <item>77</item>
+        <item>78</item>
+        <item>79</item>
+        <item>80</item>
+        <item>81</item>
+        <item>82</item>
+        <item>83</item>
+        <item>83</item>
+        <item>84</item>
+        <item>85</item>
+        <item>86</item>
+        <item>87</item>
+        <item>88</item>
+        <item>89</item>
+        <item>90</item>
+        <item>91</item>
+        <item>92</item>
+        <item>93</item>
+        <item>94</item>
+        <item>94</item>
+        <item>95</item>
+        <item>96</item>
+        <item>98</item>
+        <item>98</item>
+        <item>103</item>
+        <item>131</item>
+        <item>131</item>
+        <item>134</item>
+        <item>134</item>
+        <item>151</item>
+        <item>152</item>
+        <item>152</item>
+        <item>153</item>
+        <item>154</item>
+        <item>157</item>
+        <item>157</item>
+        <item>158</item>
+        <item>158</item>
+        <item>159</item>
+        <item>160</item>
+        <item>160</item>
+        <item>161</item>
+        <item>301</item>
+        <item>302</item>
+        <item>303</item>
+        <item>303</item>
+        <item>303</item>
+        <item>304</item>
+        <item>305</item>
+        <item>306</item>
+        <item>306</item>
+        <item>307</item>
+        <item>308</item>
+        <item>308</item>
+        <item>309</item>
+        <item>310</item>
+        <item>311</item>
+        <item>312</item>
+        <item>313</item>
+        <item>314</item>
+        <item>B1</item>
+        <item>B2</item>
+        <item>C1</item>
+
+        <item>======================</item>
+        <item>======================</item>
+        <item>======================</item>
+        <item>======================</item>
+        <item>======================</item>
+
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>002A</item>
+        <item>002A</item>
+        <item>002A</item>
+        <item>002N</item>
+        <item>002N</item>
+        <item>002N</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>004n</item>
+        <item>004n</item>
+        <item>004n</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>006A</item>
+        <item>006A</item>
+        <item>006A</item>
+        <item>006B</item>
+        <item>006B</item>
+        <item>006B</item>
+        <item>006C</item>
+        <item>006C</item>
+        <item>006C</item>
+        <item>006N</item>
+        <item>006N</item>
+        <item>006N</item>
+        <item>7</item>
+        <item>7</item>
+        <item>7</item>
+        <item>8</item>
+        <item>009A</item>
+        <item>009A</item>
+        <item>009A</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>010B</item>
+        <item>010B</item>
+        <item>010B</item>
+        <item>010N</item>
+        <item>010N</item>
+        <item>010N</item>
+        <item>010P</item>
+        <item>010P</item>
+        <item>010P</item>
+        <item>010TAX</item>
+        <item>010TAX</item>
+        <item>010TAX</item>
+        <item>11</item>
+        <item>11</item>
+        <item>11</item>
+        <item>12</item>
+        <item>12</item>
+        <item>12</item>
+        <item>14</item>
+        <item>015A</item>
+        <item>015A</item>
+        <item>015A</item>
+        <item>015A</item>
+        <item>015A</item>
+        <item>015B</item>
+        <item>16</item>
+        <item>16</item>
+        <item>16</item>
+        <item>017A</item>
+        <item>017A</item>
+        <item>017A</item>
+        <item>18</item>
+        <item>18</item>
+        <item>18</item>
+        <item>18</item>
+        <item>18</item>
+        <item>18</item>
+        <item>018A</item>
+        <item>018A</item>
+        <item>018A</item>
+        <item>018N</item>
+        <item>018N</item>
+        <item>018N</item>
+        <item>019A</item>
+        <item>019A</item>
+        <item>019A</item>
+        <item>019N</item>
+        <item>019N</item>
+        <item>019N</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>21</item>
+        <item>21</item>
+        <item>21</item>
+        <item>22</item>
+        <item>22</item>
+        <item>22</item>
+        <item>023A</item>
+        <item>023A</item>
+        <item>023A</item>
+        <item>023B</item>
+        <item>023B</item>
+        <item>023B</item>
+        <item>24</item>
+        <item>24</item>
+        <item>24</item>
+        <item>25</item>
+        <item>25</item>
+        <item>25</item>
+        <item>26</item>
+        <item>26</item>
+        <item>26</item>
+        <item>27</item>
+        <item>27</item>
+        <item>27</item>
+        <item>28</item>
+        <item>28</item>
+        <item>28</item>
+        <item>29</item>
+        <item>29</item>
+        <item>29</item>
+        <item>30</item>
+        <item>30</item>
+        <item>30</item>
+        <item>31</item>
+        <item>31</item>
+        <item>31</item>
+        <item>32</item>
+        <item>32</item>
+        <item>32</item>
+        <item>33</item>
+        <item>33</item>
+        <item>33</item>
+        <item>34</item>
+        <item>34</item>
+        <item>34</item>
+        <item>35</item>
+        <item>35</item>
+        <item>35</item>
+        <item>36</item>
+        <item>36</item>
+        <item>36</item>
+        <item>36</item>
+        <item>36</item>
+        <item>36</item>
+        <item>37</item>
+        <item>37</item>
+        <item>37</item>
+        <item>38</item>
+        <item>38</item>
+        <item>38</item>
+        <item>39</item>
+        <item>39</item>
+        <item>39</item>
+        <item>40</item>
+        <item>40</item>
+        <item>40</item>
+        <item>41</item>
+        <item>41</item>
+        <item>41</item>
+        <item>42</item>
+        <item>42</item>
+        <item>42</item>
+        <item>43</item>
+        <item>43</item>
+        <item>43</item>
+        <item>44</item>
+        <item>44</item>
+        <item>44</item>
+        <item>45</item>
+        <item>45</item>
+        <item>45</item>
+        <item>46</item>
+        <item>46</item>
+        <item>46</item>
+        <item>47</item>
+        <item>47</item>
+        <item>47</item>
+        <item>48</item>
+        <item>48</item>
+        <item>48</item>
+        <item>49</item>
+        <item>49</item>
+        <item>49</item>
+        <item>50</item>
+        <item>50</item>
+        <item>50</item>
+        <item>51</item>
+        <item>51</item>
+        <item>51</item>
+        <item>52</item>
+        <item>52</item>
+        <item>52</item>
+        <item>53</item>
+        <item>53</item>
+        <item>53</item>
+        <item>54</item>
+        <item>54</item>
+        <item>54</item>
+        <item>55</item>
+        <item>55</item>
+        <item>55</item>
+        <item>56</item>
+        <item>56</item>
+        <item>56</item>
+        <item>57</item>
+        <item>57</item>
+        <item>57</item>
+        <item>058D</item>
+        <item>058D</item>
+        <item>058D</item>
+        <item>60</item>
+        <item>60</item>
+        <item>60</item>
+        <item>61</item>
+        <item>61</item>
+        <item>61</item>
+        <item>62</item>
+        <item>62</item>
+        <item>62</item>
+        <item>63</item>
+        <item>63</item>
+        <item>63</item>
+        <item>64</item>
+        <item>64</item>
+        <item>64</item>
+        <item>65</item>
+        <item>65</item>
+        <item>65</item>
+        <item>66</item>
+        <item>66</item>
+        <item>66</item>
+        <item>67</item>
+        <item>67</item>
+        <item>67</item>
+        <item>068A</item>
+        <item>068A</item>
+        <item>068A</item>
+        <item>069A</item>
+        <item>069A</item>
+        <item>069A</item>
+        <item>70</item>
+        <item>70</item>
+        <item>70</item>
+        <item>73</item>
+        <item>73</item>
+        <item>73</item>
+        <item>74</item>
+        <item>74</item>
+        <item>74</item>
+        <item>75</item>
+        <item>75</item>
+        <item>75</item>
+        <item>76</item>
+        <item>76</item>
+        <item>76</item>
+        <item>78</item>
+        <item>78</item>
+        <item>78</item>
+        <item>79</item>
+        <item>79</item>
+        <item>79</item>
+        <item>80</item>
+        <item>80</item>
+        <item>80</item>
+        <item>81</item>
+        <item>81</item>
+        <item>81</item>
+        <item>82</item>
+        <item>82</item>
+        <item>82</item>
+        <item>83</item>
+        <item>83</item>
+        <item>83</item>
+        <item>84</item>
+        <item>84</item>
+        <item>84</item>
+        <item>85</item>
+        <item>85</item>
+        <item>85</item>
+        <item>87</item>
+        <item>87</item>
+        <item>87</item>
+        <item>88</item>
+        <item>88</item>
+        <item>88</item>
+        <item>89</item>
+        <item>89</item>
+        <item>89</item>
+        <item>90</item>
+        <item>90</item>
+        <item>90</item>
+        <item>91</item>
+        <item>91</item>
+        <item>91</item>
+        <item>92</item>
+        <item>92</item>
+        <item>92</item>
+        <item>93</item>
+        <item>93</item>
+        <item>93</item>
+        <item>94</item>
+        <item>94</item>
+        <item>94</item>
+        <item>96</item>
+        <item>96</item>
+        <item>96</item>
+        <item>97</item>
+        <item>97</item>
+        <item>97</item>
+        <item>98</item>
+        <item>98</item>
+        <item>98</item>
+        <item>99</item>
+        <item>99</item>
+        <item>99</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>101</item>
+        <item>101</item>
+        <item>101</item>
+        <item>102</item>
+        <item>102</item>
+        <item>102</item>
+        <item>103N</item>
+        <item>103N</item>
+        <item>103N</item>
+        <item>104</item>
+        <item>104</item>
+        <item>104</item>
+        <item>105</item>
+        <item>105</item>
+        <item>105</item>
+        <item>106</item>
+        <item>106</item>
+        <item>106</item>
+        <item>107</item>
+        <item>107</item>
+        <item>107</item>
+        <item>108</item>
+        <item>108</item>
+        <item>108</item>
+        <item>109</item>
+        <item>109</item>
+        <item>109</item>
+        <item>110</item>
+        <item>110</item>
+        <item>110</item>
+        <item>111</item>
+        <item>111</item>
+        <item>111</item>
+        <item>112</item>
+        <item>113</item>
+        <item>113</item>
+        <item>113</item>
+        <item>114</item>
+        <item>114</item>
+        <item>114</item>
+        <item>115</item>
+        <item>115</item>
+        <item>115</item>
+        <item>116</item>
+        <item>116</item>
+        <item>117</item>
+        <item>117</item>
+        <item>117</item>
+        <item>118</item>
+        <item>118</item>
+        <item>118</item>
+        <item>119</item>
+        <item>119</item>
+        <item>119</item>
+        <item>120</item>
+        <item>120</item>
+        <item>120</item>
+        <item>1201</item>
+        <item>1201</item>
+        <item>1201</item>
+        <item>1202</item>
+        <item>1202</item>
+        <item>1202</item>
+        <item>1203</item>
+        <item>1203</item>
+        <item>1203</item>
+        <item>121</item>
+        <item>121</item>
+        <item>121</item>
+        <item>122</item>
+        <item>122</item>
+        <item>122</item>
+        <item>123</item>
+        <item>123</item>
+        <item></item>
+        <item>123</item>
+        <item>124</item>
+        <item>124</item>
+        <item>124</item>
+        <item>125</item>
+        <item>125</item>
+        <item>125</item>
+        <item>126</item>
+        <item>126</item>
+        <item>126</item>
+        <item>127</item>
+        <item>127</item>
+        <item>127</item>
+        <item>128</item>
+        <item>128</item>
+        <item>128</item>
+        <item>129</item>
+        <item>129</item>
+        <item>129</item>
+        <item>130</item>
+        <item>130</item>
+        <item>130</item>
+        <item>131</item>
+        <item>131</item>
+        <item>131</item>
+        <item>132</item>
+        <item>132</item>
+        <item>132</item>
+        <item>133</item>
+        <item>133</item>
+        <item>133</item>
+        <item>134</item>
+        <item>134</item>
+        <item>134</item>
+        <item>135</item>
+        <item>135</item>
+        <item>135</item>
+        <item>135</item>
+        <item>135</item>
+        <item>135</item>
+        <item>136</item>
+        <item>136</item>
+        <item>136</item>
+        <item>137</item>
+        <item>137</item>
+        <item>137</item>
+        <item>138</item>
+        <item>138</item>
+        <item>138</item>
+        <item>139</item>
+        <item>139</item>
+        <item>139</item>
+        <item>139</item>
+        <item>139</item>
+        <item>139</item>
+        <item>141</item>
+        <item>141</item>
+        <item>141</item>
+        <item>141</item>
+        <item>141</item>
+        <item>141</item>
+        <item>143</item>
+        <item>143</item>
+        <item>143</item>
+        <item>144</item>
+        <item>144</item>
+        <item>144</item>
+        <item>144</item>
+        <item>144</item>
+        <item>144</item>
+        <item>145</item>
+        <item>145</item>
+        <item>145</item>
+        <item>146</item>
+        <item>146</item>
+        <item>146</item>
+        <item>147</item>
+        <item>147</item>
+        <item>147</item>
+        <item>147</item>
+        <item>148</item>
+        <item>148</item>
+        <item>149</item>
+        <item>149</item>
+        <item>149</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>150</item>
+        <item>151</item>
+        <item>151</item>
+        <item>151</item>
+        <item>152</item>
+        <item>152</item>
+        <item>152</item>
+        <item>153</item>
+        <item>153</item>
+        <item>153</item>
+        <item>154A</item>
+        <item>154A</item>
+        <item>154A</item>
+        <item>154B</item>
+        <item>154B</item>
+        <item>154B</item>
+        <item>156</item>
+        <item>156</item>
+        <item>156</item>
+        <item>156</item>
+        <item>156</item>
+        <item>156</item>
+        <item>157</item>
+        <item>157</item>
+        <item>157</item>
+        <item>158</item>
+        <item>158</item>
+        <item>158</item>
+        <item>159</item>
+        <item>159</item>
+        <item>159</item>
+        <item>160</item>
+        <item>160</item>
+        <item>160</item>
+        <item>161</item>
+        <item>161</item>
+        <item>161</item>
+        <item>162</item>
+        <item>162</item>
+        <item>162</item>
+        <item>163</item>
+        <item>163</item>
+        <item>163</item>
+        <item>164</item>
+        <item>164</item>
+        <item>164</item>
+        <item>165</item>
+        <item>165</item>
+        <item>165</item>
+        <item>166</item>
+        <item>166</item>
+        <item>166</item>
+        <item>167</item>
+        <item>167</item>
+        <item>167</item>
+        <item>168</item>
+        <item>168</item>
+        <item>168</item>
+        <item>169</item>
+        <item>169</item>
+        <item>169</item>
+        <item>170</item>
+        <item>170</item>
+        <item>170</item>
+        <item>171</item>
+        <item>171</item>
+        <item>171</item>
+        <item>176</item>
+        <item>176</item>
+        <item>176</item>
+        <item>177</item>
+        <item>177</item>
+        <item>177</item>
+        <item>178</item>
+        <item>178</item>
+        <item>178</item>
+        <item>179</item>
+        <item>179</item>
+        <item>179</item>
+        <item>180</item>
+        <item>180</item>
+        <item>180</item>
+        <item>181</item>
+        <item>181</item>
+        <item>181</item>
+        <item>183</item>
+        <item>183</item>
+        <item>183</item>
+        <item>184</item>
+        <item>184</item>
+        <item>184</item>
+        <item>185</item>
+        <item>185</item>
+        <item>185</item>
+        <item>186</item>
+        <item>186</item>
+        <item>186</item>
+        <item>188</item>
+        <item>188</item>
+        <item>188</item>
+        <item>190</item>
+        <item>190</item>
+        <item>190</item>
+        <item>191</item>
+        <item>191</item>
+        <item>191</item>
+        <item>191</item>
+        <item>191</item>
+        <item>191</item>
+        <item>192</item>
+        <item>192</item>
+        <item>192</item>
+        <item>193</item>
+        <item>193</item>
+        <item>193</item>
+        <item>194</item>
+        <item>194</item>
+        <item>194</item>
+        <item>195</item>
+        <item>195</item>
+        <item>195</item>
+        <item>196</item>
+        <item>196</item>
+        <item>196</item>
+        <item>197</item>
+        <item>197</item>
+        <item>197</item>
+        <item>198</item>
+        <item>198</item>
+        <item>198</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>201</item>
+        <item>201</item>
+        <item>201</item>
+        <item>201M</item>
+        <item>201M</item>
+        <item>201M</item>
+        <item>201P</item>
+        <item>201P</item>
+        <item>201P</item>
+        <item>202R</item>
+        <item>202R</item>
+        <item>202R</item>
+        <item>203PRQ</item>
+        <item>203PRQ</item>
+        <item>203PRQ</item>
+        <item>203PSY</item>
+        <item>203PSY</item>
+        <item>203PSY</item>
+        <item>204M</item>
+        <item>204M</item>
+        <item>204M</item>
+        <item>205</item>
+        <item>205</item>
+        <item>205</item>
+        <item>206</item>
+        <item>206</item>
+        <item>206</item>
+        <item>207C</item>
+        <item>207C</item>
+        <item>207C</item>
+        <item>207E</item>
+        <item>207E</item>
+        <item>207E</item>
+        <item>207M</item>
+        <item>207M</item>
+        <item>207M</item>
+        <item>208</item>
+        <item>208</item>
+        <item>208</item>
+        <item>208</item>
+        <item>208</item>
+        <item>208</item>
+        <item>209</item>
+        <item>209</item>
+        <item>209</item>
+        <item>210</item>
+        <item>210</item>
+        <item>210</item>
+        <item>211</item>
+        <item>211</item>
+        <item>211</item>
+        <item>212</item>
+        <item>212</item>
+        <item>212</item>
+        <item>213</item>
+        <item>213</item>
+        <item>213</item>
+        <item>214</item>
+        <item>214</item>
+        <item>214</item>
+        <item>304</item>
+        <item>334</item>
+        <item>A009</item>
+        <item>A009</item>
+        <item>A009</item>
+        <item>A017</item>
+        <item>A017</item>
+        <item>A017</item>
+        <item>A068</item>
+        <item>A068</item>
+        <item>A068</item>
+        <item>A069</item>
+        <item>A069</item>
+        <item>A069</item>
+        <item>A094</item>
+        <item>A094</item>
+        <item>A094</item>
+        <item>B015B</item>
+        <item>B015B</item>
+        <item>B015B</item>
+
+
+
+
+    </string-array>
+
+
+    <string-array name="Array_offensePenalty">
+
+        <item></item>
+        <item>Not Applicable</item>
+        <item>Sus of DL</item>
+        <item>Rev of DL</item>
+        <item>Imp MV 24hrs.</item>
+        <item>6 Mon Sus of DL</item>
+        <item>3 Mon Sus of DL</item>
+        <item>1 Mon Sus of DL</item>
+        <item>6 Mon Imp MV</item>
+        <item>CNCL FRAN.</item>
+        <item>3 Mon Confi. Plate Num</item>
+        <item>1 year Sus of DL</item>
+        <item>Imp MV / Conf. Plate Num</item>
+        <item>Impound of MV</item>
+        <item>Conf. of Plate Num</item>
+        <item>Con Bell / Siren</item>
+        <item>IMP SUS CL</item>
+        <item>Rev of FRAN</item>
+        <item>Rev of FRAN/REV OF DL</item>
+        <item>1 Week Sus of DL</item>
+
+
+    </string-array>
+
+    <string-array name="Array_offenseClass">
+
+        <item>Select</item>
+        <item>C</item>
+        <item>D</item>
+        <item>O</item>
+        <item>O/C</item>
+        <item>D/O</item>
+
+    </string-array>
+
+</resources>

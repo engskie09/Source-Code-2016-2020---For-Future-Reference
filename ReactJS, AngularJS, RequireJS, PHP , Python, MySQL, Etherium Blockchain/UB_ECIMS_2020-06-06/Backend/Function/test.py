@@ -1,0 +1,1 @@
+from flup.server.fcgi import WSGIServer

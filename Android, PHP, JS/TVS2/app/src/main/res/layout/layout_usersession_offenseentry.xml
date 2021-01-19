@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserSession_OffenseEntry"
+    android:gravity="center"
+    android:background="@color/DarkYellow"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="40dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Offense Entry"
+        android:background="@color/Blue"
+        android:textColor="@color/White"
+        android:textSize="40dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"></View>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="First Name"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Middle Name"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Last Name"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Address"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Licensed Number"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Plate Number"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Vehicle Type"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Vehicle Status"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Look up Violation"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/Blue"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Offense Name"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <View
+                android:id="@+id/view_seperator1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Fee"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Penalty"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Class"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Code"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Date"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+
+            <Button
+                android:id="@+id/btn_Print"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@color/Blue"
+                android:gravity="center"
+                android:layout_marginTop="14dp"
+                android:text="Print"
+                android:textColor="@color/White"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/btn_View"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@color/Blue"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="View"
+                android:textColor="@color/White"/>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"></View>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_offenderFirstName"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@color/White"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/et_offenderMiddleName"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@color/White"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/et_offenderLastName"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@color/White"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/et_offenderAddress"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@color/White"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/et_offenderLicenseNumber"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@color/White"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/et_offenderPlateNumber"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@color/White"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+
+
+
+            <Spinner
+                android:id="@+id/spn_vehicleType"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                android:background="@color/White"
+                android:layout_marginTop="20dp"
+                android:spinnerMode="dialog"
+                android:gravity="center"/>
+
+
+            <Spinner
+                android:id="@+id/spn_vehicleStatus"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                android:background="@color/White"
+                android:layout_marginTop="15dp"
+                android:spinnerMode="dialog"
+                android:gravity="center"/>
+
+            <Spinner
+                android:id="@+id/spn_offenseName"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/White"
+                android:gravity="center"
+                android:spinnerMode="dialog"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_offenseName"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@color/White"
+                android:gravity="center"
+                android:layout_marginTop="16dp"/>
+
+            <View
+                android:id="@+id/view_seperator2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"></View>
+
+            <EditText
+                android:id="@+id/et_offenseFee"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/White"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spn_offensePenalty"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                android:background="@color/White"
+                android:layout_marginTop="20dp"
+                android:spinnerMode="dialog"
+                android:gravity="center"/>
+
+            <Spinner
+                android:id="@+id/spn_offenseClass"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                android:background="@color/White"
+                android:layout_marginTop="20dp"
+                android:spinnerMode="dialog"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/et_offenseCode"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@color/White"
+                android:gravity="center"
+                android:layout_marginTop="16dp"/>
+
+            <Button
+                android:id="@+id/btn_offenseDate"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@color/White"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Date"
+                android:textColor="@color/Blue"/>
+
+            <Button
+                android:id="@+id/btn_Save"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@color/Blue"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Save"
+                android:textColor="@color/White"/>
+
+            <Button
+                android:id="@+id/btn_SynchData"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@color/Red"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Synch Data"
+                android:textColor="@color/White"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

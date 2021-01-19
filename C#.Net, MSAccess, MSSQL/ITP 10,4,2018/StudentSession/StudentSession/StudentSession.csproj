@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1ECA5FA2-FDA3-4BA7-B8D8-7E6B325C7744}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StudentSession</RootNamespace>
+    <AssemblyName>StudentSession</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5">
+      <HintPath>..\..\..\Bunifu_UI_v1.5\Bunifu_UI_v1.5.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ITP\StudentSession\packages\Microsoft.Reporting.WinForms.v11.1.0.0.0\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ITP\StudentSession\packages\Microsoft.Reporting.WinForms.v11.1.0.0.0\lib\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ITP\StudentSession\packages\Microsoft.Reporting.WinForms.v11.1.0.0.0\lib\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include=".Designer.cs" />
+    <Compile Include="Account.cs" />
+    <Compile Include="Account.designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountShowLoadTransaction.cs" />
+    <Compile Include="AccountShowLoadTransaction.Designer.cs">
+      <DependentUpon>AccountShowLoadTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountShowTransactionDialog.cs" />
+    <Compile Include="AccountShowTransactionDialog.Designer.cs">
+      <DependentUpon>AccountShowTransactionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddcartBF.cs" />
+    <Compile Include="AddcartBF.Designer.cs">
+      <DependentUpon>AddcartBF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddcartCombo.cs" />
+    <Compile Include="AddcartCombo.Designer.cs">
+      <DependentUpon>AddcartCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Balance.cs" />
+    <Compile Include="Balance.designer.cs">
+      <DependentUpon>Balance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="canteen_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>canteen_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CheckBalance.cs" />
+    <Compile Include="CheckBalance.Designer.cs">
+      <DependentUpon>CheckBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Copy of CheckBalance.cs" />
+    <Compile Include="Copy of CheckBalance.Designer.cs">
+      <DependentUpon>Copy of CheckBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="DialogInsufficientBalance.cs" />
+    <Compile Include="DialogInsufficientBalance.Designer.cs">
+      <DependentUpon>DialogInsufficientBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogInvalid.cs" />
+    <Compile Include="DialogInvalid.Designer.cs">
+      <DependentUpon>DialogInvalid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogNull.cs" />
+    <Compile Include="DialogNull.Designer.cs">
+      <DependentUpon>DialogNull.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogSuccessAddedtoCart.cs" />
+    <Compile Include="DialogSuccessAddedtoCart.Designer.cs">
+      <DependentUpon>DialogSuccessAddedtoCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keyboard.cs" />
+    <Compile Include="Keyboard.designer.cs">
+      <DependentUpon>Keyboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finalize.cs" />
+    <Compile Include="Finalize.designer.cs">
+      <DependentUpon>Finalize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ordering.cs" />
+    <Compile Include="Ordering.designer.cs">
+      <DependentUpon>Ordering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderingCart.cs" />
+    <Compile Include="OrderingCart.Designer.cs">
+      <DependentUpon>OrderingCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resibo.cs" />
+    <Compile Include="Resibo.designer.cs">
+      <DependentUpon>Resibo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stringpotek.cs" />
+    <Compile Include="StudentShowLoadTransaction.cs" />
+    <Compile Include="StudentShowLoadTransaction.Designer.cs">
+      <DependentUpon>StudentShowLoadTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentShowtransactions.cs" />
+    <Compile Include="StudentShowtransactions.Designer.cs">
+      <DependentUpon>StudentShowtransactions.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountShowLoadTransaction.resx">
+      <DependentUpon>AccountShowLoadTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountShowTransactionDialog.resx">
+      <DependentUpon>AccountShowTransactionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddcartBF.resx">
+      <DependentUpon>AddcartBF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddcartCombo.resx">
+      <DependentUpon>AddcartCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balance.resx">
+      <DependentUpon>Balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckBalance.resx">
+      <DependentUpon>CheckBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Copy of CheckBalance.resx">
+      <DependentUpon>Copy of CheckBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogInsufficientBalance.resx">
+      <DependentUpon>DialogInsufficientBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogInvalid.resx">
+      <DependentUpon>DialogInvalid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogNull.resx">
+      <DependentUpon>DialogNull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogSuccessAddedtoCart.resx">
+      <DependentUpon>DialogSuccessAddedtoCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keyboard.resx">
+      <DependentUpon>Keyboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finalize.resx">
+      <DependentUpon>Finalize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ordering.resx">
+      <DependentUpon>Ordering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderingCart.resx">
+      <DependentUpon>OrderingCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Resibo.resx">
+      <DependentUpon>Resibo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentShowLoadTransaction.resx">
+      <DependentUpon>StudentShowLoadTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentShowtransactions.resx">
+      <DependentUpon>StudentShowtransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="canteen_dbDataSet.xsc">
+      <DependentUpon>canteen_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="canteen_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>canteen_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="canteen_dbDataSet.xss">
+      <DependentUpon>canteen_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coke.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\royal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sprite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_fade_logon_by_ksbansal-d3f3v5q.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\philippines-peso-currency-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soda %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange-juice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee-break %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee-break %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee-break %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\breakfast %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pork-roast %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sandwich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fast-food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loop %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotate1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\promotion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-button-speech-bubble-with-question-mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\safebox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cake-slice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pancake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

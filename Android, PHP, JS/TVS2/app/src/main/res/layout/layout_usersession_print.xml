@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserSession_Print"
+    android:background="@color/DarkYellow"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.44"
+            android:background="@color/DarkYellow"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="Queueing No:"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_offenderQueueingNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="---"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="===================="
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="Full Name:"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_offenderFullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="------"
+                    android:singleLine="false"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="Fee:"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_offenderFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="------"
+                    android:singleLine="false"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/et_officerName"
+                    android:layout_width="187dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:singleLine="false"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:hint="Officer Name" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tvid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:paddingLeft="10dp"
+                android:text="PRINTING DETAILS"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="Printer Status:"
+                android:background="@color/DarkYellow"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/bpstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Disconnected"
+                android:background="@color/DarkYellow"
+                android:textSize="24dp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0.10"
+            android:background="#000000">
+
+            <Button
+                android:id="@+id/Scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@color/Blue"
+                android:gravity="center"
+                android:text="Connect"
+                android:textColor="@color/White"/>
+
+            <Button
+                android:id="@+id/mPrint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/Blue"
+                android:enabled="false"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingRight="34dp"
+                android:paddingBottom="3dp"
+                android:text="Print"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

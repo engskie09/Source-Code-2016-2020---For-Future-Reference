@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:singleLine="false"
+    android:ellipsize="none"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:background="@color/White"
+    android:scrollHorizontally="false"
+    android:layout_weight="1"
+    android:maxLines="100"
+    android:gravity="center"
+
+
+    />

@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EDAC350E-6EE2-4078-BC27-5F054EEC7DCA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Student_Information_System_TheobdsFinals</RootNamespace>
+    <AssemblyName>Student_Information_System_TheobdsFinals</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GeneralSession_Teacher_Manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralSession_Teacher_Manage.Designer.cs">
+      <DependentUpon>GeneralSession_Teacher_Manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="GeneralSession_Course_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralSession_Course_List.Designer.cs">
+      <DependentUpon>GeneralSession_Course_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralSession_Course_Manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralSession_Course_Manage.Designer.cs">
+      <DependentUpon>GeneralSession_Course_Manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralSession_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralSession_Login.Designer.cs">
+      <DependentUpon>GeneralSession_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralSession_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralSession_Main.Designer.cs">
+      <DependentUpon>GeneralSession_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralSession_MessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralSession_MessageBox.Designer.cs">
+      <DependentUpon>GeneralSession_MessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralSession_Student_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralSession_Student_List.Designer.cs">
+      <DependentUpon>GeneralSession_Student_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralSession_Student_Manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralSession_Student_Manage.Designer.cs">
+      <DependentUpon>GeneralSession_Student_Manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemMethods_GeneralSession.cs" />
+    <Compile Include="SystemMethods_ID_Counter.cs" />
+    <EmbeddedResource Include="GeneralSession_Teacher_Manage.resx">
+      <DependentUpon>GeneralSession_Teacher_Manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralSession_Course_List.resx">
+      <DependentUpon>GeneralSession_Course_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralSession_Course_Manage.resx">
+      <DependentUpon>GeneralSession_Course_Manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralSession_Login.resx">
+      <DependentUpon>GeneralSession_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralSession_Main.resx">
+      <DependentUpon>GeneralSession_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralSession_MessageBox.resx">
+      <DependentUpon>GeneralSession_MessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralSession_Student_List.resx">
+      <DependentUpon>GeneralSession_Student_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralSession_Student_Manage.resx">
+      <DependentUpon>GeneralSession_Student_Manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

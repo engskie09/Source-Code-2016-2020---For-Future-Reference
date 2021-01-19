@@ -1,0 +1,159 @@
+<center ng-show = 'Module_Loading_Visible'>
+	<div class='Module_Loading'></div>
+</center>
+
+<div class = 'col-md-12' ng-show = 'LECSteelMC_Privilege_Visible'>
+
+	<div class  =  'row' ng-show = 'Privilege_List_Visible' ng-init = "Select_Privilege_Information($event, 'Select : All')">
+
+		<div class  =  'col-md-12'>
+			<div class = 'card'>
+				<h5 class = 'card-header'>Privileges</h5>
+				<div class = 'card-body'>
+					
+					<table class = 'hover table-striped table-bordered'  id = 'tbl_Privilege_Information'>
+						<thead>
+						<tr>
+							<th>Image</th>
+							<th>Name</th>
+							<th>Position</th>
+							<th>Address</th>
+							<th>Landline No.</th>
+							<th>Mobile No.</th>		
+							<th>Email</th>
+							<th>Fax</th>
+							<th>Remark</th>
+							<th>Action</th>
+						</tr>
+						</thead>
+						<tbody>							        
+						</tbody>
+					</table>
+					
+				</div>
+			</div>		
+		</div>
+
+	</div>
+
+	<div class = 'row' ng-show = 'Privilege_Manage_Visible'>
+		
+		<div class = 'col-md-8'>
+			<div class = 'card'>
+			<h5 class = 'card-header font-Bold'>Manage Privilege</h5>
+				<div class = 'card-body'>
+					<form class = 'font-Light font-Bold' id = 'Privilege_Information'>					
+						<input name = 'Privilege_Identity' id = 'Privilege_Identity' ng-hide = 'true'>
+						<!-- Row -->
+						<div class = 'form-row col-md'>
+
+							<div class = 'form-group col-md-8'>								
+								<input type = 'text' name = 'Privilege_FullName' id = 'Privilege_FullName' class = 'form-control' required>
+								<label class = 'form-control-placeholder' for = 'Privilege_FullName'>Name</label>
+							</div>
+
+							<div class = 'form-group col-md-4'>								
+								<input type = 'text' name = 'Privilege_Position' id = 'Privilege_Position' class = 'form-control' required>
+								<label class = 'form-control-placeholder' for = 'Privilege_Position'>Position</label>
+							</div>
+
+						</div>
+
+
+						<!-- Row -->
+						<div class = 'form-row col-md'>
+
+							<div class = 'form-group col-md-8'>								
+								<input type = 'text' name = 'Privilege_Address_List' id = 'Privilege_Address_List' class = 'form-control' required>
+								<label class = 'form-control-placeholder' for = 'Privilege_Address_List'>Address</label>
+							</div>
+
+						</div>
+
+						<!-- Row -->
+						<div class = 'form-row col-md'>
+
+							<div class = 'form-group col-md-4'>								
+								<input type = 'text' name = 'Privilege_Contact_LandlineNumber' id = 'Privilege_Contact_LandlineNumber' class = 'form-control' required>
+								<label class = 'form-control-placeholder' for = 'Privilege_Contact_LandlineNumber'>Landline No.</label>
+							</div>
+
+							<div class = 'form-group col-md-4'>								
+								<input type = 'text' name = 'Privilege_Contact_MobileNumber' id = 'Privilege_Contact_MobileNumber' class = 'form-control' required>
+								<label class = 'form-control-placeholder' for = 'Privilege_Contact_MobileNumber'>Mobile No.</label>
+							</div>							
+
+							<div class = 'form-group col-md-4'>								
+								<input type = 'text' name = 'Privilege_Contact_FaxNumber' id = 'Privilege_Contact_FaxNumber' class = 'form-control' required>
+								<label class = 'form-control-placeholder' for = 'Privilege_Contact_FaxNumber'>Fax No.</label>
+							</div>						
+							
+						</div>	
+
+						<!-- Row -->
+						<div class = 'form-row col-md'>
+
+							<div class = 'form-group col-md-8'>								
+								<input type = 'text' name = 'Privilege_Contact_EmailAddress' id = 'Privilege_Contact_EmailAddress' class = 'form-control' required>
+								<label class = 'form-control-placeholder' for = 'Privilege_Contact_EmailAddress'>Email</label>
+							</div>
+
+						</div>					
+
+						<!-- Row -->
+						<div class = 'form-row col-md'>
+							
+							<div class = 'form-group col-md'>								
+								<textarea type = 'text' name = 'Privilege_Remark' id = 'Privilege_Remark' class = 'form-control' required></textarea>
+								<label class = 'form-control-placeholder' for = 'Privilege_Remark'>Remarks</label>
+							</div>
+
+						</div>
+
+
+						<div class = 'form-row col-md'>
+							
+							<div class = 'form-group col-md-6'>
+
+								<select class = 'form-control selectpicker' name = 'Privilege_Status' id = 'Privilege_Status' data-show-subtext = 'true' data-live-search = 'true' required>
+									<option selected disabled>Select Status</option>
+									<option value = 'Enable' data-subtext = 'Not Black Listed'>0</option>
+									<option value = 'Disable' data-subtext = 'Black Listed'>1</option>
+								</select>
+							
+							</div>
+
+						</div>						
+
+						<div class = 'form-row col-md'>
+							<div class = 'form-group col-md-6'>
+								<label for="Privilege_Image" class="custom-file-upload">
+								    <i class="fas fa-cloud-upload-alt"></i> Upload Image
+								</label>
+								<input type = 'file' name = 'Privilege_Image' id='Privilege_Image'  accept = 'image/*'/>
+
+
+								<img  name = 'Privilege_Image_Content' id = 'Privilege_Image_Content' src="" height="200px">
+
+							</div>
+
+						</div>
+						
+						<!-- Row -->
+						<div class = 'form-row col-md' align = 'right'>
+
+							<div class = 'form-group col-md'>
+								<button type='submit' class='btn btn-primary' id='btn_Action' ng-click = 'Manage_Privilege_Information($event, "")'>Add</button>
+							</div>
+							
+						</div>			
+						
+					</form>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>

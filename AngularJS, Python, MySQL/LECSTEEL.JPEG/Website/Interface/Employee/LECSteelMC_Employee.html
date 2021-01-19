@@ -1,0 +1,129 @@
+<center ng-show = 'Module_Loading_Visible'>
+	<div class='Module_Loading'></div>
+</center>
+
+<div ng-show = 'LECSteelMC_Employee_Visible' class = 'col-md-12'>
+
+	<div class  =  'row' ng-show = 'Employee_List_Visible' ng-init = "Select_Employee_Information($event, 'Select : All')">
+
+		<div class  =  'col-md-12'>
+			<div class = 'card'>
+				<h5 class = 'card-header'>Account Executive</h5>
+				<div class = 'card-body'>
+					
+					<table class = 'hover table-striped table-bordered'  id = 'tbl_Employee_Information'>
+						<thead>
+						<tr>
+							<th>Image</th>
+							<th>Username</th>
+							<th>Full Name</th>
+							<th>Position</th>
+							<th>Action</th>
+						</tr>
+						</thead>
+						<tbody>							        
+						</tbody>
+					</table>
+					
+				</div>
+			</div>		
+		</div>
+
+	</div>
+
+	<div class = 'row' ng-show = 'Employee_Manage_Visible'>
+		
+		<div class = 'col-md-8'>
+			<div class = 'card'>
+			<h5 class = 'card-header font-Bold'>Manage Account Executive</h5>
+				<div class = 'card-body'>
+					<form id = 'frm_Employee_Information'>					
+						<input name = 'Employee_Identity' id = 'Employee_Identity' ng-hide = 'true'>
+						<input name = 'Employee_Privilege_List' ng-hide = 'true'>
+						<!-- Row -->
+						<div class = 'form-row col-md'>
+
+							<div class = 'form-group col-md-6' ng-hide = 'true'>								
+								<input type = 'text' name = 'Employee_Username' id = 'Employee_Username' class = 'form-control'>
+								<label class = 'form-control-placeholder' for = 'Employee_Username'>Username</label>
+							</div>
+
+							<div class = 'form-group col-md-6' ng-hide = 'true'>								
+								<input type = 'password' name = 'Employee_Password' id = 'Employee_Password' class = 'form-control'>
+								<label class = 'form-control-placeholder' for = 'Employee_Password'>Password</label>
+							</div>
+
+						</div>
+
+						<!-- Row -->
+						<div class = 'form-row col-md'>
+
+							<div class = 'form-group col-md-4'>								
+								<input type = 'text' name = 'Employee_FirstName' id = 'Employee_FirstName' class = 'form-control' required>
+								<label class = 'form-control-placeholder' for = 'Employee_FirstName'>First Name</label>
+							</div>
+
+							<div class = 'form-group col-md-4'>								
+								<input type = 'text' name = 'Employee_MiddleName' id = 'Employee_MiddleName' class = 'form-control' required>
+								<label class = 'form-control-placeholder' for = 'Employee_MiddleName'>Middle Name</label>
+							</div>							
+
+							<div class = 'form-group col-md-4'>								
+								<input type = 'text' name = 'Employee_LastName' id = 'Employee_LastName' class = 'form-control' required>
+								<label class = 'form-control-placeholder' for = 'Employee_LastName'>Last Name</label>
+							</div>						
+							
+						</div>
+
+						<div class = 'form-row col-md'>
+							
+							<div class = 'form-group col-md'>
+
+								<select class = 'form-control selectpicker' name = 'Employee_Position' id = 'Employee_Position' data-show-subtext = 'true' data-live-search = 'true' data-disabled = 'false' required>
+									<option data-subtext = '' selected disabled>Select Position</option>
+									<option value = 'Sales Account Advisors'>Sales Account Advisors</option>
+									<option value = 'Account Consultant'>Account Consultant</option>
+									<option value = 'Sales Account Executive'>Sales Account Executive</option>
+									<option value = 'Sales Account Specialist'>Sales Account Specialist</option>
+									<option value = 'Assistant Store Manager'>Assistant Store Manager</option>
+									<option value = 'Business Development Specialist'>Business Development Specialist</option>
+									<option value = 'Client Advisor'>Client Advisor</option>
+									<option value = 'Director of Sales'>Director of Sales</option>
+								</select>
+							
+							</div>
+
+						</div>						
+
+						<div class = 'form-row col-md'>
+							<div class = 'form-group col-md-6'>
+								<label for="Employee_Image" class="custom-file-upload">
+								    <i class="fas fa-cloud-upload-alt"></i> Upload Image
+								</label>
+								<input type = 'file' name = 'Employee_Image' id='Employee_Image'  accept = 'image/*'/>
+
+
+								<img  name = 'Employee_Image_Content' id = 'Employee_Image_Content' height = '200px' ng-click = 'Show_Dialog_Image($event)'>
+
+							</div>
+
+						</div>
+						
+						<!-- Row -->
+						<div class = 'form-row col-md' align = 'right'>
+
+							<div class = 'form-group col-md'>
+								<button type='submit' class='btn btn-primary' id='btn_Action' ng-click = 'Manage_Employee_Information($event, "")'>Add</button>
+							</div>
+							
+						</div>			
+						
+					</form>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>

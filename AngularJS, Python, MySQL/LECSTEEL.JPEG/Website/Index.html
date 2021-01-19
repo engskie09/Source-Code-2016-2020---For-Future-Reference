@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<!-- Import Template CSS -->
+<link rel = 'stylesheet' href = 'sb-admin-2.css'>
+
+<!-- Import Template JS -->
+<script src = 'sb-admin-2.js'></script>
+
+<!-- Import JQuery JS -->
+<script src = 'Library/JQuery/JQuery_3.4.1/JQuery_3.4.1.min.js'></script>
+
+<!-- Import JQuery-Validate JS -->
+<script src = 'Library/JQuery/JQuery_Validate_1.19.1/jquery.validate.min.js'></script>
+
+<!-- Import Popper JS -->
+<script src = 'Library/Popper_1.16/Popper_1.16.min.js'></script>
+
+<!-- Import JQuery-Initialize JS -->
+<script src = 'Library/JQuery/JQuery_Initialize_1.3/jquery.initialize.min.js'></script>
+
+<!-- Bootstrap Library -->
+<!-- Bootstrap Library -->
+<!-- Bootstrap Library -->
+<!-- Bootstrap Library -->
+<!-- Bootstrap Library -->
+
+<!-- Import Bootstrap Journal Theme CSS -->
+<link rel = 'stylesheet' href = 'Library/Bootstrap//Bootstrap_Journal_4.3.1/css/bootstrap.min.css'>
+
+<!-- Import Bootstrap JS -->
+<script src = 'Library/Bootstrap/Bootstrap_Journal_4.3.1/js/bootstrap.min.js'></script>
+
+<!-- Import Bootstrap Bundle JS >
+<script src = 'Library/Bootstrap/Bootstrap_Journal_4.3.1/js/bootstrap.bundle.min.js'></script-->
+
+<!-- Import Bootstrap-Select JS -->
+<script src = 'Library/Bootstrap/Bootstrap_Select_1.13.9/js/bootstrap-select.min.js'></script>
+
+<!-- Import Bootstrap-Select CSS -->
+<link rel = 'stylesheet' href = 'Library/Bootstrap/Bootstrap_Select_1.13.9/css/bootstrap-select.min.css'>
+
+<!-- Import Bootstrap-Datepicker JS -->
+<script src = 'Library/Bootstrap/Bootstrap_Datepicker_1.9.0/js/bootstrap-datepicker.min.js'></script>
+
+<!-- Import Bootstrap-Datepicker CSS -->
+<link rel = 'stylesheet' href = 'Library/Bootstrap/Bootstrap_Datepicker_1.9.0/css/bootstrap-datepicker.standalone.css'>
+
+<!-- Bootstrap Library -->
+<!-- Bootstrap Library -->
+<!-- Bootstrap Library -->
+<!-- Bootstrap Library -->
+<!-- Bootstrap Library -->
+
+<!-- Import Angular JS -->
+<script src = 'Library/Angular_1.7.8/Angular_1.7.8.min.js'></script>
+
+<!-- Import Angular-Route JS -->
+<script src = 'Library/Angular_1.7.8/Angular-Route_1.7.8.min.js'></script>
+
+<!-- Import Angular-Cookie JS -->
+<script src = 'Library/Angular_1.7.8/Angular-Cookie_1.7.8.min.js'></script>
+
+<!-- DataTable Library -->
+<!-- DataTable Library -->
+<!-- DataTable Library -->
+<!-- DataTable Library -->
+<!-- DataTable Library -->
+
+<!-- Import DataTables CSS -->
+<link rel = 'stylesheet' href = 'Library/DataTables/DataTables_1.10.20/css/jquery.dataTables.min.css'>
+<!--link rel = 'stylesheet' href = 'Library/DataTables/DataTables_1.10.20/css/dataTables.bootstrap4.min.css'-->
+
+<!-- Import DataTables JS -->
+<script src = 'Library/DataTables/DataTables_1.10.20/js/jquery.dataTables.min.js'/></script>
+
+<!-- Import DataTables FixedHeader CSS -->
+<link rel = 'stylesheet' href = 'Library/DataTables/FixedHeader_3.1.6/css/fixedHeader.dataTables.min.css'>
+
+<!-- Import DataTables FixedHeader JS -->
+<script src = 'Library/DataTables/FixedHeader_3.1.6/js/dataTables.fixedHeader.min.js'/></script>
+
+<!-- Import DataTables Button JS -->
+<script src = 'Library/DataTables/Buttons_1.6.1/js/dataTables.buttons.min.js'/></script>
+<script src = 'Library/DataTables/Buttons_1.6.1/js/buttons.flash.min.js'/></script>
+<script src = 'Library/DataTables/Buttons_1.6.1/js/buttons.colVis.min.js'/></script>
+<script src = 'Library/DataTables/Buttons_1.6.1/js/buttons.html5.min.js'/></script>
+<script src = 'Library/DataTables/Buttons_1.6.1/js/buttons.print.min.js'/></script>
+
+<script src = 'Library/DataTables/PDFMake_0.1.36/js/pdfmake.min.js'/></script>
+<script src = 'Library/DataTables/PDFMake_0.1.36/js/vfs_fonts.js'/></script>
+<script src = 'Library/DataTables/JSZip_2.5.0/js/jszip.min.js'/></script>
+
+<!-- Import DataTables Button CSS -->
+<link rel = 'stylesheet' href = 'Library/DataTables/Buttons_1.6.1/css/buttons.dataTables.min.css'>
+<link rel = 'stylesheet' href = 'Library/DataTables/Buttons_1.6.1/css/buttons.bootstrap4.min.css'>
+
+<!-- DataTable Library -->
+<!-- DataTable Library -->
+<!-- DataTable Library -->
+<!-- DataTable Library -->
+<!-- DataTable Library -->
+
+<!-- Import LECSteelMC_Main JS -->
+<script type = 'module' src = 'Function/LECSteelMC_Main.js'></script>
+
+<!-- Import Fontawesome CSS -->
+<link rel = 'stylesheet' href = 'Library/FontAwesome_Free_5.11.2/css/all.css' >
+
+<!-- Import Main CSS -->
+<link rel = 'stylesheet' href = 'Main.css'>
+
+<html ng-app = 'LECSteelMC' ng-controller = 'LECSteelMC_Main_Controller'>
+
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>	
+	
+	<head><title>LEC Steel Back End</title></head>	
+
+	<body>
+
+		<div ng-hide = 'Session_Available' id = 'Preload'>
+			<div class = 'line'></div>
+			<div class = 'lds-grid' style='display: block;'>
+				<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>				
+			</div>
+
+			
+
+			<div class='Font-ExtraBold' id = 'Preload_Message' style='text-align: center; padding-top: 5em; color: #EB6864; font-size: 3em;'>				
+				Downloading all Web components please wait.....
+			</div>
+			<div class = 'line'></div>
+
+
+		</div>	
+		
+		<div ng-show = 'Session_Available'>
+
+			<div id = 'wrapper'>
+				<ng-include src = 'LECSteelMC_Sidebar_Link'></ng-include>
+
+				<div id = 'content-wrapper' class = 'd-flex flex-column'>
+					<div id = 'content'>
+
+						<ng-include src = 'LECSteelMC_Header_Link'></ng-include>
+
+						<div class = 'col-md-12'>
+							<ng-view></ng-view>
+						</div>
+
+						
+
+						<ng-include src = 'LECSteelMC_Footer_Link'></ng-include>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div ng-init = 'onload()'></div>
+
+	</body>
+
+</html>

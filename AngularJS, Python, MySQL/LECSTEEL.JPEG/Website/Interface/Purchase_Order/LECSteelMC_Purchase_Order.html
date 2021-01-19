@@ -1,0 +1,265 @@
+<center ng-show = 'Module_Loading_Visible'>
+	<div class='Module_Loading'></div>
+</center>
+
+<div ng-show = 'LECSteelMC_Purchase_Order_Visible' class = 'col-md'>
+
+
+	<div class  =  'row' ng-show = 'Purchase_Order_List_Visible' ng-init = "Select_Purchase_Order_Information_Parent($event, 'Select : All')">
+
+		<div class  =  'col-md'>
+			<div class = 'card'>
+				<h5 class = 'card-header'>Purchase Orders</h5>
+				<div class = 'card-body'>
+					
+					<table class = 'hover table-striped table-bordered'  id = 'tbl_Purchase_Order_Information'>
+						<thead>
+						<tr>
+							<th>Image</th>		
+							<th>P.O Number</th>
+							<th>Amount</th>
+							<th>Paid</th>
+							<th>Status</th>
+							<th>Action</th>
+						</tr>
+						</thead>
+
+						<tbody>							        
+						</tbody>
+					</table>
+					
+				</div>
+			</div>		
+		</div>
+
+	</div>
+
+	<div class = 'row' ng-show = 'Purchase_Order_Manage_Visible'>
+
+		<div class = 'col-md'>
+			<div class = 'card'>
+			<h5 class = 'card-header'>Purchase Order Form</h5>
+				<div class = 'card-body'>
+					<form id = 'frm_Purchase_Order_Information'>
+
+						<input name = 'Purchase_Order_Identity' id = 'Purchase_Order_Identity' ng-hide = 'true'>
+
+						<div class = 'col-md-8'>
+							<!-- Row -->
+							<div class = 'form-row col-md'>
+
+								<div class = 'form-group col-md-4'>								
+									<input type = 'text' name = 'Employee_Username' id = 'Employee_Username' class = 'form-control' readonly = 'true' required>
+									<label class = 'form-control-placeholder' for = 'Employee_Username'>Username</label>
+								</div>
+
+								<div class = 'form-group col-md-4'>								
+									<input type = 'text' name = 'Purchase_Order_Number_Parent' id = 'Purchase_Order_Number_Parent' class = 'form-control' required>
+									<label class = 'form-control-placeholder' for = 'Purchase_Order_Number_Parent'>P.O Number</label>
+								</div>
+
+								<div class = 'form-group col-md-4'>
+
+									<select class = 'form-control selectpicker' name = 'Purchase_Order_Supplier_Identity' id = 'Purchase_Order_Supplier_Identity' data-show-subtext = 'true' data-live-search = 'true' required>
+									</select>
+								
+								</div>							
+
+							</div>
+
+
+							<!-- Row -->
+							<div class = 'form-row col-md'>
+
+								<div class = 'form-group col-md-4'>								
+									<input type = 'text' name = 'Purchase_Order_Supplier_Term' id = 'Purchase_Order_Supplier_Term' class = 'form-control' readonly = 'true' required>
+									<label class = 'form-control-placeholder' for = 'Purchase_Order_Supplier_Term'>Term</label>
+								</div>
+
+								<div class = 'form-group col-md-4'>								
+									<input type = 'text' name = 'Supplier_Name' id = 'Supplier_Name' class = 'form-control' readonly = 'true' required>
+									<label class = 'form-control-placeholder' for = 'Supplier_Name'>Company</label>
+								</div>
+
+								<div class = 'form-group col-md-4'>								
+									<input type = 'text' name = 'Supplier_Contact_BusinessAddress' id = 'Supplier_Contact_BusinessAddress' class = 'form-control' readonly = 'true' required>
+									<label class = 'form-control-placeholder' for = 'Supplier_Contact_BusinessAddress'>Address</label>
+								</div>
+
+							</div>
+							
+
+							<!-- Row -->
+							<div class = 'form-row col-md'>
+								
+								<div class = 'form-group col-md'>								
+									<textarea type = 'text' name = 'Purchase_Order_Remarks' id = 'Purchase_Order_Remarks' class = 'form-control' required></textarea>
+									<label class = 'form-control-placeholder' for = 'Purchase_Order_Remarks'>Remarks</label>
+								</div>
+
+							</div>				
+
+							<!-- Row -->
+							<div class = 'form-row col-md'>
+
+								<div class="form-group col-md date" data-provide="datepicker">
+									<input type = 'text' name = 'Purchase_Order_DateTime_Due' id = 'Purchase_Order_DateTime_Due' class = 'form-control' required>
+									<label class = 'form-control-placeholder' for = 'Purchase_Order_DateTime_Due'><i class="far fa-calendar-alt"></i>&nbsp;Due Date</label>
+									<div class="input-group-addon"></div>
+								</div>
+								
+
+								<div class = 'form-group col-md'>								
+									<input type = 'text' name = 'Purchase_Order_Amount' id = 'Purchase_Order_Amount' class = 'form-control' readonly = 'true' required>
+									<label class = 'form-control-placeholder' for = 'Purchase_Order_Amount'>Total Amount</label>
+								</div>
+
+								<div class = 'form-group col-md'>								
+									<input type = 'text' name = 'Purchase_Order_Amount_Paid' id = 'Purchase_Order_Amount_Paid' class = 'form-control' required>
+									<label class = 'form-control-placeholder' for = 'Purchase_Order_Amount_Paid'>Amount Paid</label>
+								</div>
+
+								<div class = 'form-group col-md'>
+									<select class = 'form-control selectpicker' name = 'Purchase_Order_Status' id = 'Purchase_Order_Status' data-show-subtext = 'true' data-live-search = 'true' required>
+									</select>
+								</div>
+
+							</div>	
+
+							<div class = 'form-row col-md'>
+
+								<div class="form-group col-md date" data-provide="datepicker">
+									<input type = 'text' name = 'Purchase_Order_DateTime_Issue' id = 'Purchase_Order_DateTime_Issue' class = 'form-control' readonly = 'true' required>
+									<label class = 'form-control-placeholder' for = 'Purchase_Order_DateTime_Issue'><i class="far fa-calendar-alt"></i>&nbsp;Date Issue</label>
+									<div class="input-group-addon"></div>
+								</div>					
+
+								<div class="form-group col-md date" data-provide="datepicker">
+									<input type = 'text' name = 'Purchase_Order_DateTime_Posted' id = 'Purchase_Order_DateTime_Posted' class = 'form-control' readonly = 'true' required>
+									<label class = 'form-control-placeholder' for = 'Purchase_Order_DateTime_Posted'><i class="far fa-calendar-alt"></i>&nbsp;Date Posted</label>
+									<div class="input-group-addon"></div>
+								</div>
+
+								<div class="form-group col-md date" data-provide="datepicker">
+									<input type = 'text' name = 'Purchase_Order_DateTime_Unposted' id = 'Purchase_Order_DateTime_Unposted' class = 'form-control' readonly = 'true' required>
+									<label class = 'form-control-placeholder' for = 'Purchase_Order_DateTime_Unposted'><i class="far fa-calendar-alt"></i>&nbsp;Date Unposted</label>
+									<div class="input-group-addon"></div>
+								</div>
+
+							</div>
+
+							<div class = 'form-row col-md'>
+								<div class = 'form-group col-md-6'>
+									<label for="Purchase_Order_Image" class="custom-file-upload">
+									    <i class="fas fa-cloud-upload-alt"></i> Upload Image
+									</label>
+									<input type = 'file' name = 'Purchase_Order_Image' id='Purchase_Order_Image'  accept = 'image/*'/>
+
+
+									<img id = 'Purchase_Order_Image_Content' height = '200px' ng-click = 'Show_Dialog_Image($event)'>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<!-- Row -->
+						<div class = 'form-row col-md'>
+
+							<div class = 'form-group col-md'>
+								<div class = 'card'>
+									<h5 class = 'card-header'>P.O Raw Materials</h5>
+									<div class = 'card-body'>
+										
+										<table class = 'hover table-striped table-bordered'  id = 'tbl_Purchase_Order_Material_Information'>
+											<thead>
+											<tr>
+												<th>ID</th>
+												<th>Image</th>		
+												<th>Part Number</th>
+												<th>Description</th>
+												<th>Unit</th>
+												<th>Size</th>
+												<th>Quantity</th>
+												<th>Amount</th>
+												<th>Total</th>
+												<th>Action</th>
+											</tr>
+											</thead>
+
+											<tbody>							        
+											</tbody>
+
+											<tfoot>
+												<tr>
+													<th></th>
+													<th></th>
+													<th></th>
+													<th></th>
+													<th></th>
+													<th></th>
+													<th></th>
+													<th></th>
+													<th></th>
+													<th></th>
+												</tr>
+											</tfoot>
+
+										</table>
+										
+									</div>
+								</div>							
+							</div>
+
+						</div>
+
+						<!-- Row -->
+						<div class = 'form-row col-md' align = 'right'>
+
+							<div class = 'form-group col-md'>
+
+								<button type='submit' class='btn btn-primary' id='btn_Action' ng-click = 'Manage_Purchase_Order_Information_Parent($event, "")'>Add new P.O</button>
+							</div>
+
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class  =  'row' ng-show = 'Material_List_Visible' ng-init = "Select_Material_Information($event, 'Select : All')">
+
+		<div class  =  'col-md'>
+			<div class = 'card'>
+				<h5 class = 'card-header'>Raw Materials</h5>
+				<div class = 'card-body'>
+					
+					<table class = 'hover table-striped table-bordered'  id = 'tbl_Material_Information'>
+						<thead>
+						<tr>
+							<th>Image</th>		
+							<th>Part Number</th>
+							<th>Unit</th>
+							<th>Size</th>
+							<th>Category</th>
+							<th>Type</th>
+							<th>Price</th>
+							<th>Action</th>
+						</tr>
+						</thead>
+
+						<tbody>							        
+						</tbody>
+					</table>
+					
+				</div>
+			</div>		
+		</div>
+
+	</div>
+
+<div>

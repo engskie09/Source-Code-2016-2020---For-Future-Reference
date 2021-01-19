@@ -1,0 +1,172 @@
+<!-- Sidebar -->
+<ul class='navbar-nav bg-primary sidebar sidebar-dark accordion' id='accordionSidebar'>
+
+    <!-- Sidebar - Brand -->
+    <a class='sidebar-brand d-flex align-items-center justify-content-center' href='index.html'>
+      <div class='sidebar-brand-icon rotate-n-15'>
+        <img src = './LECSteel_Logo.png' height = '70px'>
+      </div>
+      <div class='sidebar-brand-text mx-3'>LEC STEEL <sup>corp</sup></div>
+    </a>
+
+    <!-- Divider -->
+    <hr class='sidebar-divider my-0'>
+
+    <!-- Nav Item - Dashboard -->
+    <li class='nav-item active'>
+      <a class='nav-link' href='#'>
+        <i class='fas fa-fw fa-tachometer-alt'></i>
+        <span>Dashboard</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class='sidebar-divider'>
+
+    <!-- Heading -->
+    <div class='sidebar-heading'>
+      <center><h6>Management Module</h6></center>
+    </div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class='nav-item'>
+      <a class='nav-link collapsed' data-toggle='collapse' data-target='#Material_Manage' aria-expanded='true' aria-controls='Material_Manage'>
+        <i class='fas fa-cubes'></i>
+        <span>Raw Materials</span>
+      </a>
+      <div id='Material_Manage' class='collapse' data-parent='#accordionSidebar'>
+        <div class='bg-white py-2 collapse-inner rounded'>
+          
+          <h6 class='collapse-header'><p class='font-size-collapse-header'><i class='fas fa-cubes'></i>&nbsp;Manage Materials</p></h6>
+          <a class='collapse-item' ng-click = "set_Path_Action('Material', 'Display')"><i class='fas fa-eye fa-lg'></i>&nbsp;View List</a>
+          <a class='collapse-item' ng-click = "set_Path_Action('Material', 'Insert')"><i class='fas fa-plus-circle fa-lg'></i>&nbsp;Add</a>
+
+          <h6 class='collapse-header'><p class='font-size-collapse-header'><i class='fa fa-list-alt' aria-hidden='true'></i>&nbsp;Manage Category</p></h6>
+          <a class='collapse-item' ng-click = "set_Path_Action('Material/Category', 'Display')"><i class='fas fa-eye fa-lg'></i>&nbsp;View List</a>
+          <a class='collapse-item' ng-click = "set_Path_Action('Material/Category', 'Insert')"><i class='fas fa-plus-circle fa-lg'></i>&nbsp;Add</a>
+
+          <h6 class='collapse-header'><p class='font-size-collapse-header'><i class='fa fa-list-alt' aria-hidden='true'></i>&nbsp;Manage Type</p></h6>
+          <a class='collapse-item' ng-click = "set_Path_Action('Material/Type', 'Display')"><i class='fas fa-eye fa-lg'></i>&nbsp;View List</a>
+          <a class='collapse-item' ng-click = "set_Path_Action('Material/Type', 'Insert')"><i class='fas fa-plus-circle fa-lg'></i>&nbsp;Add</a>
+
+        </div>
+      </div>
+    </li>
+
+    <li class='nav-item'>
+      <a class='nav-link collapsed' data-toggle='collapse' data-target='#Client_Manage' aria-expanded='true' aria-controls='Client_Manage'>
+        <i class="fas fa-users"></i>
+        <span>Client</span>
+      </a>
+      <div id='Client_Manage' class='collapse' data-parent='#accordionSidebar'>
+        <div class='bg-white py-2 collapse-inner rounded'>
+          
+          <h6 class='collapse-header'><p class='font-size-collapse-header'><i class='fas fa-users'></i>&nbsp;Manage Client</p></h6>
+          <a class='collapse-item' ng-click = "set_Path_Action('Client', 'Display')"><i class='fas fa-eye fa-lg'></i>&nbsp;View List</a>
+          <a class='collapse-item' ng-click = "set_Path_Action('Client', 'Insert')"><i class="fas fa-user-plus"></i>&nbsp;Add</a>    
+
+        </div>
+      </div>
+    </li>
+
+    <li class='nav-item'>
+      <a class='nav-link collapsed' data-toggle='collapse' data-target='#Supplier_Manage' aria-expanded='true' aria-controls='Supplier_Manage'>
+        <i class="fas fa-parachute-box"></i>
+        <span>Supplier</span>
+      </a>
+      <div id='Supplier_Manage' class='collapse' data-parent='#accordionSidebar'>
+        <div class='bg-white py-2 collapse-inner rounded'>
+          
+          <h6 class='collapse-header'><p class='font-size-collapse-header'><i class='fas fa-parachute-box'></i>&nbsp;Manage Supplier</p></h6>
+          <a class='collapse-item' ng-click = "set_Path_Action('Supplier', 'Display')"><i class='fas fa-eye fa-lg'></i>&nbsp;View List</a>
+          <a class='collapse-item' ng-click = "set_Path_Action('Supplier', 'Insert')"><i class='fas fa-plus-circle fa-lg'></i>&nbsp;Add</a>    
+
+
+          <h6 class='collapse-header'><p class='font-size-collapse-header'><i class='fa fa-list-alt' aria-hidden='true'></i>&nbsp;Manage Category</p></h6>
+          <a class='collapse-item' ng-click = "set_Path_Action('Supplier/Category', 'Display')"><i class='fas fa-eye fa-lg'></i>&nbsp;View List</a>
+          <a class='collapse-item' ng-click = "set_Path_Action('Supplier/Category', 'Insert')"><i class='fas fa-plus-circle fa-lg'></i>&nbsp;Add</a>
+
+        </div>
+      </div>
+    </li> 
+
+
+    <li class='nav-item'>
+      <a class='nav-link collapsed' data-toggle='collapse' data-target='#Employee_Manage' aria-expanded='true' aria-controls='Employee_Manage'>
+        <i class="fas fa-users"></i>
+        <span>Account Executive</span>
+      </a>
+      <div id='Employee_Manage' class='collapse' data-parent='#accordionSidebar'>
+        <div class='bg-white py-2 collapse-inner rounded'>
+          
+          <h6 class='collapse-header'><p class='font-size-collapse-header'><i class='fas fa-users'></i>&nbsp;Manage Account</p></h6>
+          <a class='collapse-item' ng-click = "set_Path_Action('Employee', 'Display')"><i class='fas fa-eye fa-lg'></i>&nbsp;View List</a>
+          <a class='collapse-item' ng-click = "set_Path_Action('Employee', 'Insert')"><i class="fas fa-user-plus"></i>&nbsp;Add</a>    
+
+        </div>
+      </div>
+    </li>
+
+    <li class='nav-item'>
+      <a class='nav-link collapsed' data-toggle='collapse' data-target='#Privilege_Manage' aria-expanded='true' aria-controls='Privilege_Manage'>
+        <i class="fas fa-user-shield"></i>
+        <span>Security</span>
+      </a>
+      <div id='Privilege_Manage' class='collapse' data-parent='#accordionSidebar'>
+        <div class='bg-white py-2 collapse-inner rounded'>
+          
+          <h6 class='collapse-header'><p class='font-size-collapse-header'><i class='fas fa-user-shield'></i>&nbsp;Manage Security</p></h6>
+          <a class='collapse-item' ng-click = "set_Path_Action('Privilege', 'Display')"><i class='fas fa-eye fa-lg'></i>&nbsp;View User</a>
+          <a class='collapse-item' ng-click = "set_Path_Action('Privilege', 'Insert')"><i class="fas fa-user-plus"></i>&nbsp;Add User</a>    
+
+        </div>
+      </div>
+    </li>    
+
+    <!-- Divider -->
+    <hr class='sidebar-divider'>
+
+    <!-- Heading -->
+    <div class='sidebar-heading'>
+      <center><h6>Process Module</h6></center>
+    </div>
+
+    <!-- Divider -->
+    <hr class='sidebar-divider'>
+
+    <li class='nav-item'>
+      <a class='nav-link collapsed' data-toggle='collapse' data-target='#Purchase_Order_Manage' aria-expanded='true' aria-controls='Purchase_Order_Manage'>
+        <i class="fas fa-clipboard-list"></i>
+        <span>Purchase Order</span>
+      </a>
+      <div id='Purchase_Order_Manage' class='collapse' data-parent='#accordionSidebar'>
+        <div class='bg-white py-2 collapse-inner rounded'>
+          
+          <h6 class='collapse-header'><p class='font-size-collapse-header'><i class="fas fa-clipboard-list"></i>&nbsp;Manage P/O</p></h6>
+          <a class='collapse-item' ng-click = "set_Path_Action('Purchase_Order', 'Display')"><i class='fa fa-list-alt'></i>&nbsp;P/O List</a>
+          <a class='collapse-item' ng-click = "set_Path_Action('Purchase_Order', 'Insert')"><i class="fas fa-calendar-plus"></i></i>&nbsp;Generate P/O</a>    
+
+        </div>
+      </div>
+    </li>
+
+    <li class='nav-item'>
+      <a class='nav-link collapsed' data-toggle='collapse' data-target='#Receiving_Report_Manage' aria-expanded='true' aria-controls='Receiving_Report_Manage'>
+        <i class="fas fa-clipboard-list"></i>
+        <span>Receiving Report</span>
+      </a>
+      <div id='Receiving_Report_Manage' class='collapse' data-parent='#accordionSidebar'>
+        <div class='bg-white py-2 collapse-inner rounded'>
+          
+          <h6 class='collapse-header'><p class='font-size-collapse-header'><i class="fas fa-clipboard-list"></i>&nbsp;Manage R/R</p></h6>
+          <a class='collapse-item' ng-click = "set_Path_Action('Receiving_Report', 'Receive Order')"><i class='fa fa-list-alt'></i>&nbsp;Receive Order</a>
+        </div>
+      </div>
+    </li>
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class='text-center d-none d-md-inline'>
+      <button class='rounded-circle border-0' id='sidebarToggle' ng-click='Sidebar_Toggle()'></button>
+    </div>
+
+  </ul>
+  <!-- End of Sidebar -->   

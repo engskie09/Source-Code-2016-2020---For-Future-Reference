@@ -1,0 +1,35 @@
+<div class = 'modal fade' id = 'Dialog' tabindex = '-1' role = 'dialog' aria-labelledby = 'exampleModalLabel'>
+	<div class='modal-dialog' role='document'>
+		<div class='modal-content'>
+			<div class='modal-header'>
+				<h5 class='modal-title w-100 text-center' id='Dialog_Title'>Dialog Title Here...</h5>
+				<i class='fas fa-times-circle fa-2x icon-color' id = 'btn_Close' data-dismiss='modal'></i>
+			</div>
+
+			<!-- Dialog Loading -->
+			<div id = 'Dialog_Loading' style = 'margin: auto; padding-top: 2em; display: none;'>
+				<div class='Dialog_Loading'></div>
+			</div>
+
+			<!-- Dialog Alert -->
+			<div class='alert alert-success' id = 'Dialog_Alert' style='display: none;'>			
+				<div id = 'Dialog_Alert_Title'>Alert Title Here...</div>
+				<div id = 'Dialog_Alert_Message'>Alert Content Here...</div>
+			</div>
+
+
+			<div class = 'modal-body'>
+							
+
+				<!-- Dialog Input -->
+				<form id = 'Dialog_Form'></form>
+				
+			</div>			
+
+			<div class='modal-footer'>
+				<button type='button' class='btn btn-primary' id='btn_No' value = 'No'>No</button>
+				<button type='button' class='btn btn-primary' id='btn_Ok' value = 'Yes'>Ok</button>			
+			</div>
+		</div>
+	</div>
+</div>

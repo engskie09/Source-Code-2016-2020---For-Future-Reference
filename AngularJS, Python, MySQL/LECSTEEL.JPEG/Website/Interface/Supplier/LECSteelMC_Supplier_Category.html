@@ -1,0 +1,75 @@
+<center ng-show = 'Module_Loading_Visible'>
+	<div class='Module_Loading'></div>
+</center>
+
+<div ng-show = 'LECSteelMC_Supplier_Category_Visible' class = 'col-md-12'>
+
+	<div class  =  'row' ng-show = 'Supplier_Category_List_Visible' ng-init = "Select_Supplier_Category_Information($event, 'Select : All')">
+
+		<div class  =  'col-md-12'>
+			<div class = 'card'>
+				<h5 class = 'card-header'>Raw Supplier Categories</h5>
+				<div class = 'card-body'>
+					
+					<table class = 'hover table-striped table-bordered'  id = 'tbl_Supplier_Category_Information'>
+						<thead>
+						<tr>
+							<th>Category</th>		
+							<th>Description</th>
+							<th>Action</th>
+						</tr>
+						</thead>
+						<tbody>							        
+						</tbody>
+					</table>
+					
+				</div>
+			</div>		
+		</div>
+
+	</div>
+
+	<div class = 'row' ng-show = 'Supplier_Category_Manage_Visible'>
+		
+		<div class = 'col-md-8'>
+			<div class = 'card'>
+			<h5 class = 'card-header'>Manage Supplier Category</h5>
+				<div class = 'card-body'>
+					<form id = 'frm_Supplier_Category_Information'>					
+						<input name = 'Category_Identity' id = 'Category_Identity' ng-hide = 'true'>
+						<!-- Row -->
+						<div class = 'form-row col-md'>
+
+							<div class = 'form-group col-md-8'>								
+								<input type = 'text' name = 'Category_Name' id = 'Category_Name' class = 'form-control' required>
+								<label class = 'form-control-placeholder' for = 'Category_Name'>Category</label>
+							</div>						
+						</div>
+						
+						<!-- Row -->
+						<div class = 'form-row col-md'>							
+							<div class = 'form-group col-md'>								
+								<textarea type = 'text' name = 'Category_Description' id = 'Category_Description' class = 'form-control' required></textarea>
+								<label class = 'form-control-placeholder' for = 'Category_Description'>Description</label>
+							</div>
+
+						</div>				
+						
+						<!-- Row -->
+						<div class = 'form-row col-md' align = 'right'>
+
+							<div class = 'form-group col-md'>
+								<button type='submit' class='btn btn-primary' id='btn_Action' ng-click = 'Manage_Supplier_Category_Information($event, "")'>Add</button>
+							</div>
+							
+						</div>			
+						
+					</form>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>

@@ -1,0 +1,75 @@
+<center ng-show = 'Module_Loading_Visible'>
+	<div class='Module_Loading'></div>
+</center>
+
+<div class = 'col-md-12' ng-show = 'LECSteelMC_Material_Type_Visible'>
+
+	<div class  =  'row' ng-show = 'Material_Type_List_Visible' ng-init = "Select_Material_Type_Information($event, 'Select : All')">
+
+		<div class  =  'col-md-12'>
+			<div class = 'card'>
+				<h5 class = 'card-header'>Raw Material Categories</h5>
+				<div class = 'card-body'>
+					
+					<table class = 'hover table-striped table-bordered'  id = 'tbl_Material_Type_Information'>
+						<thead>
+						<tr>
+							<th>Type</th>		
+							<th>Description</th>
+							<th>Action</th>
+						</tr>
+						</thead>
+						<tbody>							        
+						</tbody>
+					</table>
+					
+				</div>
+			</div>		
+		</div>
+
+	</div>
+
+	<div class = 'row' ng-show = 'Material_Type_Manage_Visible'>
+		
+		<div class = 'col-md-8'>
+			<div class = 'card'>
+			<h5 class = 'card-header'>Manage Raw Material Type</h5>
+				<div class = 'card-body'>
+					<form id = 'frm_Material_Type_Information'>					
+						<input name = 'Type_Identity' id = 'Type_Identity' ng-hide = 'true'>
+						<!-- Row -->
+						<div class = 'form-row col-md'>
+
+							<div class = 'form-group col-md-8'>								
+								<input type = 'text' name = 'Type_Name' id = 'Type_Name' class = 'form-control' required>
+								<label class = 'form-control-placeholder' for = 'Type_Name'>Type</label>
+							</div>						
+						</div>
+						
+						<!-- Row -->
+						<div class = 'form-row col-md'>							
+							<div class = 'form-group col-md'>								
+								<textarea type = 'text' name = 'Type_Description' id = 'Type_Description' class = 'form-control' required></textarea>
+								<label class = 'form-control-placeholder' for = 'Type_Description'>Description</label>
+							</div>
+
+						</div>				
+						
+						<!-- Row -->
+						<div class = 'form-row col-md' align = 'right'>
+
+							<div class = 'form-group col-md'>
+								<button type='submit' class='btn btn-primary' id='btn_Action' ng-click = 'Manage_Material_Type_Information($event, "")'>Add</button>
+							</div>
+							
+						</div>			
+						
+					</form>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>

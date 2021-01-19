@@ -1,0 +1,151 @@
+<center ng-show = 'Module_Loading_Visible'>
+	<div class='Module_Loading'></div>
+</center>
+
+<div class = 'col-md-12' ng-show = 'LECSteelMC_Material_Visible' >
+
+	<div class  =  'row' ng-show = 'Material_List_Visible' ng-init = "Select_Material_Information($event, 'Select : All')">
+
+		<div class  =  'col-md-12'>
+			<div class = 'card'>
+				<h5 class = 'card-header'>Raw Materials</h5>
+				<div class = 'card-body'>
+					
+					<table class = 'hover table-striped table-bordered'  id = 'tbl_Material_Information'>
+						<thead>
+						<tr>
+							<th>Image</th>		
+							<th>Part Number</th>
+							<th>Unit</th>
+							<th>Size</th>
+							<th>Category</th>
+							<th>Type</th>
+							<th>Quantity</th>
+							<th>Action</th>
+						</tr>
+						</thead>
+						<tbody>							        
+						</tbody>
+					</table>
+					
+				</div>
+			</div>		
+		</div>
+
+	</div>
+
+	<div class = 'row' ng-show = 'Material_Manage_Visible'>
+		
+		<div class = 'col-md-8'>
+			<div class = 'card'>
+			<h5 class = 'card-header'>Manage Raw Material</h5>
+				<div class = 'card-body'>
+					<form id = 'frm_Material_Information'>					
+						<input name = 'Material_Identity' id = 'Material_Identity' ng-hide = 'true'>
+						<!-- Row -->
+						<div class = 'form-row col-md'>
+francis artorga
+							<div class = 'form-group col-md-8'>								
+								<input type = 'text' name = 'Material_Part_Number' id = 'Material_Part_Number' class = 'form-control' required>
+								<label class = 'form-control-placeholder' for = 'Material_Part_Number'>Part No. (xxx-xxx-xxxx)</label>
+							</div>
+
+							<div class = 'form-group col-md-2'>								
+								<input type = 'text' name = 'Material_Unit' id = 'Material_Unit' class = 'form-control' required>
+								<label class = 'form-control-placeholder' for = 'Material_Unit'>Unit</label>
+							</div>
+
+							<div class = 'form-group col-md-2'>								
+								<input type = 'text' name = 'Material_Size' id = 'Material_Size' class = 'form-control' required>
+								<label class = 'form-control-placeholder' for = 'Material_Size'>Size</label>
+							</div>				
+						
+						</div>
+
+						<!-- Row -->
+						<div class  =  'form-row col-md'>
+							<div class = 'form-group col-md-6'>
+
+								<select class = 'form-control selectpicker' name = 'Material_Category_Identity' id = 'Material_Category_Identity' data-show-subtext = 'true' data-live-search = 'true' required>		
+								</select>							
+
+							</div>
+
+							<div class = 'form-group col-md-6'>
+
+								<select class = 'form-control selectpicker' name = 'Material_Type_Identity' id = 'Material_Type_Identity' data-show-subtext = 'true' data-live-search = 'true' required>
+								</select>							
+
+							</div>					
+						</div>
+
+						<!-- Row -->
+						<div class = 'form-row col-md'>
+							<div class = 'form-group col-md-4'>								
+								<input type = 'number' name = 'Material_Quantity' id = 'Material_Quantity' class = 'form-control' required>
+								<label class = 'form-control-placeholder' for = 'Material_Quantity'>Quantity</label>
+							</div>
+
+							<div class = 'form-group col-md-4'>								
+								<input type = 'number' name = 'Material_Order_Minimum' id = 'Material_Order_Minimum' class = 'form-control' required>
+								<label class = 'form-control-placeholder' for = 'Material_Order_Minimum'>Minimum Order</label>
+							</div>
+
+							<div class = 'form-group col-md-4'>								
+								<input type = 'number' name = 'Material_Price_Current' id = 'Material_Price_Current' class = 'form-control' required>
+								<label class = 'form-control-placeholder' for = 'Material_Price_Current'>Price</label>
+							</div>
+						</div>
+
+						<!-- Row -->
+						<div class = 'form-row col-md'>
+							
+							<div class = 'form-group col-md'>								
+								<textarea type = 'text' name = 'Material_Description' id = 'Material_Description' class = 'form-control' required></textarea>
+								<label class = 'form-control-placeholder' for = 'Material_Description'>Description</label>
+							</div>
+
+						</div>
+
+						<!-- Row -->
+						<div class = 'form-row col-md'>
+							
+							<div class = 'form-group col-md'>								
+								<textarea type = 'text' name = 'Material_Remark' id = 'Material_Remark' class = 'form-control' required></textarea>
+								<label class = 'form-control-placeholder' for = 'Material_Remark'>Remarks</label>
+							</div>
+
+						</div>
+
+						<div class = 'form-row col-md'>
+							<div class = 'form-group col-md-6'>
+								<label for="Material_Image" class="custom-file-upload">
+								    <i class="fas fa-cloud-upload-alt"></i> Upload Image
+								</label>
+								<input type = 'file' name = 'Material_Image' id='Material_Image'  accept = 'image/*'/>
+
+
+								<img  name = 'Material_Image_Content' id = 'Material_Image_Content' height = '200px' ng-click = 'Show_Dialog_Image($event)'>
+
+							</div>
+
+						</div>
+						
+						<!-- Row -->
+						<div class = 'form-row col-md' align = 'right'>
+
+							<div class = 'form-group col-md'>
+								<button type='submit' class='btn btn-primary' id='btn_Action' ng-click = 'Manage_Material_Information($event, "")'>Add</button>
+							</div>
+							
+						</div>			
+						
+					</form>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>

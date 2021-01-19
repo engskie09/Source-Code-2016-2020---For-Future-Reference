@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D49BBC6-826D-44E7-B659-6B3760100F58}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MythicalCafe_ICMS_FrontEnd</RootNamespace>
+    <AssemblyName>MythicalCafe_ICMS_FrontEnd</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Binarymission.WinForms.Controls.BinaryButtonSuite">
+      <HintPath>..\..\MythicalCafe_Libraries\Binarymission.WinForms.Controls.BinaryButtonSuite.dll</HintPath>
+    </Reference>
+    <Reference Include="Binarymission.WinForms.Controls.BinaryComboBox">
+      <HintPath>..\..\MythicalCafe_Libraries\Binarymission.WinForms.Controls.BinaryComboBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Binarymission.WinForms.Controls.BinaryDatePicker">
+      <HintPath>..\..\MythicalCafe_Libraries\Binarymission.WinForms.Controls.BinaryDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Binarymission.WinForms.Controls.BinaryMenuItem">
+      <HintPath>..\..\MythicalCafe_Libraries\Binarymission.WinForms.Controls.BinaryMenuItem.dll</HintPath>
+    </Reference>
+    <Reference Include="Binarymission.WinForms.Controls.BinaryToolTip">
+      <HintPath>..\..\MythicalCafe_Libraries\Binarymission.WinForms.Controls.BinaryToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Binarymission.WinForms.Controls.ModernChromeWindow">
+      <HintPath>..\..\MythicalCafe_Libraries\Binarymission.WinForms.Controls.ModernChromeWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="Binarymission.WinForms.Controls.ScrollBars">
+      <HintPath>..\..\MythicalCafe_Libraries\Binarymission.WinForms.Controls.ScrollBars.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\MythicalCafe_Libraries\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MythicalCafe_Libraries\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MythicalCafe_Control_Propety.cs" />
+    <Compile Include="MythicalCafe_FrontEnd.cs" />
+    <Compile Include="MythicalCafe_FrontEnd_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_Dialog.designer.cs">
+      <DependentUpon>MythicalCafe_FrontEnd_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_Login.Designer.cs">
+      <DependentUpon>MythicalCafe_FrontEnd_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_Main.Designer.cs">
+      <DependentUpon>MythicalCafe_FrontEnd_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_Main_Method.cs" />
+    <Compile Include="MythicalCafe_FrontEnd_Product_Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_Product_Cart.Designer.cs">
+      <DependentUpon>MythicalCafe_FrontEnd_Product_Cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_UserControl_Product.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_UserControl_Product.Designer.cs">
+      <DependentUpon>MythicalCafe_FrontEnd_UserControl_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_UserControl_Product_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_UserControl_Product_View.Designer.cs">
+      <DependentUpon>MythicalCafe_FrontEnd_UserControl_Product_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MythicalCafe_FrontEnd_Dialog.resx">
+      <DependentUpon>MythicalCafe_FrontEnd_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_FrontEnd_Login.resx">
+      <DependentUpon>MythicalCafe_FrontEnd_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_FrontEnd_Main.resx">
+      <DependentUpon>MythicalCafe_FrontEnd_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_FrontEnd_Product_Cart.resx">
+      <DependentUpon>MythicalCafe_FrontEnd_Product_Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_FrontEnd_UserControl_Product.resx">
+      <DependentUpon>MythicalCafe_FrontEnd_UserControl_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_FrontEnd_UserControl_Product_View.resx">
+      <DependentUpon>MythicalCafe_FrontEnd_UserControl_Product_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png_ShoppingCart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png_OrderQueue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png_Money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png_Rank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png_Clear.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

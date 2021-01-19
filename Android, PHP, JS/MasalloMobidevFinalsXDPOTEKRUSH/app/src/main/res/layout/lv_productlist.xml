@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgv_ProductImage"
+        android:layout_width="175dp"
+        android:layout_height="132dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/tv_ProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Name"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_ProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Price"/>
+
+        <TextView
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Click to Order......"
+            android:textSize="20dp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

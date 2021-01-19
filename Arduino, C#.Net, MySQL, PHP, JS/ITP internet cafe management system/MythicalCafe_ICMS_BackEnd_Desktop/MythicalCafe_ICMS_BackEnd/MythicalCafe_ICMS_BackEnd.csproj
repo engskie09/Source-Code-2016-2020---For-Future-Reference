@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C5DC5136-4CF0-4CD8-A84C-57D1392E00EB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MythicalCafe_ICMS_BackEnd</RootNamespace>
+    <AssemblyName>MythicalCafe_ICMS_BackEnd</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon_emoji_cat.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="MythicalCafe_BackEnd_Account_Manage_List_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Account_Manage_List_Dialog.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Account_Manage_List_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Account.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Account_Customer_Manage_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Account_Customer_Manage_List.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Account_Customer_Manage_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Account_Position_Manage_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Account_Position_Manage_List.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Account_Position_Manage_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Account_Staff_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Account_Staff_List.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Account_Staff_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Account_Staff_Manage_List_Method.cs" />
+    <Compile Include="MythicalCafe_BackEnd_Account_Staff_Manage_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Account_Staff_Manage_List.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Account_Staff_Manage_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Account_Staff_Manage_Payroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Account_Staff_Manage_Payroll.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Account_Staff_Manage_Payroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Account_Staff_Manage_Payroll_Payslip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Account_Staff_Manage_Payroll_Payslip.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Account_Staff_Manage_Payroll_Payslip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_DataSet.cs">
+      <DependentUpon>MythicalCafe_BackEnd_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MythicalCafe_BackEnd_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Login.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Log_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Log_List.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Log_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Log_Manage_List_Method.cs" />
+    <Compile Include="MythicalCafe_BackEnd_Product_Category_Manage_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Product_Category_Manage_List.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Product_Category_Manage_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Product.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Product_Category_Manage_List_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Product_Category_Manage_List_Dialog.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Product_Category_Manage_List_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Product_Category_Manage_List_Method.cs" />
+    <Compile Include="MythicalCafe_BackEnd_Product_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Product_List.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Product_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Product_Manage_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Product_Manage_List.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Product_Manage_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Product_Manage_List_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Product_Manage_List_Dialog.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Product_Manage_List_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Product_Manage_List_Method.cs" />
+    <Compile Include="MythicalCafe_BackEnd_Product_Order_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Product_Order_List.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Product_Order_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Product_Order_Manage_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Product_Order_Manage_List.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Product_Order_Manage_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Product_Order_Manage_List_Method.cs" />
+    <Compile Include="MythicalCafe_BackEnd_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Report.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_SerialPort_ShortMessageService.cs" />
+    <Compile Include="MythicalCafe_BackEnd_Settings_Time_Warning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Settings_Time_Warning.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Settings_Time_Warning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_UserControl_Workstation_Method.cs" />
+    <Compile Include="MythicalCafe_BackEnd_UserControl_Workstation_Time_Bonus_And_Custom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_UserControl_Workstation_Time_Bonus_And_Custom.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_UserControl_Workstation_Time_Bonus_And_Custom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Account_Method.cs" />
+    <Compile Include="MythicalCafe_BackEnd_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Main.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Main_Method.cs" />
+    <Compile Include="MythicalCafe_BackEnd_Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Settings.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_SerialPort_RadioFrequency.cs" />
+    <Compile Include="MythicalCafe_BackEnd_Account_Manage_List_Property_Information_Time.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Account_Manage_List_Property_Information_Time.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Account_Manage_List_Property_Information_Time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Workstation_Client.cs" />
+    <Compile Include="MythicalCafe_BackEnd_Workstation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Workstation.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Workstation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Workstation_InternetProtocol_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Workstation_InternetProtocol_List.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Workstation_InternetProtocol_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Workstation_Manage_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Workstation_Manage_List.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Workstation_Manage_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Dialog.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Workstation_Manage_List_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Workstation_Manage_List_Dialog.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_Workstation_Manage_List_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_Account_Customer_Manage_List_Method.cs" />
+    <Compile Include="MythicalCafe_BackEnd_Workstation_Manage_List_Method.cs" />
+    <Compile Include="MythicalCafe_BackEnd_Workstation_Method.cs" />
+    <Compile Include="MythicalCafe_BackEnd_Workstation_Server.cs" />
+    <Compile Include="MythicalCafe_SelectablePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd.cs" />
+    <Compile Include="potaenaaa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="potaenaaa.Designer.cs">
+      <DependentUpon>potaenaaa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MythicalCafe_Control_Propety.cs" />
+    <Compile Include="MythicalCafe_BackEnd_UserControl_Workstation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_UserControl_Workstation.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_UserControl_Workstation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_UserControl_Workstation_More_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_BackEnd_UserControl_Workstation_More_Dialog.Designer.cs">
+      <DependentUpon>MythicalCafe_BackEnd_UserControl_Workstation_More_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Account_Manage_List_Dialog.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Account_Manage_List_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Account.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Account_Customer_Manage_List.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Account_Customer_Manage_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Account_Position_Manage_List.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Account_Position_Manage_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Account_Staff_List.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Account_Staff_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Account_Staff_Manage_List.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Account_Staff_Manage_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Account_Staff_Manage_Payroll.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Account_Staff_Manage_Payroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Account_Staff_Manage_Payroll_Payslip.rdlc" />
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Account_Staff_Manage_Payroll_Payslip.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Account_Staff_Manage_Payroll_Payslip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Login.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Log_List.rdlc" />
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Log_List.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Log_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Product_Category_Manage_List.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Product_Category_Manage_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Product.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Product_Category_Manage_List_Dialog.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Product_Category_Manage_List_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Product_List.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Product_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Product_Manage_List.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Product_Manage_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Product_Manage_List_Dialog.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Product_Manage_List_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Product_Order_List.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Product_Order_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Product_Order_Manage_List.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Product_Order_Manage_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Report.rdlc" />
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Report.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Settings_Time_Warning.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Settings_Time_Warning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_UserControl_Workstation_Time_Bonus_And_Custom.resx">
+      <DependentUpon>MythicalCafe_BackEnd_UserControl_Workstation_Time_Bonus_And_Custom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Main.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Settings.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Account_Manage_List_Property_Information_Time.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Account_Manage_List_Property_Information_Time.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Workstation.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Workstation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Workstation_InternetProtocol_List.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Workstation_InternetProtocol_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Workstation_Manage_List.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Workstation_Manage_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Dialog.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_Workstation_Manage_List_Dialog.resx">
+      <DependentUpon>MythicalCafe_BackEnd_Workstation_Manage_List_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="potaenaaa.resx">
+      <DependentUpon>potaenaaa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_UserControl_Workstation.resx">
+      <DependentUpon>MythicalCafe_BackEnd_UserControl_Workstation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_BackEnd_UserControl_Workstation_More_Dialog.resx">
+      <DependentUpon>MythicalCafe_BackEnd_UserControl_Workstation_More_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MythicalCafe_BackEnd_DataSet.xsc">
+      <DependentUpon>MythicalCafe_BackEnd_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MythicalCafe_BackEnd_DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MythicalCafe_BackEnd_DataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MythicalCafe_BackEnd_DataSet.xss">
+      <DependentUpon>MythicalCafe_BackEnd_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Binarymission.WinForms.Controls.BinaryButtonSuite, Version=2.1.258.0, Culture=neutral, PublicKeyToken=5cb4c20959280c09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MythicalCafe_Libraries\Binarymission.WinForms.Controls.BinaryButtonSuite.dll</HintPath>
+    </Reference>
+    <Reference Include="Binarymission.WinForms.Controls.BinaryComboBox, Version=7.5.0.0, Culture=neutral, PublicKeyToken=5cb4c20959280c09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MythicalCafe_Libraries\Binarymission.WinForms.Controls.BinaryComboBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Binarymission.WinForms.Controls.BinaryDatePicker, Version=2.2.0.0, Culture=neutral, PublicKeyToken=5cb4c20959280c09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MythicalCafe_Libraries\Binarymission.WinForms.Controls.BinaryDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Binarymission.WinForms.Controls.BinaryMenuItem, Version=2.1.258.0, Culture=neutral, PublicKeyToken=a2b7eee90a027d01, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MythicalCafe_Libraries\Binarymission.WinForms.Controls.BinaryMenuItem.dll</HintPath>
+    </Reference>
+    <Reference Include="Binarymission.WinForms.Controls.BinaryToolTip">
+      <HintPath>..\..\MythicalCafe_Libraries\Binarymission.WinForms.Controls.BinaryToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Binarymission.WinForms.Controls.ModernChromeWindow, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4cfe5bcc18b7a89e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MythicalCafe_Libraries\Binarymission.WinForms.Controls.ModernChromeWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="Binarymission.WinForms.Controls.ScrollBars, Version=1.0.0.0, Culture=neutral, PublicKeyToken=800c063458506e41, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MythicalCafe_Libraries\Binarymission.WinForms.Controls.ScrollBars.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\custom\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Gma.System.MouseKeyHook">
+      <HintPath>..\custom\Gma.System.MouseKeyHook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Mocean, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mocean.Csharp.Client.1.0.2.1\lib\Mocean.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\custom\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Client">
+      <HintPath>..\custom\NuGet.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Common">
+      <HintPath>..\custom\NuGet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.ContentModel">
+      <HintPath>..\custom\NuGet.ContentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Frameworks">
+      <HintPath>..\custom\NuGet.Frameworks.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Packaging">
+      <HintPath>..\custom\NuGet.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Packaging.Core">
+      <HintPath>..\custom\NuGet.Packaging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Packaging.Core.Types">
+      <HintPath>..\custom\NuGet.Packaging.Core.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Repositories">
+      <HintPath>..\custom\NuGet.Repositories.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.RuntimeModel">
+      <HintPath>..\custom\NuGet.RuntimeModel.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Versioning">
+      <HintPath>..\custom\NuGet.Versioning.dll</HintPath>
+    </Reference>
+    <Reference Include="RJCP.SerialPortStream">
+      <HintPath>..\custom\RJCP.SerialPortStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon_emoji_cat.ico" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\png_Account_FFFFFF.png" />
+    <Content Include="Resources\png_ArrowUp_FFFFFF.png" />
+    <None Include="Resources\png_Workstation_FFFFFF.png" />
+    <None Include="Resources\png_Logout_FFFFFF.png" />
+    <None Include="Resources\png_Setting_FFFFFF.png" />
+    <None Include="Resources\png_Product_FFFFFF.png" />
+    <None Include="Resources\png_Check_FFFFFF.png" />
+    <None Include="Resources\png_Male.png" />
+    <None Include="Resources\png_Female.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

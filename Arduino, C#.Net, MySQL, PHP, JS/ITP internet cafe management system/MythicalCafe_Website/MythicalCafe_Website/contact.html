@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ITP &mdash; Internet Cafe Management System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="import" href="GeneralSession_SystemAssets_CSS,HTML/control.html"/>
+    
+  </head>
+  
+  <body style="pointer-events: auto;">
+
+  <div class="preloadPage" id="preloadPage" style="display: block;">
+    <div class="loader" style="position: fixed; top: 50%; left: 50%; margin-top: -60px; margin-left: -60px;"></div>
+  </div>
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <div id="get_WebsiteHeader"></div>    
+
+    <div class="site-section site-hero inner">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-10">
+            <span class="d-block mb-3 caption" data-aos="fade-up">Get In Touch</span>
+            <h1 class="d-block mb-4" data-aos="fade-up" data-aos-delay="100">Contact Us</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" data-aos="fade-up">
+
+            <form id="form_Inquire">                        
+
+              <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="" for="get_InquirerFirstName">First Name</label>
+                  <input type="text" name="get_InquirerFirstName" id="get_InquirerFirstName" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <label class="" for="get_InquirerLastName">Last Name</label>
+                  <input type="text" name="get_InquirerLastName" id="get_InquirerLastName" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="" for="get_InquirerEmailAddress">Email</label> 
+                  <input type="email" name="get_InquirerEmailAddress" id="get_InquirerEmailAddress" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="" for="get_InquirerSubject">Subject</label> 
+                  <input type="subject" name="get_InquirerSubject" id="get_InquirerSubject" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="" for="get_InquirerMessage">Message</label> 
+                  <textarea name="message" name="get_InquirerMessage" id="get_InquirerMessage" cols="30" rows="7" class="form-control"></textarea>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <a class="btn btn-primary py-2 px-4 text-white modalButton"  href="#" id="btn_SendMessage">Send Message</a>
+                  
+                </div>
+              </div>            
+
+  
+            </form>
+          </div>
+          <div class="col-md-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            <div class="p-4 mb-3">
+              <p class="mb-0 font-weight-bold text-secondary text-uppercase mb-3">Address</p>
+              <p class="mb-4">109 Samson Rd, Caloocan, 1400 Metro Manila</p>
+
+              <p class="mb-0 font-weight-bold text-secondary text-uppercase mb-3">Phone</p>
+              <p class="mb-4"><a href="#">09123456789</a></p>
+
+              <p class="mb-0 font-weight-bold text-secondary text-uppercase mb-3">Email Address</p>
+              <p class="mb-0"><a href="#">itpXD@sti.com</a></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="site-section" data-aos="fade">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-lg-4 mb-5">
+            <div class="site-section-heading">
+              <h2 class="text-center">Testimonials</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-one-item home-slider owl-carousel">
+          
+          <div class="row justify-content-center">
+
+            <div class="testimony text-center col-md-5">
+              <figure>
+                <img src="images/person_1.jpg" alt="Image" class="img-fluid">
+              </figure>
+              <blockquote>
+                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem alias reprehenderit error quidem aliquam ad minus, veritatis modi.&rdquo;</p>
+                <p class="author">&mdash; Emely Peters</p>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+           <div class="testimony text-center col-md-5">
+              <figure>
+                <img src="images/person_2.jpg" alt="Image" class="img-fluid">
+              </figure>
+              <blockquote>
+                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem alias reprehenderit error quidem aliquam ad minus, veritatis modi.&rdquo;</p>
+                <p class="author">&mdash; Alex Anchors</p>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="testimony text-center col-md-5">
+              <figure>
+                <img src="images/person_3.jpg" alt="Image" class="img-fluid">
+              </figure>
+              <blockquote>
+                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem alias reprehenderit error quidem aliquam ad minus, veritatis modi.&rdquo;</p>
+                <p class="author">&mdash; Aaron Thomas</p>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="testimony text-center col-md-5">
+              <figure>
+                <img src="images/person_1.jpg" alt="Image" class="img-fluid">
+              </figure>
+              <blockquote>
+                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem alias reprehenderit error quidem aliquam ad minus, veritatis modi.&rdquo;</p>
+                <p class="author">&mdash; Emely Peters</p>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+           <div class="testimony text-center col-md-5">
+              <figure>
+                <img src="images/person_2.jpg" alt="Image" class="img-fluid">
+              </figure>
+              <blockquote>
+                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem alias reprehenderit error quidem aliquam ad minus, veritatis modi.&rdquo;</p>
+                <p class="author">&mdash; Alex Anchors</p>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="testimony text-center col-md-5">
+              <figure>
+                <img src="images/person_3.jpg" alt="Image" class="img-fluid">
+              </figure>
+              <blockquote>
+                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem alias reprehenderit error quidem aliquam ad minus, veritatis modi.&rdquo;</p>
+                <p class="author">&mdash; Aaron Thomas</p>
+              </blockquote>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+        
+      </div>
+    </div>
+    
+      
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <h2 class="footer-heading text-uppercase mb-4">About Developers</h2>
+            <p>We are composed of Students that currently enrolled in STI Caloocan.</p>
+          </div>
+          <div class="col-md-3 ml-auto">
+            <h2 class="footer-heading text-uppercase mb-4">Quick Links</h2>
+            <ul class="list-unstyled">
+              <li><a href="about.html">About Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h2 class="footer-heading text-uppercase mb-4">Connect with Us</h2>
+            <p>
+              <a href="https://www.facebook.com/" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+              <a href="https://www.twitter.com/" class="p-2"><span class="icon-twitter"></span></a>
+              <a href="https://www.youtube.com/" class="p-2"><span class="icon-youtube"></span></a>
+              <a href="https://www.instagram.com/" class="p-2"><span class="icon-instagram"></span></a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          
+            <div class="col-md-12 text-center">
+              <div class="border-top pt-5">
+              <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </div> 
+
+  <div id = "get_ModalSignIn"></div>
+  <div id = "get_ModalLoading"></div>
+  <div id = "get_ModalMessageBox"></div>
+    
+  </body>
+</html>

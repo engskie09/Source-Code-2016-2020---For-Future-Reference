@@ -1,0 +1,406 @@
+<link rel="stylesheet" href="../fonts/icomoon/style.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/magnific-popup.css">
+<link rel="stylesheet" href="../css/jquery-ui.css">
+<link rel="stylesheet" href="../css/owl.carousel.min.css">
+<link rel="stylesheet" href="../css/owl.theme.default.min.css">
+<link rel="stylesheet" href="../css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="../fonts/flaticon/font/flaticon.css">
+<link rel="stylesheet" href="../css/aos.css">
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="stylesheet" href="../GeneralSession_SystemAssets_CSS,HTML/style.css">
+<script src="../GeneralSession_SystemMethods_PHP,JS/jquery-3.3.1.min.js"></script>
+<script src="../GeneralSession_SystemMethods_PHP,JS/jquery.cookie.js"></script>
+
+
+<script src="../js/jquery-migrate-3.0.1.min.js"></script>
+<script src="../js/jquery-ui.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/jquery.stellar.min.js"></script>
+<script src="../js/jquery.countdown.min.js"></script>
+<script src="../js/jquery.magnific-popup.min.js"></script>
+<script src="../js/bootstrap-datepicker.min.js"></script>
+<script src="../js/aos.js"></script>
+<script src="../js/main.js"></script>
+
+
+<script src="../GeneralSession_SystemMethods_PHP,JS/SystemMethods_GeneralSession.js"></script>
+<script src="../GeneralSession_SystemMethods_PHP,JS/classie.js"></script>
+
+<script type="text/javascript">
+
+	var get_DomainName = '/ITPwebsiteXD/'
+
+	window.onload = function()
+	{
+		var get_CurrentWindowLocationPathName = window.location.pathname;
+
+		//Change this condition when changing a Domain Name.
+		if (get_CurrentWindowLocationPathName == get_DomainName)
+		{
+			window.location = get_CurrentWindowLocationPathName + 'index.html';
+			return false;
+		}			
+
+
+		if($.cookie('user_SessionID') == null || $.cookie('user_SessionID') == 'null')
+		{			
+			set_Controls('Inactive', '');			
+		}
+
+		else
+		{
+			get_user_information('user_Cookie');										
+		}
+
+		var get_Timeout = setTimeout(function()
+		{			
+			set_ButtonClick();
+			set_Classie();
+			$('#preloadPage').css('display', 'none');
+			
+		},500);
+
+
+	}		
+
+	function set_Controls(set_SessionStatus, set_WebsiteHeaderUserName)
+	{
+		var get_CurrentWindowLocationPathName = window.location.pathname;	
+		
+		if (get_CurrentWindowLocationPathName.includes('index.html') || get_CurrentWindowLocationPathName.includes('about.html') || get_CurrentWindowLocationPathName.includes('contact.html'))
+		{					
+
+			$('#get_ModalSignIn').load('GeneralSession_SystemAssets_CSS,HTML/control.html #set_ModalSignIn');	
+			$('#get_ModalLoading').load('GeneralSession_SystemAssets_CSS,HTML/control.html #set_ModalLoading');	
+			$('#get_ModalMessageBox').load('GeneralSession_SystemAssets_CSS,HTML/control.html #set_ModalMessageBox');	
+
+			$('#get_WebsiteHeader').load('GeneralSession_SystemAssets_CSS,HTML/control.html #set_WebsiteHeader');
+			
+			var get_Interval = setInterval(function()
+			{	
+				
+				var get_WebsiteHeaderUL = $('#get_WebsiteHeader ul').load('GeneralSession_SystemAssets_CSS,HTML/control.html #set_WebsiteHeader nav li, #set_WebsiteHeaderProfileSession' + set_SessionStatus + ' li', function()
+					{
+						if (get_CurrentWindowLocationPathName.includes('index.html'))
+						{	
+							$('header #get_WebsiteHeaderIndex').addClass('active');			
+						}		
+
+						else if (get_CurrentWindowLocationPathName.includes('about.html'))
+						{
+							$('header #get_WebsiteHeaderAboutUs').addClass('active');
+						}		
+
+						else if (get_CurrentWindowLocationPathName.includes('contact.html'))
+						{
+							$('header #get_WebsiteHeaderContact').addClass('active');
+						}
+
+						$('header #get_WebsiteHeaderUserName a').text(set_WebsiteHeaderUserName);
+
+						
+
+						clearInterval(get_Interval);
+					});				
+
+			}, 100);
+
+
+		}
+
+		
+		
+	}	
+
+	var get_seconds;
+
+	function timer_countdown() 
+	{
+	    get_seconds = get_seconds - 1;
+	    if (get_seconds < 0) 
+	    {  
+	        
+	    } 
+	    else 
+	    {     
+		    $('#countdown').innerHTML = get_seconds;	
+
+		    window.setTimeout('timer_countdown()', 1000);
+	    }
+	}
+
+	function set_Loading(set_CurrentModal)
+	{	
+		$('#'+set_CurrentModal).modal('hide');
+		$('#modal_Loading').modal('show');	
+	}
+
+	function set_MessageBox(set_Action, set_MessageBoxMessage, set_ControlButtonID, set_ControlOnclick)
+	{	
+		$('#modal_Loading').modal('hide');
+		$('#modal_MessageBox').modal('toggle');	
+
+		$('#modal_MessageBoxMessage').text(set_MessageBoxMessage);
+
+		set_MessageBoxButtonID(set_ControlButtonID, set_ControlOnclick);
+	}
+
+	//current programming
+	function set_MessageBoxButtonID(set_ControlButtonID, set_ControlOnclick)
+	{		
+		$('.set_MessageBoxButton').attr('id', set_ControlButtonID);
+		$('.set_MessageBoxButton').attr('onclick', set_ControlOnclick);
+
+		//alert(set_ControlID);
+	}
+
+	function set_MessageBoxButton(control, set_CurrentControl)
+	{
+		$('#modal_MessageBox').modal('toggle');
+
+		if (set_CurrentControl == 'btn_ShowModal_SignIn')
+		{
+			$('#modal_SignIn').modal('show');
+		}
+	}
+
+	function set_ModalShowHide(set_hideModalID, set_showModalID)
+	{
+		var get_hideModal = $('#' + set_hideModalID);
+		var get_showModal = $('#' + set_showModalID);
+
+		get_hideModal.modal('hide');
+		get_showModal.modal('show');
+
+	}
+
+	
+	function set_Classie()
+	{
+		// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+		if (!String.prototype.trim) {
+			(function() {
+				// Make sure we trim BOM and NBSP
+				var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+				String.prototype.trim = function() {
+					return this.replace(rtrim, '');
+				};
+			})();
+		}
+
+		[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+			// in case the input is already filled..
+			if( inputEl.value.trim() !== '' ) {
+				classie.add( inputEl.parentNode, 'input--filled' );
+			}
+
+			// events:
+			inputEl.addEventListener( 'focus', onInputFocus );
+			inputEl.addEventListener( 'blur', onInputBlur );
+		} );
+
+		function onInputFocus( ev ) {
+			classie.add( ev.target.parentNode, 'input--filled' );
+		}
+
+		function onInputBlur( ev ) {
+			if( ev.target.value.trim() === '' ) {
+				classie.remove( ev.target.parentNode, 'input--filled' );
+			}
+		}
+	};
+		
+
+
+
+
+</script>
+
+
+<control id = "set_ModalSignIn">
+
+	<div class="modal fade" id="modal_SignIn">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+				  <div style="font-weight: bold; font-size: 250%; color: white; margin: auto;">Sign In</div>
+				</div>        
+				<div class="modal-body" >
+					<center>
+						<div style="font-style: bold; font-size: 150%;">Enter Your credentials.</div>
+						<form id = "form_SignIn" style="font-size: 125%;">
+
+							<div class="row form-group">
+								<div class="col-md-12">						
+
+									<span class="input input--haruki">										
+										<input type="text" class="input__field input__field--haruki" name="get_UserName" id="get_UserName" maxlength ="5"/>		
+										<label class="input__label input__label--haruki" for="get_UserName">
+											<span class="input__label-content input__label-content--haruki">Username</span>
+										</label>	
+									</span>
+
+								</div>
+							</div>						
+
+							<div class="row form-group">
+								<div class="col-md-12">						
+
+									<span class="input input--haruki">										
+										<input type="text" class="input__field input__field--haruki" name="get_UserPassword" id="get_UserPassword" maxlength ="5"/>		
+										<label class="input__label input__label--haruki" for="get_UserPassword">
+											<span class="input__label-content input__label-content--haruki">Password</span>
+										</label>	
+									</span>
+
+								</div>
+							</div>
+						</form>
+
+					</center>         
+				</div>
+				<div class="modal-footer">
+				  <a class ="modalButton" href="#" id="btn_SignIn">Sign in</a>
+				  <a class ="modalButton" href="#" data-dismiss="modal">Close</a>
+				</div>
+			</div>      
+		</div>
+	</div>
+
+</control>
+
+<control id = "set_ModalLoading">
+
+	<div class="modal fade" id="modal_Loading">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+				  <div style="font-weight: bold; font-size: 250%; color: white; margin: auto;">...Loading...</div>
+				</div>        
+				<div class="modal-body" >
+				  <center>
+				    <div class="loader"></div>
+				    <div id = "countdown"></div>
+				  </center>         
+				</div>
+				<div class="modal-footer">          
+				</div>
+			</div>      
+		</div>
+	</div>
+
+</control>
+
+<control id="set_ModalMessageBox">
+
+<div class="modal fade" id="modal_MessageBox">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+			  <div style="font-weight: bold; font-size: 250%; color: white; margin: auto;">Message</div>
+			</div>        
+			<div class="modal-body" >
+			  <center>
+			    <p id="modal_MessageBoxMessage" style = "font-size: 150%;"></p>
+			  </center>         
+			</div>
+			<div class="modal-footer">
+			  <a class ="modalButton set_MessageBoxButton" href="#" id="btn_ModalMessageBox" >Back</a>
+			  <a class ="modalButton" href="#" data-dismiss="modal">Close</a>
+			</div>
+		</div>      
+	</div>
+</div>
+</control>
+
+<control id="set_WebsiteHeader">
+
+	<div class="site-mobile-menu">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close mt-3">
+			<span class="icon-close2 js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body">
+			<div class="site-mobile-menu-body">
+				<ul class="site-nav-wrap">
+					<li id=""><a href="index.html">Home</a></li>
+					<li id=""><a href="about.html">About Us</a></li>
+					<li id=""><a href="contact.html">Contacts</a></li>
+				</ul>
+			</div>
+		</div>
+    </div>
+	<header class="site-navbar py-3" role="banner">
+
+      <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-11 col-xl-2">
+            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">Internet<span class="text-primary">Cafe</span> </a></h1>
+            </div>
+              <div class="col-12 col-md-10 d-none d-xl-block">
+                <nav class="site-navigation position-relative text-right" role="navigation">
+                  <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                    <li id="get_WebsiteHeaderIndex"><a href="index.html">Home</a></li>
+                    <li id="get_WebsiteHeaderAboutUs"><a href="about.html">About Us</a></li>
+                    <li id="get_WebsiteHeaderContact"><a href="contact.html">Contacts</a></li>
+                    <li id="get_WebsiteHeaderForum"><a href="#">Forums</a></li> 
+                  </ul>
+                </nav>
+              </div>
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+          </div>
+      </div>
+      
+    </header>
+</control>
+
+<control id="set_WebsiteHeaderProfileSessionInactive">
+
+	<li id="get_WebsiteHeaderRegister" class="cta"><a href="#">Sign Up</a></li>
+    <li id="get_WebsiteHeaderSignIn" class="cta"><a href="#" data-toggle="modal" data-target="#modal_SignIn">Already a Member? Sign in</a></li>  
+	
+</control>
+
+<control id="set_WebsiteHeaderProfileSessionActive">
+
+	<li id="get_WebsiteHeaderUserName" class="cta"><a class="btn_DashBoard" href="#">UserName</a></li>
+	<!--<li id="get_WebsiteHeaderMyAccount" class="cta"><a href="#">My Account</a></li>-->
+    <li id="get_WebsiteHeaderSignOut" class="cta"><a class="btn_SignOut" href="#" data-toggle="modal">Sign Out</a></li>
+        
+</control>
+
+					
+
+
+<control>
+	
+</control>
+
+<control>
+	
+</control>
+
+<control>
+	
+</control>
+
+<control>
+	
+</control>
+
+<control>
+	
+</control>
+
+<control>
+	
+</control>
+
+<control>
+	
+</control>

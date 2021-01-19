@@ -1,0 +1,78 @@
+<header class="clearfix md-whiteframe-z1">
+
+<div class="top-nav">
+
+
+
+
+
+<ul class="nav-button pull-right list-unstyled" ng-controller="RightNavbarCtrl">
+    <li>
+        <a md-ink-ripple="#bbb" ng-click="toggleRightNavbar()" href="javascript:;" class="">
+          <md-icon class="color-primary" md-svg-src="dist/img/icons/ic_format_align_right_24px.svg"></md-icon>
+        </a>
+    </li>
+</ul>
+
+<ul class="nav-button pull-right list-unstyled">
+
+    <li class="dropdown text-small nav-profile">
+        <a md-ink-ripple="#bbb" href="javascript:;" class="dropdown-toggle text-muted" data-toggle="dropdown" aria-expanded="false">
+            <span class="nav-profile__welcome-text"><i class="fa fa-angle-down"></i>&nbsp; Welcome John Doe &nbsp; </span><img src="dist/images/user.png" alt="" class="img30_30">
+        </a>
+
+        <div class="dropdown-menu pull-right panel panel-default">
+
+            <ul class="list-group">
+
+                <li class="list-group-item--header">
+                  Profile settings
+                </li>
+
+                <li class="list-group-item">
+                    <a href="#/pages/profile">
+
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#/tasks">
+
+                        <span>Tasks</span>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#/contact">
+
+                    <span>Contact</span>
+                  </a>
+                </li>
+
+            </ul>
+            <div class="panel-footer">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <a href="#/pages/lock-screen">
+                    <md-icon class="color-warning" md-svg-src="dist/img/icons/ic_lock_48px.svg"></md-icon>
+                    <span>Lock</span>
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#/pages/signin">
+                    <md-icon class="color-danger" md-svg-src="dist/img/icons/ic_exit_to_app_24px.svg"></md-icon>
+                    <span>Log out</span>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+        </div>
+    </li>
+
+</ul>
+
+</div>
+
+</header>
+
+

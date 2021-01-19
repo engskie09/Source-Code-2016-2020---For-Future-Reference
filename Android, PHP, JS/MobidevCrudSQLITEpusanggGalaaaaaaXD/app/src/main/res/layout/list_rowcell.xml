@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_regid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DADSDSDSDS"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:padding="5dp"
+        android:textStyle="bold"
+     />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DADSDcSDSDS"
+        android:textColor="@color/blue"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_below="@+id/tv_regid"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DADSDSDSDcS"
+        android:textColor="@color/blue"
+        android:padding="5dp"
+        android:layout_below="@+id/tv_name"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DADSDSDSDS"
+        android:textColor="@color/blue"
+        android:padding="5dp"
+        android:layout_below="@+id/tv_email"
+        android:gravity="center"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DADSDSDSDS"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:padding="5dp"
+        android:layout_below="@+id/tv_address"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
+</RelativeLayout>

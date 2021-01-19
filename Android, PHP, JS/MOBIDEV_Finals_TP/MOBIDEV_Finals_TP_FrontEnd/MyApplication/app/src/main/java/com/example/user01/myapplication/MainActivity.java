@@ -1,0 +1,52 @@
+package com.example.user01.myapplication;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity {
+
+    // Array of strings for ListView Title
+    String[] listviewTitle = new String[]{
+            "ListView Title 1", "ListView Title 2", "ListView Title 3", "ListView Title 4",
+            "ListView Title 5", "ListView Title 6", "ListView Title 7", "ListView Title 8",
+    };
+
+
+    int[] listviewImage = new int[]{
+            R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background,
+            R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background, R.drawable.ic_launcher_background,
+    };
+
+    String[] listviewShortDescription = new String[]{
+            "paeng1", "paeng2", "paeng3", "paeng4", "paeng5", "paeng6", "paeng7", "paeng8",
+    };
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        List<HashMap<String, String>> aList = new ArrayList<HashMap<String, String  >>();
+
+        for (int i = 0; i < 8; i++) {
+            HashMap<String, String> hm = new HashMap<String, String>();
+            hm.put("listview_title", listviewTitle[i]);
+            hm.put("listview_discription", listviewShortDescription[i]);
+            hm.put("listview_image", Integer.toString(listviewImage[i]));
+            aList.add(hm);
+        }
+
+        String[] from = {"listview_image", "listview_title", "listview_discription"};
+        int[] to = {R.id.listview_image, R.id.listview_item_title, R.id.listview_item_short_description};
+
+        SimpleAdapter simpleAdapter = new SimpleAdapter(getBaseContext(), aList, R.layout.listview_activity, from, to);
+        ListView androidListView = (ListView) findViewById(R.id.list_view);
+        androidListView.setAdapter(simpleAdapter);
+    }
+}

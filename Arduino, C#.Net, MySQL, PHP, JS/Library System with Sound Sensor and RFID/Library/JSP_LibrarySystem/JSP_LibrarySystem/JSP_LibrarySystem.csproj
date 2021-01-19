@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F36832A-FE40-4C6C-89B0-FDF414DADD06}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JSP_LibrarySystem</RootNamespace>
+    <AssemblyName>JSP_LibrarySystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminSession_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSession_Main.Designer.cs">
+      <DependentUpon>AdminSession_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSession_MyAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSession_MyAccount.Designer.cs">
+      <DependentUpon>AdminSession_MyAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSession_Staff%28Management%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSession_Staff%28Management%29.Designer.cs">
+      <DependentUpon>AdminSession_Staff%28Management%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox_AddBorrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox_AddBorrow.Designer.cs">
+      <DependentUpon>DialogBox_AddBorrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox_RemoveBorrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox_RemoveBorrow.Designer.cs">
+      <DependentUpon>DialogBox_RemoveBorrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox_ReturnBorrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox_ReturnBorrow.Designer.cs">
+      <DependentUpon>DialogBox_ReturnBorrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralSession_AttendanceMonitoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralSession_AttendanceMonitoring.Designer.cs">
+      <DependentUpon>GeneralSession_AttendanceMonitoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralSession_BorrowReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralSession_BorrowReturn.Designer.cs">
+      <DependentUpon>GeneralSession_BorrowReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralSession_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralSession_Login.Designer.cs">
+      <DependentUpon>GeneralSession_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralSession_NoiseMonitoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralSession_NoiseMonitoring.Designer.cs">
+      <DependentUpon>GeneralSession_NoiseMonitoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralSession_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralSession_Report.Designer.cs">
+      <DependentUpon>GeneralSession_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaffSessionMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffSessionMain.Designer.cs">
+      <DependentUpon>StaffSessionMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENT_MANAGEMENTcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STUDENT_MANAGEMENTcs.Designer.cs">
+      <DependentUpon>STUDENT_MANAGEMENTcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemMethods_AdminSession.cs" />
+    <Compile Include="SystemMethods_GeneralSession.cs" />
+    <EmbeddedResource Include="AdminSession_Main.resx">
+      <DependentUpon>AdminSession_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSession_MyAccount.resx">
+      <DependentUpon>AdminSession_MyAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSession_Staff%28Management%29.resx">
+      <DependentUpon>AdminSession_Staff%28Management%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox_AddBorrow.resx">
+      <DependentUpon>DialogBox_AddBorrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox_RemoveBorrow.resx">
+      <DependentUpon>DialogBox_RemoveBorrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox_ReturnBorrow.resx">
+      <DependentUpon>DialogBox_ReturnBorrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralSession_AttendanceMonitoring.resx">
+      <DependentUpon>GeneralSession_AttendanceMonitoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralSession_BorrowReturn.resx">
+      <DependentUpon>GeneralSession_BorrowReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralSession_Login.resx">
+      <DependentUpon>GeneralSession_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralSession_NoiseMonitoring.resx">
+      <DependentUpon>GeneralSession_NoiseMonitoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralSession_Report.resx">
+      <DependentUpon>GeneralSession_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StaffSessionMain.resx">
+      <DependentUpon>StaffSessionMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STUDENT_MANAGEMENTcs.resx">
+      <DependentUpon>STUDENT_MANAGEMENTcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solid-red-fabric-Robert-Kaufman-USA-Red-179485-1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lightoff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lighton.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

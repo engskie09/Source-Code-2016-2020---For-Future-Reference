@@ -1,0 +1,147 @@
+.main
+{
+	background: rgb(104,147,238); 
+	background-image: linear-gradient(lightgreen, white);
+	/*background: linear-gradient(128deg, rgba(104,147,238,1) 0%, rgba(168,194,251,1) 33%, rgba(208,223,255,1) 100%);*/
+	background-repeat:no-repeat;
+	background-size:cover;
+	height: 100vh;
+}
+
+.Table tr td
+{
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+
+.ButtonModal
+{
+	
+	background-color: rgba(68, 172, 225,.5);
+	font-family: Courier;
+	text-decoration: none; 	
+	position: relative;
+	transition: 0.5s;
+	overflow: hidden;
+
+}
+
+.ButtonModal:Focus
+{
+	outline: none;
+}
+
+.ButtonModal:Before
+{
+	content: '';
+	display: block;
+	position: absolute;
+	background: rgba(255,255,255,.5);
+	width: 60px;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: .5s;
+	filter: blur(50px);
+	transform: translateX(-130px) skewX(-15deg);
+}
+
+.ButtonModal:After
+{
+	content: '';
+	display: block;
+	position: absolute;
+	background: rgba(255,255,255,.2);
+	width: 30px;
+	height: 100%;
+	left: 30px;
+	top: 0;
+	opacity: 0;
+	filter: blur(30px);
+	transform: translate(-100px) scaleX(-15deg);
+}
+
+.ButtonModal:Hover
+{
+	background: #0000;
+	cursor: pointer;
+}
+
+.ButtonModal:hover:before
+{
+	transform: translateX(300px) skewX(-15deg);
+	opacity: .6;
+	transition: .7s;
+}
+
+.ButtonModal:Hover:after
+{
+	transform: translateX(300px) skewX(-15deg);
+	opacity: 1;
+	transition: .7s;
+}
+
+.main-nav * 
+{
+	padding:0; margin:0;
+}
+.main-nav a 
+{
+	text-decoration: none;
+}		
+/* Navigation STyling */
+
+.main-nav a 
+{
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: #FFF;
+	display: block;
+	padding: 10px 0 10px 20px;
+	border-bottom: 1px dotted gray;
+}
+.main-nav a:hover 
+{
+	background: linear-gradient(green, lightgreen);
+	color: white;
+}
+.main-nav-ul ul 
+{
+	display: none;
+}
+.main-nav-ul li:hover ul 
+{
+	display: block;
+}
+
+.main-nav-ul ul a:before 
+{
+	
+	margin-right: 20px;
+}
+
+.main-nav .sub-arrow:after 
+{
+
+	float: right;
+	margin-right: 20px;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+}
+
+.main-nav li:hover .sub-arrow:after 
+{
+	
+}
+
+.word-wrap 
+{
+	word-wrap: break-word;	
+}
+
+.TableForm tr td
+{
+	padding-top: 20px;
+}

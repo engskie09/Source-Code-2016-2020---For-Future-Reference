@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpSession"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/et_getUserLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Lastname"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/et_getUserMiddleName"
+        app:layout_constraintTop_toBottomOf="@+id/et_getUserMiddleName" />
+
+    <EditText
+        android:id="@+id/et_getUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_getUserPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/et_getUserName"
+        app:layout_constraintTop_toBottomOf="@+id/et_getUserName" />
+
+    <EditText
+        android:id="@+id/et_getUserFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Firstname"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/et_getUserPassword"
+        app:layout_constraintTop_toBottomOf="@+id/et_getUserPassword" />
+
+    <EditText
+        android:id="@+id/et_getUserMiddleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Middlename"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/et_getUserFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/et_getUserFirstName" />
+
+    <Button
+        android:id="@+id/btn_Signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_getUserLastName" />
+</android.support.constraint.ConstraintLayout>

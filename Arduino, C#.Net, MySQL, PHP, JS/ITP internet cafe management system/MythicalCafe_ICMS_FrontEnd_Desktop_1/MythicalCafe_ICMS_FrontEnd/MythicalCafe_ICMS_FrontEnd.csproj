@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{751A05F7-6616-4C2C-8F80-C8EBF3B21C2E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MythicalCafe_ICMS_FrontEnd</RootNamespace>
+    <AssemblyName>MythicalCafe_ICMS_FrontEnd</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon_emoji_kiki.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Binarymission.WinForms.Controls.BinaryComboBox, Version=7.5.0.0, Culture=neutral, PublicKeyToken=5cb4c20959280c09, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Library\Binarymission.WinForms.Controls.BinaryComboBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Binarymission.WinForms.Controls.BinaryMenuItem, Version=2.1.258.0, Culture=neutral, PublicKeyToken=a2b7eee90a027d01, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Library\Binarymission.WinForms.Controls.BinaryMenuItem.dll</HintPath>
+    </Reference>
+    <Reference Include="Binarymission.WinForms.Controls.ScrollBars, Version=1.0.0.0, Culture=neutral, PublicKeyToken=800c063458506e41, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Library\Binarymission.WinForms.Controls.ScrollBars.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Library\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Library\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Library\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Client, Version=4.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Library\NuGet.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Common, Version=4.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Library\NuGet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.ContentModel, Version=4.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Library\NuGet.ContentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Frameworks, Version=4.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Library\NuGet.Frameworks.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Packaging, Version=4.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Library\NuGet.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Packaging.Core, Version=4.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Library\NuGet.Packaging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Packaging.Core.Types, Version=4.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Library\NuGet.Packaging.Core.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Repositories, Version=4.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Library\NuGet.Repositories.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.RuntimeModel, Version=4.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Library\NuGet.RuntimeModel.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Versioning, Version=4.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Library\NuGet.Versioning.dll</HintPath>
+    </Reference>
+    <Reference Include="RJCP.SerialPortStream">
+      <HintPath>..\..\MythicalCafe_ICMS_BackEnd_Destop\custom\RJCP.SerialPortStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MythicalCafe_FrontEnd_Time_Extend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_Time_Extend.designer.cs">
+      <DependentUpon>MythicalCafe_FrontEnd_Time_Extend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_Account_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_Account_User.designer.cs">
+      <DependentUpon>MythicalCafe_FrontEnd_Account_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_Dialog.designer.cs">
+      <DependentUpon>MythicalCafe_FrontEnd_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_Control_Propety.cs" />
+    <Compile Include="MythicalCafe_FrontEnd_LockScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_LockScreen.Designer.cs">
+      <DependentUpon>MythicalCafe_FrontEnd_LockScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_Login.Designer.cs">
+      <DependentUpon>MythicalCafe_FrontEnd_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_SerialPort_RadioFrequency.cs" />
+    <Compile Include="MythicalCafe_FrontEnd_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_Main.Designer.cs">
+      <DependentUpon>MythicalCafe_FrontEnd_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MythicalCafe_FrontEnd_Main_Method.cs" />
+    <Compile Include="MythicalCafe_FrontEnd_Workstation_Server.cs" />
+    <Compile Include="MythicalCafe_FrontEnd.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MythicalCafe_FrontEnd_Time_Extend.resx">
+      <DependentUpon>MythicalCafe_FrontEnd_Time_Extend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_FrontEnd_Account_User.resx">
+      <DependentUpon>MythicalCafe_FrontEnd_Account_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_FrontEnd_Dialog.resx">
+      <DependentUpon>MythicalCafe_FrontEnd_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_FrontEnd_LockScreen.resx">
+      <DependentUpon>MythicalCafe_FrontEnd_LockScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_FrontEnd_Login.resx">
+      <DependentUpon>MythicalCafe_FrontEnd_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MythicalCafe_FrontEnd_Main.resx">
+      <DependentUpon>MythicalCafe_FrontEnd_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon_emoji_kiki.ico" />
+    <None Include="Resources\icon_Male.png" />
+    <None Include="Resources\icon_Female.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/kierby"></LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_setQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="20px"
+        android:background="@color/colorWhite"/>
+
+
+    <RadioGroup
+        android:id="@+id/rdgrp_getAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdbtn_getAnswerA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Answer A" />
+
+        <RadioButton
+            android:id="@+id/rdbtn_getAnswerB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer B" />
+
+
+
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rdbtn_getAnswerC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer C" />
+
+            <RadioButton
+                android:id="@+id/rdbtn_getAnswerD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer D" />
+
+
+    </RadioGroup>
+
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_Answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next" />
+
+</LinearLayout>

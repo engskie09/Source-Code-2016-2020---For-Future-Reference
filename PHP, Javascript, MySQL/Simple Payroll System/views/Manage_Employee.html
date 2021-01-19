@@ -1,0 +1,166 @@
+<div class="page-content" ng-init="set_ManageEmployee()">
+	
+	<div class="row">	
+
+		<header class="col-md-2" ng-include="'GeneralSession_SystemAssets_CSS-HTML/System_Header.html'"></header>
+
+		<div class="col-md-8">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="card-header">Employee Management</h3>
+							<br>
+							<div class="card" id ='dv_EmployeeList'>
+								<h5 class="card-header">Employee List</h5>
+								<div class="card-body">				
+									<table id="tbl_EmployeeInformation" class="display" style=" text-align: center; font-size: 20px;">
+										<thead>
+											<tr>
+												<th>Employee ID</th>
+												<th>Full Name</th>														
+												<th>Position</th>
+												<th>Contact Number</th>
+												<th>Action</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+											<td>Test 1 ID</td>
+											<td>Test 1 Full Name</td>
+											<td>Test 1 Position</td>
+											<td>Test 1 Contact Number</td>
+											<td>Test 1 Action</td>
+											</tr>								        
+										</tbody>
+									</table>											
+								</div>
+							</div>
+
+							<div class="card" id ='dv_EmployeeInformation'>
+								<h5 class="card-header">Add Employee</h5>
+								<div class="card-body">
+									
+									<form id="frm_EmployeeInformation">												
+										<h5 class="card-header">Personal Information</h5>
+										<br>
+										<input type="text" name="get_UserID" id="get_UserID" style="display: none;"></input>
+										<div class="form-group row">
+											<div class="col">
+												<input type="text" class="form-control" name="get_UserFirstName" id="get_UserFirstName" placeholder="First Name" required>
+											</div>	
+											<div class="col">
+												<input type="text" class="form-control" name="get_UserMiddleName" id="get_UserMiddleName" placeholder="Middle Name (Optional)">
+											</div>	
+											<div class="col">
+												<input type="text" class="form-control" name="get_UserLastName" id="get_UserLastName" placeholder="Last Name" required>	
+											</div>		
+										</div>
+
+										<div class="form-group row">
+											<div class="col">
+												<select class="form-control" name="get_UserPosition" id="get_UserPosition" required>
+													<option selected disabled>Select Position</option>
+													<option value="Admin">Admin</option>
+													<option value="Staff">Staff</option>
+												</select> 
+											</div>
+											<div class="col">
+												<input type="text" class="form-control" name="get_UserContactNumber" id="get_UserContactNumber" placeholder="Contact Number" required>	
+											</div>
+										</div>
+
+										<h5 class="card-header">Credential Information</h5>
+										<br>
+										<div class="form-group row">
+											<div class="col">
+												<input type="text" class="form-control" name="get_UserName" id="get_UserName" placeholder="Username" required>
+											</div>
+										</div>
+										<div class="form-group row">
+											<div class="col">				
+												<input type="password" class="form-control" name="get_UserPassword" id='get_UserPassword' placeholder="Password" required>
+											</div class="col">
+											<div class="col">				
+												<input type="password" class="form-control" name="get_UserConfirmPassword" id="get_UserConfirmPassword" placeholder="Confirm Password" required>
+											</div class="col">				
+										</div>
+										<button type="submit" class="btn btn-dark" name="btn_Action" id="btn_Action" value="btn_Action">Add Employee</button>								
+									</form>	
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="row">
+				<div class="col-md-12">				  			
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-2">
+			<div class="row">
+				<div class="card" style="width: 18rem;">	
+										
+					<h5 class="card-header">
+						<div id="set_CurrentDate"></div>
+						<br>
+						<div id="set_CurrentTime"></div>
+					</h5>
+
+					<div class="card-body">
+						<div class="form-group card-header">
+							<div class="col">
+								<h5 class="card-title" id="get_TotalEmployee">Total Employee: (Value)</h5>							
+								<button type="button" class="btn btn-dark" ng-click="Show_EmployeeList()">View Employee List</button>
+							</div>
+							<div class="col">
+								<br>									
+								<button type="button" class="btn btn-dark" ng-click="Show_frm_EmployeeInformation_insert()">Add Employee</button>
+							</div>
+						</div>
+						<br>
+						<br>
+						<div class="form-group card-header">
+							<div class="col">
+								<h5 class="card-title">Total Request: 10</h5>
+								<button type="button" class="btn btn-dark" id='btn_RequestList'>View Request List</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>		
+
+<script type="text/javascript">
+
+	/*nction show_frm_EmployeeInformation(set_UserID)
+	{
+		$('#dv_EmployeeInformation').show();
+		$('#dv_EmployeeList').hide();
+		
+		var get_JSON = JSON.parse(select_user_information('Select Specific', set_UserID.id));	
+	
+		$('#get_UserID').val(get_JSON[0]['user_ID']);
+		$('#get_UserFirstName').val(get_JSON[0]['user_FirstName']);
+		$('#get_UserMiddleName').val(get_JSON[0]['user_MiddleName']);
+		$('#get_UserLastName').val(get_JSON[0]['user_LastName']);
+		$('#get_UserPosition').val(get_JSON[0]['user_Position']);
+		$('#get_UserContactNumber').val(get_JSON[0]['user_ContactNumber']);
+		$('#get_UserName').val(get_JSON[0]['user_Name']);
+		$('#get_UserPassword').val(get_JSON[0]['user_Password']);
+		$('#get_UserConfirmPassword').val(get_JSON[0]['user_Password']);
+		$('#btn_Action').val('Update');
+		$('#btn_Action').text('Update Employee');
+	}*/
+	
+</script>

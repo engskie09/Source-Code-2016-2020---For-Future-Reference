@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	
+	<title>Practice System</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+	<link rel="import" href="GeneralSession_SystemAssets_CSS-HTML/control.html">
+	<script type="text/javascript" src="GeneralSession_SystemMethods_JS-PHP/app.js"></script>	
+</head>	
+	<body>
+		<div id="dv_loader" style="padding-top: 15%"><div class="loader"></div></div>
+		<div id="dv_body" style="display: block;">
+			<div class="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">	          
+							<div class="logo">
+								<h1><a href="index.html">Simple Payroll System</a></h1>
+							</div>
+						</div>	    
+					</div>
+				</div>
+			</div>
+
+			<ng-view>
+			
+			
+		</div>
+
+		<footer ng-include="'GeneralSession_SystemAssets_CSS-HTML/System_Footer.html'"></footer>
+	</body>
+</html>
+
+<script type="text/javascript">	
+
+
+
+</script>

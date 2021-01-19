@@ -1,0 +1,117 @@
+
+
+<!-- Imported Assets -->
+
+<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+<script type="text/javascript" src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="../GeneralSession_SystemAssets_JS-PHP/jquery-3.4.1.min.js"></script>
+
+<script type="text/javascript" src="../GeneralSession_SystemAssets_JS-PHP/jquery.validate.min.js"></script>
+
+<!-- Customed Assets -->
+
+<link rel="stylesheet" type="text/css" href="bbc.css">
+
+<script type="text/javascript" src="../GeneralSession_SystemAssets_JS-PHP/SystemMethods_GeneralSession.js"></script>
+
+
+<script type="text/javascript">
+	
+	window.onload = function()
+	{
+		check_session();		
+	}
+
+
+
+	function check_session()
+	{
+		$.ajax({
+
+			url: 'GeneralSession_SystemAssets_JS-PHP/SystemMethods_GeneralSession.php',
+			type: 'POST',
+			data: 'set_session=set_session',
+
+			success: function(response)
+			{
+				if(response != '')
+				{					
+					set_website_header('Active');					
+				}
+
+				else
+					set_website_header('InActive');
+			},
+
+			error: function(response)
+			{
+				alert('Ajax Error!!!');
+			}
+		});	
+		
+	}
+
+	function set_website_header(set_SessionStatus)
+	{
+		$('#get_WebsiteHeader').load('GeneralSession_SystemAssets_CSS-HTML/controls.html #set_WebsiteHeader');
+
+
+		var get_Interval = setInterval(function()
+		{
+			$('#get_WebsiteHeader ul').load('GeneralSession_SystemAssets_CSS-HTML/controls.html #set_WebsiteHeader nav li, #set_WebsiteHeader' + set_SessionStatus + ' li', function(){
+
+				clearInterval(get_Interval);
+			});
+		}, 100);
+		
+	}
+
+</script>
+
+
+<control id ="set_WebsiteHeader">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="#">PHP Exam</a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">					
+					<span class="navbar-toggler-icon"></span>				
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarResponsive">					
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="blog_home.html">Home</a>
+						</li>											
+					</ul>
+				</div>
+			</div>
+		</nav>
+</control>
+
+<control id ="set_WebsiteHeaderInActive">
+	<li class="nav-item active">
+		<a class="nav-link" href="blog_login.html">Login</a>
+	</li>
+	<li class="nav-item active">
+		<a class="nav-link" href="blog_register.html">Register</a>
+	</li>
+</control>
+
+<control id ="set_WebsiteHeaderActive">
+
+	<li class="nav-item active">
+		<a class="nav-link" href="blog_management.html">Blog Mangement</a>
+	</li>
+
+	<li class="nav-item active">
+		<a class="nav-link" href="blog_myaccount.html">My Account</a>
+	</li>
+
+	<li class="nav-item active">
+		<a class="nav-link" href="#" onclick ='SignOut();'>Sign Out</a>
+	</li>
+
+</control>

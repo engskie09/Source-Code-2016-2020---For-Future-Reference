@@ -1,0 +1,170 @@
+
+
+<!-- Imported Assets -->
+
+<link rel="stylesheet" type="text/css" href="../Import/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+<script type="text/javascript" src="../Import/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="../Import/jquery-3.4.1.min.js"></script>
+
+<script type="text/javascript" src="../Import/jquery.cookie.js"></script>
+
+<script type="text/javascript" src="../Import/jquery.validate.min.js"></script>
+
+<script type="text/javascript" src="../Import/angular.min.js"></script>
+
+<script type="text/javascript" src="../Import/angular-route.min.js"></script>
+
+<!--<link rel="stylesheet" type="text/css" href="../Import/DataTables/datatables.min.css">
+
+<script type="text/javascript" src="../Import/DataTables/datatables.min.js"></script>-->
+
+
+<link rel="stylesheet" type="text/css" href="../Import/DataTables/DataTables-1.10.18/css/jquery.dataTables.min.css">
+
+<script type="text/javascript" src="../Import/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+
+<!--<link rel="stylesheet" type="text/css" href="../Import/DataTables/DataTables-1.10.18/css/dataTables.foundation.min.css">
+
+<script type="text/javascript" src="../Import/DataTables/DataTables-1.10.18/js/dataTables.foundation.min.js"></script>-->
+
+<!-- Customed Import -->
+
+<link rel="stylesheet" type="text/css" href="pms.css">
+
+<link rel="stylesheet" type="text/css" href="custom.css">
+
+<script type="text/javascript" src="../GeneralSession_SystemMethods_JS-PHP/SystemMethods_GeneralSession.js"></script>
+
+<script type="text/javascript">
+
+	var get_UserSessionID = '';
+
+	$(document).ready(function()
+	{	
+
+		var get_CurrentWindowLocationPathName = window.location.href;
+		get_CurrentWindowLocationPathName = get_CurrentWindowLocationPathName.toLowerCase();
+
+	
+		if (!set_user_session('check_user_session'))
+		{
+			if(!get_CurrentWindowLocationPathName.includes('SignIn.html'.toLowerCase()))
+			{					
+				window.location.href = 'SignIn.html';
+			}
+		}
+
+
+
+		
+		$('#dv_loader').css('display', 'none');
+		$('#dv_body').css('display', 'block');
+
+	});	
+
+	function get_Current_DateTime()
+	{
+		var get_Response;
+
+		$.ajax({
+
+				url: get_URL + '/SystemMethods_GeneralSession.php',
+				type: 'post',
+				data: 'get_Current_DateTime=get_Current_DateTime',
+				async: false,
+
+				success: function(set_Response)
+				{					
+					get_Response = set_Response;							
+				},
+
+				error: function(set_Response)
+				{
+					alert('Ajax Error!!!');
+				}
+			});
+
+		var get_JSON = JSON.parse(get_Response);	
+
+		$('#set_CurrentDate').text('Date: ' + get_JSON.set_CurrentDate);
+		$('#set_CurrentTime').text('Time: ' + get_JSON.set_CurrentTime);
+	}
+
+	
+
+	function set_TotalEmployee()
+	{
+		var get_JSON = JSON.parse(select_user_information('Select Count', ''));
+
+		$('#get_TotalEmployee').text('Total Employee: ' + get_JSON[0]['COUNT(*)']);
+	}
+
+	function set_TotalEmployee_PresentWork()
+	{
+		var get_JSON = JSON.parse(select_user_information('Select Count', ''));
+
+		$('#get_TotalEmployee').text('Total Employee: ' + get_JSON[0]['COUNT(*)']);
+	}
+
+
+
+	function set_user_session(set_Action)
+	{
+		var get_Data;
+
+		if (set_Action == 'SignOut')
+			get_Data = 'set_user_session=set_user_session' + '&get_Action=' + set_Action;
+
+		else if (set_Action == 'check_user_session')
+			get_Data = 'set_user_session=set_user_session&get_UserID=get_UserID';
+
+		else		
+			get_Data = 'set_user_session=set_user_session';	
+		
+
+		$.ajax({
+
+			url: get_URL + '/SystemMethods_GeneralSession.php',
+			type: 'POST',
+			data: get_Data,
+			async: false,
+
+			success: function(set_response)
+			{			
+
+				if (set_Action == 'SignOut')	
+				{				
+					if (set_response.includes('Success : SignOut'))						
+						location.reload();		
+				}
+				
+				else if(set_response.includes('No Session'))
+				{				
+					get_Data = false;
+				}
+
+				else
+				{
+					var get_JSON = JSON.parse(set_response);	
+					get_UserSessionID = get_JSON.get_UserID;
+					get_Data = true;					
+				}								
+
+				
+
+				
+			},
+
+			error: function(set_response)
+			{
+				alert('Ajax Error!!!');
+			}
+		});	
+
+		return get_Data;
+		
+	}	
+
+</script>

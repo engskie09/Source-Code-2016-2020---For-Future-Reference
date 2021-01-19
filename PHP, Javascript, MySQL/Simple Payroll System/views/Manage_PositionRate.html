@@ -1,0 +1,184 @@
+<div class="page-content" ng-init="set_Manage_PositionRate()">
+
+	<div class="row">
+			
+		<header class="col-md-2" ng-include="'GeneralSession_SystemAssets_CSS-HTML/System_Header.html'"></header>
+
+		<div class="col-md-8">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="card-header">Position/Rate Management</h3>
+							<br>						
+								
+							<div class="card" id="dv_PositionList">			
+								<h5 class="card-header">Position List</h5>					
+								<div class="card-body">
+
+									<table id="tbl_PositionInformation" class="display" style=" text-align: center; font-size: 20px;">
+										<thead>
+											<tr>
+												<th>Position ID</th>
+												<th>Position Name</th>											
+												<th>Position Description</th>
+												<th>Rate ID</th>
+												<th>Action</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Test 1 ID</td>
+												<td>Test 1 Name</td>
+												<td>Test 1 Description</td>
+												<th>Test 1 ID</th>
+												<th>Test Action</th>
+											</tr>		        
+										</tbody>
+									</table>
+
+								</div>
+							</div>
+							
+							<div class="col-md-9">
+								<div class="card" id="dv_RateList">			
+									<h5 class="card-header">Rate List</h5>					
+									<div class="card-body">	
+										<table id="tbl_RateInformation" class="display" style=" text-align: center; font-size: 20px;">
+											<thead>
+												<tr>
+													<th>Rate ID</th>										
+													<th>Rate Value</th>
+													<td>Rate Action</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Test 1 ID</td>
+													<td>Test 1 Value</td>
+													<td>Test 1 Action</td>
+												</tr>	        
+											</tbody>
+										</table>	
+									</div>
+								</div>
+							</div>
+
+							<div class="card" id ='dv_PositionInformation'>
+								<h5 class="card-header">Add Position</h5>
+								<div class="card-body">									
+									<form id="frm_PositionInformation">
+
+										<h5 class="card-header">Position Information</h5>
+										<br>
+										<input type="text" name="get_PositionID" id="get_PositionID" style="display: none;"></input>
+										
+
+										
+										<div class="form-group">
+											<div class="col-md-3">
+												<input type="text" class="form-control" name="get_PositionName" id="get_PositionName" placeholder="Position Name" required>
+											</div>
+
+											<br>
+											<div class="col-md-3">
+												<select class="form-control" name="get_RateID_position" id="get_RateID_position" required>
+													<option selected disabled>Select Rate</option>
+													<option value="RT-01">500 /Day</option>
+													<option value="RT-02">700 /Day</option>
+												</select> 
+											</div>
+
+											<br>
+											<div class="col-md-6">
+												<textarea type="text" class="form-control" name="get_PositionDescription" id="get_PositionDescription" placeholder="Position Description" required></textarea>
+											</div>
+										</div>
+									
+										<button type="submit" class="btn btn-dark" name="btn_Action" id="btn_Action" value="btn_Action">Add Position</button>
+
+									</form>
+								</div>
+							</div>	
+
+
+							<div class="card" id ='dv_RateInformation'>
+								<h5 class="card-header">Add Rate</h5>
+								<div class="card-body">									
+									<form id="frm_RateInformation">
+
+										<h5 class="card-header">Rate Information</h5>
+										<br>
+										<input type="text" name="get_RateID" id="get_RateID" style="display: none;"></input>				
+
+										
+										<div class="form-group">
+											<div class="col-md-3">
+												<input type="text" class="form-control" name="get_RateValue" id="get_RateValue" placeholder="Rate Value / Per Day Salary" required>
+											</div>									
+										</div>
+									
+										<button type="submit" class="btn btn-dark" name="btn_Action" id="btn_Action" value="btn_Action">Add Rate</button>
+
+									</form>
+								</div>
+							</div>
+						
+
+
+
+						</div>
+					</div>
+				</div>
+				<div class="row">
+				<div class="col-md-12">
+					
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-2">
+			<div class="row">						
+				<div class="card" style="width: 18rem;">	
+										
+					<h5 class="card-header">
+						<div id="set_CurrentDate"></div>
+						<br>
+						<div id="set_CurrentTime"></div>
+					</h5>
+
+					<div class="card-body">
+						<div class="form-group card-header">
+							<div class="col">											
+								<button type="button" class="btn btn-dark" ng-click="Show_PositionList()">View Position List</button>
+							</div>
+							<div class="col">
+								<br>									
+								<button type="button" class="btn btn-dark" ng-click="Show_frm_PositionInformation_insert()">Add Position</button>
+							</div>
+						</div>											
+					</div>
+
+					<div class="card-body">
+						<div class="form-group card-header">
+							<div class="col">											
+								<button type="button" class="btn btn-dark" ng-click="Show_RateList()">View Rate List</button>
+							</div>
+							<div class="col">
+								<br>									
+								<button type="button" class="btn btn-dark" ng-click="Show_frm_RateInformation_insert()">Add Rate</button>
+							</div>
+						</div>											
+					</div>
+
+				</div>
+			</div>
+
+		</div>	
+
+	</div>
+
+	
+
+</div>

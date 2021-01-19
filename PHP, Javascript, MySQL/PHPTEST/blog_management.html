@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<link rel="import" href="GeneralSession_SystemAssets_CSS-HTML/controls.html">
+			
+		<title></title>
+
+	</head>
+
+	<body>
+
+		<dir id ="get_WebsiteHeader"></dir>
+
+			<div style="padding-top: 50px"></div>
+			
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-8">
+						<h1 class="my-4">PHP
+						<small>EXAM</small>
+						</h1> 	
+
+						<div id="div_Blog_Add">
+							<form id="blog_Add">
+								<h2>Add new Blog</h2>						
+
+								<p class="lead">Blog Information</p>
+
+								<div class="form-group">
+									<input type="text" class="form-control" name="blog_Title" placeholder="Blog Title" required>			
+								</div> 
+
+								<div class="form-group">
+									<textarea class="form-control" name="blog_Content" placeholder="Blog Content" size="10;" required></textarea>	
+								</div> 
+								<div class="form-group">
+									<button class="btn btn-dark btn-lg">Add</button>
+								</div>
+							</form>
+						</div>
+
+						<div id="div_Blog_Display">		
+
+						</div>						
+
+						<nav aria-label="Page navigation example">
+							<ul class="pagination" id="ul_Blog_Display_By_Page">					
+
+								<li class="page-item"><a class="page-link" style="color: black;" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" style="color: black;" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" style="color: black;" href="#">3</a></li>														
+							</ul>
+						</nav>	    
+
+					</div>
+
+			
+					<div class="col-md-4">
+						<div class="card my-4">	
+							<h5 class="card-header">Blog Management</h5>
+							<div class="card-body">							
+								
+
+								<p id="get_TotalPosts"></p>
+								<p id="get_TotalUsers"></p>
+								<p id="get_CurrentDateTime"></p>
+
+								<a href="#" class="btn btn-dark" onclick="set_div_visible('Blog_Add');">Add Blog &rarr;</a>
+								<a href="#" class="btn btn-dark" onclick="set_div_visible('Blog_View_All');">View My Blog &rarr;</a>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				
+			</div>
+
+
+
+
+	</body>
+</html>
+
+<script type="text/javascript">
+	
+	var get_Date = new Date();
+	var get_DateToday = (get_Date.getMonth() + 1) + '-' + get_Date.getDate() + '-' + get_Date.getFullYear();
+
+	$('#get_CurrentDateTime').text('Current Date: ' + get_Date);
+
+	var get_JSON = JSON.parse(get_blog_information_summary());
+
+	$('#get_TotalPosts').text('Total Posts: ' + get_JSON.get_Blog_TotalRow);
+	$('#get_TotalUsers').text('Total Users: ' + get_JSON.get_Blogger_TotalRow);
+
+	$('#div_Blog_Add').hide();
+
+	function set_div_visible(set_CurrentControl)
+	{		
+
+		if (set_CurrentControl == 'Blog_Add')
+		{
+			$('#div_Blog_Add').show();
+			$('#div_Blog_Display').hide();
+		}
+
+		else if (set_CurrentControl == 'Blog_View_All')
+		{
+			$('#div_Blog_Display').show();
+			$('#div_Blog_Add').hide();			
+		}
+	}
+
+	$('#div_Blog_Display').html(get_blog_information('Select-Specify-Page', '1'));
+	$('#ul_Blog_Display_By_Page').html(get_blog_information('Select-Specify-Paging', null));
+
+	function get_current_page($set_Current_Page)
+	{
+		$('#div_Blog_Display').html(get_blog_information('Select-Specify-Page', $set_Current_Page));
+	}
+
+
+
+
+
+</script>

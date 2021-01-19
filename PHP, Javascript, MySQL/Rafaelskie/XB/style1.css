@@ -1,0 +1,39 @@
+
+@font-face{
+
+	font-family: qweqwe;
+	src: url("Gaegu-Regular.ttf");
+}
+
+.GTab{
+
+	background-color: #7B858A;
+
+}
+
+.GTabHover:hover{
+	background-color: #7B858A;
+
+
+}
+
+.blank
+{
+
+	padding-bottom: 300px;
+}
+
+.registerForm
+{
+	background-color: #7B858A;
+	padding: 50px 50px 50px 700px;
+	font-size: 30px;
+}
+
+.registerForm form 	 tr td {
+	text-align: right;
+	font-family: qweqwe;
+	color: white;
+
+}
+

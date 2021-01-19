@@ -1,0 +1,39 @@
+.MainBackground
+{
+	background-image: url('bg.jpeg');
+	
+background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+.navigationbar
+{
+	background-color: #CCB79B;
+	opacity: 0.7;
+	height: 100px;
+	width: 1800px;	
+}
+
+.itemlistcontainer
+{
+	background-color: #7B593D;	
+	height: 2000px;
+	width: 1500px;
+	opacity: 0.7;
+
+	font-size:  50px;
+
+
+}
+
+.contentFood
+{
+
+	border: solid;
+	float: left;
+	margin-left: 50px;	
+}
+
+
